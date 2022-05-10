@@ -9,3 +9,36 @@ C:\Users\mohee\Desktop\BloodBankProject\BloodBank\obj\Debug\BloodBank.csproj.Gen
 C:\Users\mohee\Desktop\BloodBankProject\BloodBank\obj\Debug\BloodBank.csproj.CoreCompileInputs.cache
 C:\Users\mohee\Desktop\BloodBankProject\BloodBank\obj\Debug\BloodBank.exe
 C:\Users\mohee\Desktop\BloodBankProject\BloodBank\obj\Debug\BloodBank.pdb
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\BloodBank.exe.config
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\BloodBank.exe
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\BloodBank.pdb
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\CircularProgressBar.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\ProgressRing.Forms.Plugin.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\WinFormAnimation.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\CircularProgressBar.xml
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.csproj.AssemblyReference.cache
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.Form1.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.loading_page.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.Properties.Resources.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.csproj.GenerateResource.cache
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.csproj.CopyComplete
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.exe
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.pdb
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\bin\Debug\Guna.UI2.dll
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.Dashboard.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.login_page.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.donor_page.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.Patient_Page.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.view_donor.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.view_patient.resources
+C:\Users\Ahmed Adel\Desktop\Blood-Bank-Project-main (2)\Blood-Bank-Project-main\BloodBank\obj\Debug\BloodBank.admin_login.resources
