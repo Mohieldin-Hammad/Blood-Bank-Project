@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessManagers\Manager.cs" />
     <Compile Include="AccessManagers\Patient.cs" />
     <Compile Include="admin login.cs">
       <SubType>Form</SubType>

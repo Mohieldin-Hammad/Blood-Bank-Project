@@ -7,11 +7,20 @@ CREATE PROCEDURE sp_InsertDonor
 	@DPhone varchar(50),
 	@DCity VarChar(50)
 AS
+-- INSERT INTO THE DONOR NEW ROW IF THIS DONOR IS NOT EXISTS IN DATA BASE
+IF NOT EXISTS (SELECT * FROM Donors 
+                WHERE DName = @DName
+                AND DGender = @DGender
+                AND DBlood = @DBlood
+				AND DBirthDate = @DBirthDate
+				AND DPhone = @DPhone
+				AND DCity = @DCity
+				)
 BEGIN
-	insert into Donors
-		(DName, DGender, DBlood, DBirthDate, DPhone, DCity, DDonationDate) 
-	values
-		(@DName , @DGender, @DBlood, @DBirthDate, @DPhone, @DCity, getdate())
+    INSERT INTO Donors
+		(DName, DGender, DBlood, DBirthDate, DPhone, DCity) 
+	VALUES
+		(@DName , @DGender, @DBlood, @DBirthDate, @DPhone, @DCity)
 END
 
 

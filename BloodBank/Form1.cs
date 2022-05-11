@@ -16,26 +16,32 @@ namespace BloodBank
         public Form1()
         {
             InitializeComponent();
-            test();
+            
         }
 
 
-        private void test()
-        {
-            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
-            {
-                SqlDataAdapter sda = new SqlDataAdapter("exec sp_ShowDonorsTable", conn);
-                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+        //private void test()
+        //{
+        //    using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+        //    {
+        //        SqlDataAdapter sda = new SqlDataAdapter("exec sp_ShowDonorsTable", conn);
+        //        SqlCommandBuilder builder = new SqlCommandBuilder(sda);
 
-                var ds = new DataSet();
-                sda.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0];
-            }
-        }
+        //        var ds = new DataSet();
+        //        sda.Fill(ds);
+        //        dataGridView1.DataSource = ds.Tables[0];
+        //    }
+        //}
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AccessManagers.Patient patient = new AccessManagers.Patient();
+            patient.InsertNewPatient("mohammed", "M", "B+", "2002-5-8", "12345", "mansoura");
         }
     }
 }

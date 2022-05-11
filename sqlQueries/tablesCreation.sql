@@ -13,8 +13,7 @@ PBlood varchar(5) not null,
 PBirthDate date not null,
 P_Age as (year(getdate()) - year(PBirthDate)),
 PPhone varchar(50) not null,
-PCity VarChar(50) not null,
-PTransferDate date,
+PCity VarChar(50) not null
 constraint PatientsPK primary key(P_ID),
 constraint PGenderCheck check(PGender in ('M', 'F')),
 constraint PBloodCheck check(PBlood in ('A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'))
@@ -30,11 +29,35 @@ DBlood varchar(5) not null,
 DBirthDate date not null,
 D_Age as (year(getdate()) - year(DBirthDate)),
 DPhone varchar(50) not null,
-DCity VarChar(50) not null,
-DDonationDate date,
+DCity VarChar(50) not null
 constraint DonorsPK primary key(D_ID),
 constraint DGenderCheck check(DGender in ('M', 'F')),
 constraint DBloodCheck check(DBlood in ('A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'))
+)
+
+-- create Donor History Table
+create table Donations(
+ID_Donor int not null, 
+D_Date date not null,
+D_Blood varchar(5) not null
+constraint IDforeign foreign key(ID_Donor) references Donors(D_ID)
+	on delete cascade on update cascade,
+constraint Bloodforeign foreign key(D_Blood) references Bloods(BGroup)
+	on delete cascade on update cascade,
+constraint PrimaryKey primary key(ID_Donor, D_Date)
+)
+
+
+-- create Donor History Table
+create table transfers(
+ID_Patient int not null, 
+P_Date date not null,
+P_Blood varchar(5) not null
+constraint IDforeign1 foreign key(ID_Patient) references Patients(P_ID)
+	on delete cascade on update cascade,
+constraint Bloodforeign1 foreign key(P_Blood) references Bloods(BGroup)
+	on delete cascade on update cascade,
+constraint PrimaryKey1 primary key(ID_Patient, P_Date)
 )
 
 
@@ -46,21 +69,24 @@ BCounts int not null default 0
 
 -- Creating table of all admins password which will let me create new users
 create table Admins(
-AdminPass varchar(50) primary key
+A_ID int identity primary key,
+AdminUName varchar(50) not null,
+AdminPass varchar(50) not null
 )
 
 -- adding new admin to the Admins table
-insert into Admins values ('123456789')
+insert into Admins(AdminUName, AdminPass) values('mohee', '1234')
 
 
 -- Creating table for users and have the admin passwords as a foreign key
 create table Users(
+A_ID int not null,
+U_ID int not null,
 UName varchar(50) not null,
-UPass varchar(50) not null, 
-APass varchar(50) not null,
-constraint Aforeign foreign key(APass) references Admins(AdminPass)
+UPass varchar(50) not null
+constraint Uforeign foreign key(A_ID) references Admins(A_ID)
 	on delete cascade on update cascade,
-constraint PrimaryKey primary key(Uname, APass)
+constraint UPrimaryKey primary key(A_ID, U_ID)
 )
 
 

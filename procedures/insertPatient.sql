@@ -7,12 +7,24 @@ CREATE PROCEDURE sp_InsertPatient
 	@PPhone varchar(50),
 	@PCity VarChar(50)
 AS
+-- INSERT INTO THE PATIENT NEW ROW IF THIS PATIENT IS NOT EXISTS IN DATA BASE
+IF NOT EXISTS (SELECT * FROM Patients 
+                WHERE PName = @PName
+                AND PGender = @PGender
+                AND PBlood = @PBlood
+				AND PBirthDate = @PBirthDate
+				AND PPhone = @PPhone
+				AND PCity = @PCity
+				)
 BEGIN
-	insert into Patients
-		(PName, PGender, PBlood, PBirthDate, PPhone, PCity, PTransferDate) 
-	values
-		(@PName , @PGender, @PBlood, @PBirthDate, @PPhone, @PCity, getdate())
+    INSERT INTO Patients
+		(PName, PGender, PBlood, PBirthDate, PPhone, PCity) 
+	VALUES
+		(@PName , @PGender, @PBlood, @PBirthDate, @PPhone, @PCity)
 END
+
+	
+
 
 
 
