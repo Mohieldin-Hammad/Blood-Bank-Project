@@ -1,30 +1,34 @@
--- This procedure is inserting new row to the donor with specific values
+-- this procedure is inserting new row to the Patient with specific values
 CREATE PROCEDURE sp_InsertDonor
-	@DName varchar(50),
-	@DGender varchar(5),
-	@DBlood varchar(5),
-	@DBirthDate date,
-	@DPhone varchar(50),
-	@DCity VarChar(50)
+	@PName varchar(50),
+	@PGender varchar(50),
+	@PBlood varchar(5),
+	@PBirthDate date,
+	@PPhone varchar(50),
+	@PCity VarChar(50)
 AS
--- INSERT INTO THE DONOR NEW ROW IF THIS DONOR IS NOT EXISTS IN DATA BASE
-IF NOT EXISTS (SELECT * FROM Donors 
-                WHERE DName = @DName
-                AND DGender = @DGender
-                AND DBlood = @DBlood
-				AND DBirthDate = @DBirthDate
-				AND DPhone = @DPhone
-				AND DCity = @DCity
+-- INSERT INTO THE PATIENT NEW ROW IF THIS PATIENT IS NOT EXISTS IN DATA BASE
+IF NOT EXISTS (SELECT * FROM People 
+                WHERE PName = @PName
+                AND PGender = @PGender
+                AND PBlood = @PBlood
+				AND PBirthDate = @PBirthDate
+				AND PPhone = @PPhone
+				AND PCity = @PCity
+				AND PType = 'D'
 				)
 BEGIN
-    INSERT INTO Donors
-		(DName, DGender, DBlood, DBirthDate, DPhone, DCity) 
+    INSERT INTO People
+		(PName, PGender, PBlood, PBirthDate, PPhone, PCity, PType) 
 	VALUES
-		(@DName , @DGender, @DBlood, @DBirthDate, @DPhone, @DCity)
+		(@PName , @PGender, @PBlood, @PBirthDate, @PPhone, @PCity, 'D')
 END
+
+	
+
 
 
 
 
 -- For example to execute the procedure we can run the following query
---exec sp_InsertDonor 'mohee' , 'M', 'A+', '2002-04-20', '0123456789', 'Mansoura'
+--exec sp_InsertPatient 'mohee' , 'M', 'A+', '2002-04-20', '0123456789', 'Mansoura'

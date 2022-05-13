@@ -4,21 +4,31 @@
 CREATE PROCEDURE sp_EditPRowOfId
 	@ID int,
 	@Name varchar(50),
-	@Gender varchar(5),
+	@Gender varchar(50),
 	@Blood varchar(5),
 	@BirthDate date,
 	@Phone varchar(50),
 	@City VarChar(50)
 AS
+IF NOT EXISTS (SELECT * FROM People 
+                WHERE P_ID = @ID
+				AND PName = @Name
+                AND PGender = @Gender
+                AND PBlood = @Blood
+				AND PBirthDate = @BirthDate
+				AND PPhone = @Phone
+				AND PCity = @City
+				AND PType = 'P'
+				)
 BEGIN
 
-	update Patients set 
+	update People set 
 		PName = @Name,
 		PGender = @Gender,
 		PBlood = @Blood,
 		PBirthDate = @BirthDate,
 		PPhone = @Phone,
 		PCity = @City
-	Where P_ID = @ID
+	Where P_ID = @ID and PType = 'P'
 	
 END

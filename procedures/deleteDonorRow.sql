@@ -1,5 +1,4 @@
--- this procedure is deleting the row with these columns values
-CREATE PROCEDURE sp_DeletePatientRow
+CREATE PROCEDURE sp_DeleteDonorRow
 	@ID int,
 	@Name varchar(50),
 	@Gender varchar(5),
@@ -16,7 +15,7 @@ IF EXISTS (SELECT * FROM People
 				AND PBirthDate = @BirthDate
 				AND PPhone = @Phone
 				AND PCity = @City
-				AND PType = 'P'
+				AND PType = 'D'
 				)
 BEGIN
 	delete from People
@@ -27,9 +26,9 @@ BEGIN
 		and PBirthDate = @BirthDate
 		and PPhone = @Phone
 		and PCity = @City
-		and PType = 'P'
+		and PType = 'D'
 END
 else 
 begin
-THROW 50005, N'Patient is not in the DataBase', 1;
+THROW 50005, N'Donor is not in the DataBase', 1;
 end

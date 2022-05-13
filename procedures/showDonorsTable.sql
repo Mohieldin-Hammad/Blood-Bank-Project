@@ -2,14 +2,13 @@
 CREATE PROCEDURE sp_ShowDonorsTable
 AS
 BEGIN
-	select DName as 'Name', 
-		DBlood as 'Blood_Type',
-		(Case
-			WHEN DGender = 'M' THEN 'Male'
-            WHEN DGender = 'F' THEN 'Female'
-		End) as Gender,
-		D_Age as 'Age',
-		DPhone as 'Phone',
-		DCity as 'City'	
-	from Donors
+	select P_ID as "ID",
+		PName as 'Name', 
+		PBlood as 'Blood_Type',
+		PGender as Gender,
+		P_Age as 'Age',
+		PPhone as 'Phone',
+		PCity as 'City'	
+	from People 
+	where PType = 'D'
 END

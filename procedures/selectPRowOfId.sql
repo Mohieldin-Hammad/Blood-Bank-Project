@@ -5,12 +5,9 @@ AS
 BEGIN
 	select PName, 
 		PBlood,
-		PGender = Case
-			WHEN PGender = 'M' THEN 'Male'
-            WHEN PGender = 'F' THEN 'Female'
-		End,
-		PBirthDate,
+		PGender,
+		convert(varchar,PBirthDate , 23) as PBirthDate,
 		PPhone,
-		PCity	
-	from Patients where P_ID = @ID 
+		PCity
+	from People where P_ID = @ID And PType = 'P'
 END

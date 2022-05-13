@@ -70,6 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessManagers\Blood.cs" />
+    <Compile Include="AccessManagers\Donor.cs" />
     <Compile Include="AccessManagers\Manager.cs" />
     <Compile Include="AccessManagers\Patient.cs" />
     <Compile Include="admin login.cs">

@@ -3,14 +3,11 @@ CREATE PROCEDURE sp_SelectDRowOfId
 @ID int
 AS
 BEGIN
-	select DName, 
-		DBlood,
-		PGender = Case
-			WHEN DGender = 'M' THEN 'Male'
-            WHEN DGender = 'F' THEN 'Female'
-		End,
-		DBirthDate,
-		DPhone,
-		DCity	
-	from Donors where D_ID = @ID 
+	select PName, 
+		PBlood,
+		PGender,
+		convert(varchar,PBirthDate , 23) as PBirthDate,
+		PPhone,
+		PCity
+	from People where P_ID = @ID And PType = 'D'
 END
