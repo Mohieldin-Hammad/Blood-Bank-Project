@@ -1,0 +1,8 @@
+CREATE PROCEDURE sp_InsertInjection
+	@P_ID INT
+AS
+BEGIN
+    INSERT INTO Transfers(P_ID)
+	VALUES
+		(@P_ID)
+END

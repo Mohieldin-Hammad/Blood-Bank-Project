@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace BloodBank.AccessManagers
 {
-     internal class Manager
+    public class Manager
     {
 
 
@@ -28,15 +28,15 @@ namespace BloodBank.AccessManagers
                         conn.Open();
                         SqlCommand cmd = new SqlCommand($"exec {procedure} '{name}', '{gender}', '{blood}', '{BD}', '{phone}', '{city}'", conn);
                         cmd.ExecuteNonQuery();
-                        
+
                         conn.Close();
-                        return "Succeed";
                     }
                     catch (Exception ex)
                     {
                         conn.Close();
                         return ex.Message;
                     }
+                    return "Succeed";
                 }
             }
         }
@@ -48,15 +48,12 @@ namespace BloodBank.AccessManagers
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
                 string Query = $"exec {procedure}";
-                SqlDataAdapter adapter = new SqlDataAdapter(Query, conn);
-                SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet);
+                DataSet dataSet = GetDataSet(Query, conn);
                 return dataSet.Tables[0];
             }
         }
 
-        public List<string> getColumnsByID(int id, params string[] cols)
+        public List<string> getColumnsByID(char type, int id, params string[] cols)
         {
             // checking that the id exists
 
@@ -64,9 +61,9 @@ namespace BloodBank.AccessManagers
 
             //*************************
 
-            string[] all_items = new string[6] {"PName","PBlood", "PGender", "PBirthDate", "PPhone", "PCity"};
+            string[] all_items = new string[6] { "PName", "PBlood", "PGender", "PBirthDate", "PPhone", "PCity" };
 
-            foreach(string item in cols)
+            foreach (string item in cols)
             {
                 if (!all_items.Contains(item))
                 {
@@ -74,21 +71,23 @@ namespace BloodBank.AccessManagers
                     return null;
                 }
             }
-            
+
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
-                string Query = $"exec sp_SelectPRowOfId {id}";
-                SqlDataAdapter adapter = new SqlDataAdapter(Query, conn);
-                SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
-                DataSet dataSet = new DataSet();
-                adapter.Fill(dataSet);
-                
+                string Query = "";
+                if (type == 'P')
+                    Query = $"exec sp_SelectPRowOfId {id}";
+                else if (type == 'D')
+                    Query = $"exec sp_SelectDRowOfId {id}";
+
+                DataSet dataSet = GetDataSet(Query, conn);
+
                 List<string> ListOfValues = new List<string>();
                 //ListOfValues[0] = dataSet.Tables[0].Rows[0]["PName"].ToString();
 
                 if (dataSet.Tables[0].Rows.Count > 0)
                 {
-                    foreach(string col in cols)
+                    foreach (string col in cols)
                     {
                         ListOfValues.Add(dataSet.Tables[0].Rows[0][col].ToString());
                     }
@@ -96,6 +95,7 @@ namespace BloodBank.AccessManagers
                 return ListOfValues;
             }
         }
+
 
 
         public string Edit(string procedure, int ID, string name, string gender, string blood, string BD, string phone, string city)
@@ -115,13 +115,13 @@ namespace BloodBank.AccessManagers
                         cmd.ExecuteNonQuery();
 
                         conn.Close();
-                        return "Succeed";
                     }
                     catch (Exception ex)
                     {
                         conn.Close();
                         return ex.Message;
                     }
+                    return "Succeed";
                 }
             }
         }
@@ -147,16 +147,119 @@ namespace BloodBank.AccessManagers
                         cmd.ExecuteNonQuery();
 
                         conn.Close();
-                        return "Succeed";
                     }
                     catch (Exception ex)
                     {
                         conn.Close();
                         return ex.Message;
                     }
+                    return "Succeed";
                 }
             }
         }
+
+
+        // There is two procedurs 
+        // sp_BloodDecrement or sp_BloodIncrement
+        private string ChangeBloodCount(string procedure, string blood)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand($"exec {procedure} '{blood}'", conn);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    conn.Close();
+                    return ex.Message;
+                }
+            }
+            return "Succeed";
+        }
+
+
+        public string CheckPerson(int id, string personType)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                string Query = $"exec sp_CheckPerson {id}, '{personType}'";
+                DataSet dataSet = GetDataSet(Query, conn);
+                return dataSet.Tables[0].Rows[0][0].ToString();
+            }
+        }
+
+
+        public string InsertDonation(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                try
+                {
+                    conn.Open();
+
+                    string bloodType = getColumnsByID('D', id, "PBlood")[0];
+                    if (ChangeBloodCount("sp_BloodIncrement", bloodType) != "Succeed")
+                    {
+                        return "Failed_To_Increment_Blood";
+                    }
+
+                    SqlCommand cmd = new SqlCommand($"exec sp_InsertDonation {id}", conn);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    conn.Close();
+                    return ex.Message;
+                }
+                return "Succeed";
+            }
+        }
+
+        public string InsertInjection(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                try
+                {
+                    conn.Open();
+
+                    string bloodType = getColumnsByID('P', id, "PBlood")[0];
+                    if (ChangeBloodCount("sp_BloodDecrement", bloodType) != "Succeed")
+                    {
+                        return "Failed_To_Decrement_Blood";
+                    }
+
+                    SqlCommand cmd = new SqlCommand($"exec sp_InsertInjection {id}", conn);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    conn.Close();
+                    return ex.Message;
+                }
+                return "Succeed";
+            }
+        }
+
+
+        // Execute sql query and return DataSet
+        private DataSet GetDataSet(string query, SqlConnection conn)
+        {
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
+            DataSet dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            conn.Close();
+
+            return dataSet;
+        }     
 
         // checking if there is a missing information or null string
         private bool CheckMissingInformation(string name, string gender, string blood, string BD, string phone, string city)

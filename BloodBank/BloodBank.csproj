@@ -74,6 +74,8 @@
     <Compile Include="AccessManagers\Donor.cs" />
     <Compile Include="AccessManagers\Manager.cs" />
     <Compile Include="AccessManagers\Patient.cs" />
+    <Compile Include="AccessManagers\User.cs" />
+    <Compile Include="AccessManagers\UserManager.cs" />
     <Compile Include="admin login.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -3,6 +3,14 @@ CREATE PROCEDURE sp_BloodDecrement
 	@BloodType varchar(5)
 AS
 BEGIN
-	update Bloods set BCounts = BCounts - 1
+	
+BEGIN TRY  
+     update Bloods set BCounts = BCounts - 1
 		where BGroup = @BloodType
+END TRY  
+
+BEGIN CATCH  
+     raiserror('FAILED', 1, 1)
+END CATCH  
+;
 END

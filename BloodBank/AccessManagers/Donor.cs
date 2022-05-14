@@ -9,7 +9,7 @@ using System.Data;
 
 namespace BloodBank.AccessManagers
 {
-    internal class Donor : Manager
+    public class Donor
     {
         public void InsertNewDonor(string name, string gender, string blood, string BD, string phone, string city)
         {
@@ -32,10 +32,10 @@ namespace BloodBank.AccessManagers
 
 
         // will return list of values else it will return null
-        public List<string> ValuesOfRow(int id, params string[] cols)
+        public List<string> ValuesOfDonorRow(int id, params string[] cols)
         {
             Manager manager = new Manager();
-            List<string> items = manager.getColumnsByID(id, cols);
+            List<string> items = manager.getColumnsByID('D', id, cols);
             return items;
         }
 

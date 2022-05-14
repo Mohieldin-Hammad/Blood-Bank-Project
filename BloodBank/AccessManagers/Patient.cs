@@ -9,7 +9,7 @@ using System.Data;
 
 namespace BloodBank.AccessManagers
 {
-    internal class Patient : Manager
+    public class Patient
     {
 
         // Inserting new patient to the database will require the following parameters
@@ -24,9 +24,12 @@ namespace BloodBank.AccessManagers
             // Succeed happen if all the information is valid
             // else It will send an exeption.message that show the error message
             string result = manager.Insert("sp_InsertPatient", name, gender, blood, BD, phone, city);
-            if (result == "Failed") MessageBox.Show("Missing Information");
-            else if (result == "Succeed") MessageBox.Show("Patient Successfully Seved");
-            else  MessageBox.Show(result);
+            if (result == "Failed") 
+                MessageBox.Show("Missing Information");
+            else if (result == "Succeed") 
+                MessageBox.Show("Patient Successfully Seved");
+            else  
+                MessageBox.Show(result);
         }
 
 
@@ -40,10 +43,10 @@ namespace BloodBank.AccessManagers
 
 
         // will return list of values else it will return null
-        public List<string> ValuesOfRow(int id, params string[] cols)
+        public List<string> ValuesOfPatientRow(int id, params string[] cols)
         {
             Manager manager = new Manager();
-            List<string> items = manager.getColumnsByID(id, cols);
+            List<string> items = manager.getColumnsByID('P', id, cols);
             return items;
         }
 
@@ -54,9 +57,12 @@ namespace BloodBank.AccessManagers
             Manager manager = new Manager();
             string result = manager.Edit("sp_EditPRowOfId", ID, name, gender, blood, BD, phone, city);
 
-            if (result == "Failed") MessageBox.Show("Missing Information");
-            else if (result == "Succeed") MessageBox.Show("Patient is Successfully Updated");
-            else MessageBox.Show(result);
+            if (result == "Failed") 
+                MessageBox.Show("Missing Information");
+            else if (result == "Succeed") 
+                MessageBox.Show("Patient is Successfully Updated");
+            else 
+                MessageBox.Show(result);
         }
 
         
@@ -70,8 +76,5 @@ namespace BloodBank.AccessManagers
             else if (result == "Succeed") MessageBox.Show("Patient Successfully Deleted");
             else MessageBox.Show(result);
         }
-
-
-
     }
 }
