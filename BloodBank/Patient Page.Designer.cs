@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -36,25 +37,25 @@
             this.patient = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.donor = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PBloodInsert = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.PCity_text = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PCityInsert = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PBlood_text = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PPhone_text = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PPhoneInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PGender_text = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PBD_text = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PDBInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PName_text = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PNameInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.PSaveInsert = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.PGenderInsert = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,274 +153,271 @@
             this.donor.TabIndex = 2;
             this.donor.Text = "Donor";
             // 
-            // guna2ComboBox1
+            // PBloodInsert
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Red;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.PBloodInsert.BackColor = System.Drawing.Color.Transparent;
+            this.PBloodInsert.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PBloodInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PBloodInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PBloodInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PBloodInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PBloodInsert.ForeColor = System.Drawing.Color.Red;
+            this.PBloodInsert.ItemHeight = 30;
+            this.PBloodInsert.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
             "AB+",
-            "AB",
-            "O",
+            "AB-",
             "O+",
-            "A",
-            "A-"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(374, 278);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(188, 36);
-            this.guna2ComboBox1.TabIndex = 38;
+            "O-"});
+            this.PBloodInsert.Location = new System.Drawing.Point(403, 269);
+            this.PBloodInsert.Name = "PBloodInsert";
+            this.PBloodInsert.Size = new System.Drawing.Size(200, 36);
+            this.PBloodInsert.TabIndex = 38;
+            this.PBloodInsert.SelectedIndexChanged += new System.EventHandler(this.ptblood_SelectedIndexChanged);
             // 
-            // guna2HtmlLabel6
+            // PCity_text
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(100, 351);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(110, 33);
-            this.guna2HtmlLabel6.TabIndex = 37;
-            this.guna2HtmlLabel6.Text = "Address";
+            this.PCity_text.BackColor = System.Drawing.Color.Transparent;
+            this.PCity_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PCity_text.ForeColor = System.Drawing.Color.Firebrick;
+            this.PCity_text.Location = new System.Drawing.Point(653, 230);
+            this.PCity_text.Name = "PCity_text";
+            this.PCity_text.Size = new System.Drawing.Size(55, 33);
+            this.PCity_text.TabIndex = 37;
+            this.PCity_text.Text = "City";
             // 
-            // guna2TextBox6
+            // PCityInsert
             // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(100, 390);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(253, 138);
-            this.guna2TextBox6.TabIndex = 36;
+            this.PCityInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PCityInsert.DefaultText = "";
+            this.PCityInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PCityInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PCityInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PCityInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PCityInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PCityInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PCityInsert.Location = new System.Drawing.Point(653, 269);
+            this.PCityInsert.Name = "PCityInsert";
+            this.PCityInsert.PasswordChar = '\0';
+            this.PCityInsert.PlaceholderText = "";
+            this.PCityInsert.SelectedText = "";
+            this.PCityInsert.Size = new System.Drawing.Size(200, 36);
+            this.PCityInsert.TabIndex = 36;
             // 
-            // textBox6
+            // PBlood_text
             // 
-            this.textBox6.Location = new System.Drawing.Point(120, 390);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(53, 20);
-            this.textBox6.TabIndex = 35;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(366, 239);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(150, 33);
-            this.guna2HtmlLabel5.TabIndex = 34;
-            this.guna2HtmlLabel5.Text = "Blood Type";
+            this.PBlood_text.BackColor = System.Drawing.Color.Transparent;
+            this.PBlood_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PBlood_text.ForeColor = System.Drawing.Color.Firebrick;
+            this.PBlood_text.Location = new System.Drawing.Point(403, 230);
+            this.PBlood_text.Name = "PBlood_text";
+            this.PBlood_text.Size = new System.Drawing.Size(150, 33);
+            this.PBlood_text.TabIndex = 34;
+            this.PBlood_text.Text = "Blood Type";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(386, 278);
+            this.textBox5.Location = new System.Drawing.Point(423, 269);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(0, 20);
             this.textBox5.TabIndex = 33;
             // 
-            // guna2HtmlLabel4
+            // PPhone_text
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(100, 239);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(86, 33);
-            this.guna2HtmlLabel4.TabIndex = 32;
-            this.guna2HtmlLabel4.Text = "Phone ";
+            this.PPhone_text.BackColor = System.Drawing.Color.Transparent;
+            this.PPhone_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PPhone_text.ForeColor = System.Drawing.Color.Firebrick;
+            this.PPhone_text.Location = new System.Drawing.Point(137, 230);
+            this.PPhone_text.Name = "PPhone_text";
+            this.PPhone_text.Size = new System.Drawing.Size(86, 33);
+            this.PPhone_text.TabIndex = 32;
+            this.PPhone_text.Text = "Phone ";
             // 
-            // guna2TextBox4
+            // PPhoneInsert
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(100, 278);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox4.TabIndex = 31;
+            this.PPhoneInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PPhoneInsert.DefaultText = "";
+            this.PPhoneInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PPhoneInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PPhoneInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PPhoneInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PPhoneInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PPhoneInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PPhoneInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PPhoneInsert.Location = new System.Drawing.Point(137, 269);
+            this.PPhoneInsert.Name = "PPhoneInsert";
+            this.PPhoneInsert.PasswordChar = '\0';
+            this.PPhoneInsert.PlaceholderText = "";
+            this.PPhoneInsert.SelectedText = "";
+            this.PPhoneInsert.Size = new System.Drawing.Size(200, 36);
+            this.PPhoneInsert.TabIndex = 31;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(120, 278);
+            this.textBox4.Location = new System.Drawing.Point(155, 194);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(0, 20);
             this.textBox4.TabIndex = 30;
             // 
-            // guna2HtmlLabel3
+            // PGender_text
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(616, 128);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(99, 33);
-            this.guna2HtmlLabel3.TabIndex = 29;
-            this.guna2HtmlLabel3.Text = "Gender";
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(616, 167);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox3.TabIndex = 28;
+            this.PGender_text.BackColor = System.Drawing.Color.Transparent;
+            this.PGender_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PGender_text.ForeColor = System.Drawing.Color.Firebrick;
+            this.PGender_text.Location = new System.Drawing.Point(653, 127);
+            this.PGender_text.Name = "PGender_text";
+            this.PGender_text.Size = new System.Drawing.Size(99, 33);
+            this.PGender_text.TabIndex = 29;
+            this.PGender_text.Text = "Gender";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(636, 167);
+            this.textBox3.Location = new System.Drawing.Point(673, 166);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(0, 20);
             this.textBox3.TabIndex = 27;
             // 
-            // guna2HtmlLabel2
+            // PBD_text
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(366, 128);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(54, 33);
-            this.guna2HtmlLabel2.TabIndex = 26;
-            this.guna2HtmlLabel2.Text = "Age";
+            this.PBD_text.BackColor = System.Drawing.Color.Transparent;
+            this.PBD_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PBD_text.ForeColor = System.Drawing.Color.Firebrick;
+            this.PBD_text.Location = new System.Drawing.Point(403, 127);
+            this.PBD_text.Name = "PBD_text";
+            this.PBD_text.Size = new System.Drawing.Size(126, 33);
+            this.PBD_text.TabIndex = 26;
+            this.PBD_text.Text = "BirthDate";
             // 
-            // guna2TextBox2
+            // PDBInsert
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(366, 167);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox2.TabIndex = 25;
+            this.PDBInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PDBInsert.DefaultText = "";
+            this.PDBInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PDBInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PDBInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PDBInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PDBInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PDBInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PDBInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PDBInsert.Location = new System.Drawing.Point(403, 166);
+            this.PDBInsert.Name = "PDBInsert";
+            this.PDBInsert.PasswordChar = '\0';
+            this.PDBInsert.PlaceholderText = "";
+            this.PDBInsert.SelectedText = "";
+            this.PDBInsert.Size = new System.Drawing.Size(200, 36);
+            this.PDBInsert.TabIndex = 25;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(386, 167);
+            this.textBox2.Location = new System.Drawing.Point(423, 166);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(0, 20);
             this.textBox2.TabIndex = 24;
             // 
-            // guna2HtmlLabel1
+            // PName_text
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(100, 128);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(79, 33);
-            this.guna2HtmlLabel1.TabIndex = 23;
-            this.guna2HtmlLabel1.Text = "Name";
+            this.PName_text.BackColor = System.Drawing.Color.Transparent;
+            this.PName_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PName_text.ForeColor = System.Drawing.Color.Firebrick;
+            this.PName_text.Location = new System.Drawing.Point(137, 127);
+            this.PName_text.Name = "PName_text";
+            this.PName_text.Size = new System.Drawing.Size(79, 33);
+            this.PName_text.TabIndex = 23;
+            this.PName_text.Text = "Name";
             // 
-            // guna2TextBox1
+            // PNameInsert
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(100, 167);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 22;
+            this.PNameInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PNameInsert.DefaultText = "";
+            this.PNameInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PNameInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PNameInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PNameInsert.Location = new System.Drawing.Point(137, 166);
+            this.PNameInsert.Name = "PNameInsert";
+            this.PNameInsert.PasswordChar = '\0';
+            this.PNameInsert.PlaceholderText = "";
+            this.PNameInsert.SelectedText = "";
+            this.PNameInsert.Size = new System.Drawing.Size(200, 36);
+            this.PNameInsert.TabIndex = 22;
+            this.PNameInsert.TextChanged += new System.EventHandler(this.PNameInsert_TextChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 167);
+            this.textBox1.Location = new System.Drawing.Point(157, 166);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(0, 20);
             this.textBox1.TabIndex = 21;
             // 
-            // guna2Button1
+            // PSaveInsert
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(475, 566);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 39;
-            this.guna2Button1.Text = "Save";
+            this.PSaveInsert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.PSaveInsert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.PSaveInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.PSaveInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.PSaveInsert.FillColor = System.Drawing.Color.Red;
+            this.PSaveInsert.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PSaveInsert.ForeColor = System.Drawing.Color.White;
+            this.PSaveInsert.Location = new System.Drawing.Point(475, 566);
+            this.PSaveInsert.Name = "PSaveInsert";
+            this.PSaveInsert.Size = new System.Drawing.Size(180, 45);
+            this.PSaveInsert.TabIndex = 39;
+            this.PSaveInsert.Text = "Save";
+            this.PSaveInsert.Click += new System.EventHandler(this.PSaveInsert_Click);
+            // 
+            // PGenderInsert
+            // 
+            this.PGenderInsert.BackColor = System.Drawing.Color.Transparent;
+            this.PGenderInsert.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PGenderInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PGenderInsert.ForeColor = System.Drawing.Color.Red;
+            this.PGenderInsert.ItemHeight = 30;
+            this.PGenderInsert.Items.AddRange(new object[] {
+            "Female ",
+            "Male "});
+            this.PGenderInsert.Location = new System.Drawing.Point(653, 166);
+            this.PGenderInsert.Name = "PGenderInsert";
+            this.PGenderInsert.Size = new System.Drawing.Size(200, 36);
+            this.PGenderInsert.TabIndex = 40;
             // 
             // Patient_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 656);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.guna2TextBox6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.guna2HtmlLabel5);
+            this.Controls.Add(this.PGenderInsert);
+            this.Controls.Add(this.PSaveInsert);
+            this.Controls.Add(this.PBloodInsert);
+            this.Controls.Add(this.PCity_text);
+            this.Controls.Add(this.PCityInsert);
+            this.Controls.Add(this.PBlood_text);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.PPhone_text);
+            this.Controls.Add(this.PPhoneInsert);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.PGender_text);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.PBD_text);
+            this.Controls.Add(this.PDBInsert);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.PName_text);
+            this.Controls.Add(this.PNameInsert);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient_Page";
             this.Text = "Patient_Page";
+            this.Load += new System.EventHandler(this.Patient_Page_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -437,24 +435,24 @@
         private System.Windows.Forms.Label patient;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label donor;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private System.Windows.Forms.TextBox textBox6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2ComboBox PBloodInsert;
+        private Guna.UI2.WinForms.Guna2HtmlLabel PCity_text;
+        private Guna.UI2.WinForms.Guna2TextBox PCityInsert;
+        private Guna.UI2.WinForms.Guna2HtmlLabel PBlood_text;
         private System.Windows.Forms.TextBox textBox5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel PPhone_text;
+        private Guna.UI2.WinForms.Guna2TextBox PPhoneInsert;
         private System.Windows.Forms.TextBox textBox4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel PGender_text;
         private System.Windows.Forms.TextBox textBox3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel PBD_text;
+        private Guna.UI2.WinForms.Guna2TextBox PDBInsert;
         private System.Windows.Forms.TextBox textBox2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel PName_text;
+        private Guna.UI2.WinForms.Guna2TextBox PNameInsert;
         private System.Windows.Forms.TextBox textBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button PSaveInsert;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2ComboBox PGenderInsert;
     }
 }

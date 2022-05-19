@@ -23,7 +23,7 @@ namespace BloodBank.AccessManagers
 
                     conn.Close();
                 }
-                catch (Exception ex)
+                catch (Exception _)
                 {
                     conn.Close();
                     return false;

@@ -15,6 +15,8 @@ namespace BloodBank
         public view_patient()
         {
             InitializeComponent();
+            showtable();
+
         }
 
         private void view_patient_Load(object sender, EventArgs e)
@@ -44,6 +46,25 @@ namespace BloodBank
 
         private void guna2HtmlLabel6_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void PTshow_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public void showtable()
+        {
+            AccessManagers.Patient PT = new AccessManagers.Patient();
+            PTshow.DataSource = PT.ShowPatients();
+        }
+        //awel haga value pt take id then comma add name of columns as string 
+        private void PTshow_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            AccessManagers.Patient PT = new AccessManagers.Patient();
+            int ID =  (int)PTshow.Rows[e.RowIndex].Cells[0].Value;
+            List<string> items = PT.ValuesOfPatientRow(ID, "PName", "PGender", "PBlood", "PBirthDate", "PPhone");
+            
 
         }
     }

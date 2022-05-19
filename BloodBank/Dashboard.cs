@@ -46,5 +46,11 @@ namespace BloodBank
         {
 
         }
+
+        private void ptlabel_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
     }
 }

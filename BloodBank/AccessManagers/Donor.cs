@@ -11,14 +11,25 @@ namespace BloodBank.AccessManagers
 {
     public class Donor
     {
-        public void InsertNewDonor(string name, string gender, string blood, string BD, string phone, string city)
+        public string InsertNewDonor(string name, string gender, string blood, string BD, string phone, string city)
         {
             Manager manager = new Manager();
 
             string result = manager.Insert("sp_InsertDonor", name, gender, blood, BD, phone, city);
-            if (result == "Failed") MessageBox.Show("Missing Information");
-            else if (result == "Succeed") MessageBox.Show("Donor Successfully Seved");
-            else MessageBox.Show(result);
+            if (result == "Failed")
+            {
+                MessageBox.Show("Missing Information");
+                return "MissInformation";
+            }
+            else if (result == "Succeed")
+            {
+                MessageBox.Show("Patient Successfully Seved");
+                return "Done";
+            }
+            else
+                MessageBox.Show(result);
+
+            return null;
         }
 
 
