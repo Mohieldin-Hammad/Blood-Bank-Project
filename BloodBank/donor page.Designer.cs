@@ -30,33 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.patient = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.donor = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DNameInsert = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DBirthDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DBirthDateInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DPhone = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DPhoneInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DBlood = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DCity = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.DBloodInsert = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DSaveInsert = new Guna.UI2.WinForms.Guna2Button();
+            this.BGenderInsert = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DCityInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +73,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1154, 82);
             this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(45, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 29);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Dashboard";
             // 
             // label5
             // 
@@ -142,280 +152,261 @@
             this.donor.TabIndex = 2;
             this.donor.Text = "Donor";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 29);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Dashboard";
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 166);
+            this.textBox1.Location = new System.Drawing.Point(156, 168);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(0, 20);
             this.textBox1.TabIndex = 2;
             // 
-            // guna2TextBox1
+            // DNameInsert
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(115, 166);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 3;
+            this.DNameInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DNameInsert.DefaultText = "";
+            this.DNameInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DNameInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DNameInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DNameInsert.Location = new System.Drawing.Point(136, 168);
+            this.DNameInsert.Name = "DNameInsert";
+            this.DNameInsert.PasswordChar = '\0';
+            this.DNameInsert.PlaceholderText = "";
+            this.DNameInsert.SelectedText = "";
+            this.DNameInsert.Size = new System.Drawing.Size(200, 36);
+            this.DNameInsert.TabIndex = 3;
             // 
-            // guna2HtmlLabel1
+            // DName
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(115, 127);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(79, 33);
-            this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.Text = "Name";
+            this.DName.BackColor = System.Drawing.Color.Transparent;
+            this.DName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DName.ForeColor = System.Drawing.Color.Firebrick;
+            this.DName.Location = new System.Drawing.Point(136, 129);
+            this.DName.Name = "DName";
+            this.DName.Size = new System.Drawing.Size(79, 33);
+            this.DName.TabIndex = 4;
+            this.DName.Text = "Name";
             // 
-            // guna2HtmlLabel2
+            // DBirthDate
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(381, 127);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(54, 33);
-            this.guna2HtmlLabel2.TabIndex = 7;
-            this.guna2HtmlLabel2.Text = "Age";
+            this.DBirthDate.BackColor = System.Drawing.Color.Transparent;
+            this.DBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBirthDate.ForeColor = System.Drawing.Color.Firebrick;
+            this.DBirthDate.Location = new System.Drawing.Point(402, 129);
+            this.DBirthDate.Name = "DBirthDate";
+            this.DBirthDate.Size = new System.Drawing.Size(126, 33);
+            this.DBirthDate.TabIndex = 7;
+            this.DBirthDate.Text = "BirthDate";
             // 
-            // guna2TextBox2
+            // DBirthDateInsert
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(381, 166);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox2.TabIndex = 6;
+            this.DBirthDateInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DBirthDateInsert.DefaultText = "";
+            this.DBirthDateInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DBirthDateInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DBirthDateInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DBirthDateInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DBirthDateInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DBirthDateInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DBirthDateInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DBirthDateInsert.Location = new System.Drawing.Point(402, 168);
+            this.DBirthDateInsert.Name = "DBirthDateInsert";
+            this.DBirthDateInsert.PasswordChar = '\0';
+            this.DBirthDateInsert.PlaceholderText = "";
+            this.DBirthDateInsert.SelectedText = "";
+            this.DBirthDateInsert.Size = new System.Drawing.Size(200, 36);
+            this.DBirthDateInsert.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(401, 166);
+            this.textBox2.Location = new System.Drawing.Point(422, 168);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(0, 20);
             this.textBox2.TabIndex = 5;
             // 
-            // guna2HtmlLabel3
+            // DGender
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(631, 127);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(99, 33);
-            this.guna2HtmlLabel3.TabIndex = 10;
-            this.guna2HtmlLabel3.Text = "Gender";
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(631, 166);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox3.TabIndex = 9;
+            this.DGender.BackColor = System.Drawing.Color.Transparent;
+            this.DGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGender.ForeColor = System.Drawing.Color.Firebrick;
+            this.DGender.Location = new System.Drawing.Point(652, 129);
+            this.DGender.Name = "DGender";
+            this.DGender.Size = new System.Drawing.Size(99, 33);
+            this.DGender.TabIndex = 10;
+            this.DGender.Text = "Gender";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(651, 166);
+            this.textBox3.Location = new System.Drawing.Point(672, 168);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(0, 20);
             this.textBox3.TabIndex = 8;
             // 
-            // guna2HtmlLabel4
+            // DPhone
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(115, 238);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(86, 33);
-            this.guna2HtmlLabel4.TabIndex = 13;
-            this.guna2HtmlLabel4.Text = "Phone ";
+            this.DPhone.BackColor = System.Drawing.Color.Transparent;
+            this.DPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DPhone.ForeColor = System.Drawing.Color.Firebrick;
+            this.DPhone.Location = new System.Drawing.Point(136, 234);
+            this.DPhone.Name = "DPhone";
+            this.DPhone.Size = new System.Drawing.Size(86, 33);
+            this.DPhone.TabIndex = 13;
+            this.DPhone.Text = "Phone ";
             // 
-            // guna2TextBox4
+            // DPhoneInsert
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(115, 277);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox4.TabIndex = 12;
+            this.DPhoneInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DPhoneInsert.DefaultText = "";
+            this.DPhoneInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DPhoneInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DPhoneInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DPhoneInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DPhoneInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DPhoneInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DPhoneInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DPhoneInsert.Location = new System.Drawing.Point(136, 273);
+            this.DPhoneInsert.Name = "DPhoneInsert";
+            this.DPhoneInsert.PasswordChar = '\0';
+            this.DPhoneInsert.PlaceholderText = "";
+            this.DPhoneInsert.SelectedText = "";
+            this.DPhoneInsert.Size = new System.Drawing.Size(200, 36);
+            this.DPhoneInsert.TabIndex = 12;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(135, 277);
+            this.textBox4.Location = new System.Drawing.Point(156, 273);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(0, 20);
             this.textBox4.TabIndex = 11;
             // 
-            // guna2HtmlLabel5
+            // DBlood
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(381, 238);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(150, 33);
-            this.guna2HtmlLabel5.TabIndex = 16;
-            this.guna2HtmlLabel5.Text = "Blood Type";
+            this.DBlood.BackColor = System.Drawing.Color.Transparent;
+            this.DBlood.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBlood.ForeColor = System.Drawing.Color.Firebrick;
+            this.DBlood.Location = new System.Drawing.Point(402, 234);
+            this.DBlood.Name = "DBlood";
+            this.DBlood.Size = new System.Drawing.Size(150, 33);
+            this.DBlood.TabIndex = 16;
+            this.DBlood.Text = "Blood Type";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(401, 277);
+            this.textBox5.Location = new System.Drawing.Point(422, 273);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(0, 20);
             this.textBox5.TabIndex = 14;
             // 
-            // guna2HtmlLabel6
+            // DCity
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(115, 350);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(110, 33);
-            this.guna2HtmlLabel6.TabIndex = 19;
-            this.guna2HtmlLabel6.Text = "Address";
+            this.DCity.BackColor = System.Drawing.Color.Transparent;
+            this.DCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCity.ForeColor = System.Drawing.Color.Firebrick;
+            this.DCity.Location = new System.Drawing.Point(652, 234);
+            this.DCity.Name = "DCity";
+            this.DCity.Size = new System.Drawing.Size(55, 33);
+            this.DCity.TabIndex = 19;
+            this.DCity.Text = "City ";
             // 
-            // guna2TextBox6
+            // DBloodInsert
             // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(115, 389);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(253, 138);
-            this.guna2TextBox6.TabIndex = 18;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(135, 389);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(53, 20);
-            this.textBox6.TabIndex = 17;
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Red;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.DBloodInsert.BackColor = System.Drawing.Color.Transparent;
+            this.DBloodInsert.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DBloodInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DBloodInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DBloodInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DBloodInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBloodInsert.ForeColor = System.Drawing.Color.Red;
+            this.DBloodInsert.ItemHeight = 30;
+            this.DBloodInsert.Items.AddRange(new object[] {
             "AB+",
             "AB",
             "O",
             "O+",
             "A",
             "A-"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(386, 277);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(188, 36);
-            this.guna2ComboBox1.TabIndex = 20;
+            this.DBloodInsert.Location = new System.Drawing.Point(407, 273);
+            this.DBloodInsert.Name = "DBloodInsert";
+            this.DBloodInsert.Size = new System.Drawing.Size(188, 36);
+            this.DBloodInsert.TabIndex = 20;
             // 
-            // guna2Button1
+            // DSaveInsert
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(471, 563);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 21;
-            this.guna2Button1.Text = "Save";
+            this.DSaveInsert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DSaveInsert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DSaveInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DSaveInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DSaveInsert.FillColor = System.Drawing.Color.Red;
+            this.DSaveInsert.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSaveInsert.ForeColor = System.Drawing.Color.White;
+            this.DSaveInsert.Location = new System.Drawing.Point(471, 563);
+            this.DSaveInsert.Name = "DSaveInsert";
+            this.DSaveInsert.Size = new System.Drawing.Size(180, 45);
+            this.DSaveInsert.TabIndex = 21;
+            this.DSaveInsert.Text = "Save";
+            this.DSaveInsert.Click += new System.EventHandler(this.DSaveInsert_Click);
+            // 
+            // BGenderInsert
+            // 
+            this.BGenderInsert.BackColor = System.Drawing.Color.Transparent;
+            this.BGenderInsert.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.BGenderInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.BGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.BGenderInsert.ForeColor = System.Drawing.Color.Red;
+            this.BGenderInsert.ItemHeight = 30;
+            this.BGenderInsert.Items.AddRange(new object[] {
+            "Female ",
+            "Male "});
+            this.BGenderInsert.Location = new System.Drawing.Point(652, 168);
+            this.BGenderInsert.Name = "BGenderInsert";
+            this.BGenderInsert.Size = new System.Drawing.Size(200, 36);
+            this.BGenderInsert.TabIndex = 41;
+            // 
+            // DCityInsert
+            // 
+            this.DCityInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DCityInsert.DefaultText = "";
+            this.DCityInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DCityInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DCityInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DCityInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DCityInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DCityInsert.Location = new System.Drawing.Point(652, 273);
+            this.DCityInsert.Name = "DCityInsert";
+            this.DCityInsert.PasswordChar = '\0';
+            this.DCityInsert.PlaceholderText = "";
+            this.DCityInsert.SelectedText = "";
+            this.DCityInsert.Size = new System.Drawing.Size(200, 36);
+            this.DCityInsert.TabIndex = 42;
             // 
             // donor_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 656);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.guna2TextBox6);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.guna2HtmlLabel5);
+            this.Controls.Add(this.DCityInsert);
+            this.Controls.Add(this.BGenderInsert);
+            this.Controls.Add(this.DSaveInsert);
+            this.Controls.Add(this.DBloodInsert);
+            this.Controls.Add(this.DCity);
+            this.Controls.Add(this.DBlood);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.DPhone);
+            this.Controls.Add(this.DPhoneInsert);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.DGender);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.DBirthDate);
+            this.Controls.Add(this.DBirthDateInsert);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.DName);
+            this.Controls.Add(this.DNameInsert);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -439,24 +430,23 @@
         private System.Windows.Forms.Label donor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox DNameInsert;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DBirthDate;
+        private Guna.UI2.WinForms.Guna2TextBox DBirthDateInsert;
         private System.Windows.Forms.TextBox textBox2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DGender;
         private System.Windows.Forms.TextBox textBox3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DPhone;
+        private Guna.UI2.WinForms.Guna2TextBox DPhoneInsert;
         private System.Windows.Forms.TextBox textBox4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DBlood;
         private System.Windows.Forms.TextBox textBox5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private System.Windows.Forms.TextBox textBox6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DCity;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ComboBox DBloodInsert;
+        private Guna.UI2.WinForms.Guna2Button DSaveInsert;
+        private Guna.UI2.WinForms.Guna2ComboBox BGenderInsert;
+        private Guna.UI2.WinForms.Guna2TextBox DCityInsert;
     }
 }

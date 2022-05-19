@@ -18,7 +18,8 @@ namespace BloodBank
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new loading_page());
             //Application.Run(new login_page());
-            Application.Run(new Form1());
+            Application.Run(new Patient_Page());
+
         }
     }
 }

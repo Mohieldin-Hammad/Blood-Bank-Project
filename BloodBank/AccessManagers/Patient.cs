@@ -15,7 +15,7 @@ namespace BloodBank.AccessManagers
         // Inserting new patient to the database will require the following parameters
         // Name of the patient, gender (Male or Female), blood type, BD, phone, city
         // And InsertNewPatient will return messagebox that define the result and if the insertion successfully worked
-        public void InsertNewPatient(string name, string gender, string blood,string BD, string phone, string city)
+        public string InsertNewPatient(string name, string gender, string blood,string BD, string phone, string city)
         {
             Manager manager = new Manager();
             
@@ -24,12 +24,23 @@ namespace BloodBank.AccessManagers
             // Succeed happen if all the information is valid
             // else It will send an exeption.message that show the error message
             string result = manager.Insert("sp_InsertPatient", name, gender, blood, BD, phone, city);
-            if (result == "Failed") 
+
+            // if result is equal Faild it will return to the user massage as a string "MissInformation"
+            // else if the result is successfully saved the method will return massage to the user as a string "Done"
+            // else if there is another error from sql it will return this unique message to the user and will return null
+            if (result == "Failed") { 
                 MessageBox.Show("Missing Information");
-            else if (result == "Succeed") 
+                return "MissInformation";
+            }
+            else if (result == "Succeed")
+            { 
                 MessageBox.Show("Patient Successfully Seved");
+                return "Done";
+            }
             else  
                 MessageBox.Show(result);
+            
+            return null;
         }
 
 

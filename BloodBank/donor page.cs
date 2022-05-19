@@ -21,5 +21,10 @@ namespace BloodBank
         {
 
         }
+
+        private void DSaveInsert_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
