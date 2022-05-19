@@ -23,7 +23,7 @@ namespace BloodBank.AccessManagers
             }
             else if (result == "Succeed")
             {
-                MessageBox.Show("Patient Successfully Seved");
+                MessageBox.Show("Donor Successfully Seved");
                 return "Done";
             }
             else

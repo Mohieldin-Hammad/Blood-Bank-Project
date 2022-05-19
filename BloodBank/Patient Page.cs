@@ -37,7 +37,11 @@ namespace BloodBank
         private void PSaveInsert_Click(object sender, EventArgs e)
         {
             AccessManagers.Patient PatientInsert = new AccessManagers.Patient();
-            
+            // write the same code of donor page code
+            //*****************************
+            //
+            //*****************************
+
             string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PDBInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
             if (CheckMassage == "Done" && CheckMassage != null) { 
                 ResetPatient();
@@ -47,8 +51,8 @@ namespace BloodBank
         private void ResetPatient()
         {
             PNameInsert.Text = "";
-            PGenderInsert.Items.Clear();
-            PBloodInsert.Items.Clear();
+            PBloodInsert.SelectedIndex = -1;
+            PGenderInsert.SelectedIndex = -1;
             PDBInsert.Text = "";
             PPhoneInsert.Text = "";
             PCityInsert.Text = "";

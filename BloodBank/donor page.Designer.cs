@@ -41,7 +41,6 @@
             this.DNameInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.DName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DBirthDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DBirthDateInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.DGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -54,8 +53,9 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.DBloodInsert = new Guna.UI2.WinForms.Guna2ComboBox();
             this.DSaveInsert = new Guna.UI2.WinForms.Guna2Button();
-            this.BGenderInsert = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DGenderInsert = new Guna.UI2.WinForms.Guna2ComboBox();
             this.DCityInsert = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DBirthDateInsert = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,9 +168,10 @@
             this.DNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DNameInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DNameInsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DNameInsert.Location = new System.Drawing.Point(136, 168);
+            this.DNameInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DNameInsert.Name = "DNameInsert";
             this.DNameInsert.PasswordChar = '\0';
             this.DNameInsert.PlaceholderText = "";
@@ -199,25 +200,6 @@
             this.DBirthDate.Size = new System.Drawing.Size(126, 33);
             this.DBirthDate.TabIndex = 7;
             this.DBirthDate.Text = "BirthDate";
-            // 
-            // DBirthDateInsert
-            // 
-            this.DBirthDateInsert.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DBirthDateInsert.DefaultText = "";
-            this.DBirthDateInsert.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DBirthDateInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DBirthDateInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DBirthDateInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DBirthDateInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DBirthDateInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DBirthDateInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DBirthDateInsert.Location = new System.Drawing.Point(402, 168);
-            this.DBirthDateInsert.Name = "DBirthDateInsert";
-            this.DBirthDateInsert.PasswordChar = '\0';
-            this.DBirthDateInsert.PlaceholderText = "";
-            this.DBirthDateInsert.SelectedText = "";
-            this.DBirthDateInsert.Size = new System.Drawing.Size(200, 36);
-            this.DBirthDateInsert.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -264,9 +246,10 @@
             this.DPhoneInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DPhoneInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DPhoneInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DPhoneInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DPhoneInsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DPhoneInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DPhoneInsert.Location = new System.Drawing.Point(136, 273);
+            this.DPhoneInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DPhoneInsert.Name = "DPhoneInsert";
             this.DPhoneInsert.PasswordChar = '\0';
             this.DPhoneInsert.PlaceholderText = "";
@@ -348,23 +331,23 @@
             this.DSaveInsert.Text = "Save";
             this.DSaveInsert.Click += new System.EventHandler(this.DSaveInsert_Click);
             // 
-            // BGenderInsert
+            // DGenderInsert
             // 
-            this.BGenderInsert.BackColor = System.Drawing.Color.Transparent;
-            this.BGenderInsert.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.BGenderInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.BGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.BGenderInsert.ForeColor = System.Drawing.Color.Red;
-            this.BGenderInsert.ItemHeight = 30;
-            this.BGenderInsert.Items.AddRange(new object[] {
+            this.DGenderInsert.BackColor = System.Drawing.Color.Transparent;
+            this.DGenderInsert.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DGenderInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.DGenderInsert.ForeColor = System.Drawing.Color.Red;
+            this.DGenderInsert.ItemHeight = 30;
+            this.DGenderInsert.Items.AddRange(new object[] {
             "Female ",
             "Male "});
-            this.BGenderInsert.Location = new System.Drawing.Point(652, 168);
-            this.BGenderInsert.Name = "BGenderInsert";
-            this.BGenderInsert.Size = new System.Drawing.Size(200, 36);
-            this.BGenderInsert.TabIndex = 41;
+            this.DGenderInsert.Location = new System.Drawing.Point(652, 168);
+            this.DGenderInsert.Name = "DGenderInsert";
+            this.DGenderInsert.Size = new System.Drawing.Size(200, 36);
+            this.DGenderInsert.TabIndex = 41;
             // 
             // DCityInsert
             // 
@@ -375,9 +358,10 @@
             this.DCityInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DCityInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DCityInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DCityInsert.Location = new System.Drawing.Point(652, 273);
+            this.DCityInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DCityInsert.Name = "DCityInsert";
             this.DCityInsert.PasswordChar = '\0';
             this.DCityInsert.PlaceholderText = "";
@@ -385,13 +369,29 @@
             this.DCityInsert.Size = new System.Drawing.Size(200, 36);
             this.DCityInsert.TabIndex = 42;
             // 
+            // DBirthDateInsert
+            // 
+            this.DBirthDateInsert.Animated = true;
+            this.DBirthDateInsert.Checked = true;
+            this.DBirthDateInsert.CustomFormat = "yyyy-MM-dd";
+            this.DBirthDateInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBirthDateInsert.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DBirthDateInsert.Location = new System.Drawing.Point(402, 168);
+            this.DBirthDateInsert.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DBirthDateInsert.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DBirthDateInsert.Name = "DBirthDateInsert";
+            this.DBirthDateInsert.Size = new System.Drawing.Size(229, 36);
+            this.DBirthDateInsert.TabIndex = 43;
+            this.DBirthDateInsert.Value = new System.DateTime(2022, 5, 16, 0, 0, 0, 0);
+            // 
             // donor_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 656);
+            this.Controls.Add(this.DBirthDateInsert);
             this.Controls.Add(this.DCityInsert);
-            this.Controls.Add(this.BGenderInsert);
+            this.Controls.Add(this.DGenderInsert);
             this.Controls.Add(this.DSaveInsert);
             this.Controls.Add(this.DBloodInsert);
             this.Controls.Add(this.DCity);
@@ -403,7 +403,6 @@
             this.Controls.Add(this.DGender);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.DBirthDate);
-            this.Controls.Add(this.DBirthDateInsert);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.DName);
             this.Controls.Add(this.DNameInsert);
@@ -433,7 +432,6 @@
         private Guna.UI2.WinForms.Guna2TextBox DNameInsert;
         private Guna.UI2.WinForms.Guna2HtmlLabel DName;
         private Guna.UI2.WinForms.Guna2HtmlLabel DBirthDate;
-        private Guna.UI2.WinForms.Guna2TextBox DBirthDateInsert;
         private System.Windows.Forms.TextBox textBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel DGender;
         private System.Windows.Forms.TextBox textBox3;
@@ -446,7 +444,8 @@
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2ComboBox DBloodInsert;
         private Guna.UI2.WinForms.Guna2Button DSaveInsert;
-        private Guna.UI2.WinForms.Guna2ComboBox BGenderInsert;
+        private Guna.UI2.WinForms.Guna2ComboBox DGenderInsert;
         private Guna.UI2.WinForms.Guna2TextBox DCityInsert;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DBirthDateInsert;
     }
 }
