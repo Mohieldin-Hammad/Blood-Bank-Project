@@ -10,19 +10,33 @@ using System.Windows.Forms;
 
 namespace BloodBank
 {
-    public partial class view_donor : Form
+    public partial class Transfer : Form
     {
-        public view_donor()
+        public Transfer()
         {
             InitializeComponent();
         }
 
-        private void view_donor_Load(object sender, EventArgs e)
+        private void Transfer_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        private void Donor(object sender, PaintEventArgs e)
+        {
+            Font myfont = new Font("Arial", 14);
+            Brush mybrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+            e.Graphics.TranslateTransform(30, 20);
+            e.Graphics.RotateTransform(90);
+            e.Graphics.DrawString("Donor", myfont, mybrush, 0, 0);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -32,20 +46,12 @@ namespace BloodBank
             view_donor D2 = new view_donor();
             D2.Show();
             this.Hide();
-
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
             Transfer T1 = new Transfer();
             T1.Show();
-            this.Hide();
-        }
-
-        private void donor_Click(object sender, EventArgs e)
-        {
-            view_donor D2 = new view_donor();
-            D2.Show();
             this.Hide();
         }
 
