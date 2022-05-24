@@ -67,5 +67,24 @@ namespace BloodBank
             
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            view_donor D2 = new view_donor();
+            D2.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Transfer T1 = new Transfer();
+            T1.Show();
+            this.Hide();
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+            this.Hide();    
+        }
     }
 }

@@ -36,16 +36,15 @@ namespace BloodBank
 
         private void PSaveInsert_Click(object sender, EventArgs e)
         {
-            AccessManagers.Patient PatientInsert = new AccessManagers.Patient();
-            // write the same code of donor page code
-            //*****************************
-            //
-            //*****************************
+            AccessManagers.Patient PatientInsert = new AccessManagers.Patient(); PBirthDateInsert.Format = DateTimePickerFormat.Custom;
+            PBirthDateInsert.CustomFormat = "yyyy-MM-dd";
 
-            string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PDBInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
-            if (CheckMassage == "Done" && CheckMassage != null) { 
+            string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PBirthDateInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
+            if (CheckMassage == "Done" && CheckMassage != null)
+            {
                 ResetPatient();
             }
+
         }
 
         private void ResetPatient()
@@ -53,9 +52,14 @@ namespace BloodBank
             PNameInsert.Text = "";
             PBloodInsert.SelectedIndex = -1;
             PGenderInsert.SelectedIndex = -1;
-            PDBInsert.Text = "";
+            //PBirhDateInsert.Text = "";
             PPhoneInsert.Text = "";
             PCityInsert.Text = "";
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

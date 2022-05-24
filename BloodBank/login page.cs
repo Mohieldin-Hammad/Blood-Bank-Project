@@ -28,5 +28,12 @@ namespace BloodBank
             log2.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dash1 = new Dashboard();  
+            dash1.Show();
+            this.Hide();
+        }
     }
 }
