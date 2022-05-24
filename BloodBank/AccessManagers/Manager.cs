@@ -11,20 +11,24 @@ namespace BloodBank.AccessManagers
 {
     public class Manager
     {
-
-
+        // insert people function
+        // will get the procedure name that will be used in the execution, name of the person
+        // blood type, person gender(Male, Female), BirthDate as YYYY-MM-DD, phone number as string, city
         public string Insert(string procedure, string name, string gender, string blood, string BD, string phone, string city)
         {
+            // starting the connection with sql
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
-                if (CheckMissingInformation(name, gender, blood, BD, phone, city))
+                // if there is any missing information while the insertion it will return Failed  
+                if (CheckMissingInformation(name, gender, blood, BD, phone, city)) 
                 {
                     return "Failed";
                 }
-                else
+                else // else if there is no el
                 {
                     try
                     {
+                        // open the connection and 
                         conn.Open();
                         SqlCommand cmd = new SqlCommand($"exec {procedure} '{name}', '{gender}', '{blood}', '{BD}', '{phone}', '{city}'", conn);
                         cmd.ExecuteNonQuery();
