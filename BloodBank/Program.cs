@@ -20,7 +20,8 @@ namespace BloodBank
             //Application.Run(new login_page());
             //Application.Run(new donor_page());
             //Application.Run(new Patient_Page());    
-            Application.Run(new loading_page()) ;
+            //Application.Run(new loading_page());
+            Application.Run(new Dashboard());
 
         }
     }

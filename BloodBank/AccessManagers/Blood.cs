@@ -59,5 +59,31 @@ namespace BloodBank.AccessManagers
                 MessageBox.Show("There is no patients found with this ID");
         }
 
+
+
+        public string getCountOfBloods(string blood)
+        {
+            string[] bloods = new string[8] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" };
+
+            // checking that the selected parameter is contained in blood types else it will return null
+                if (!bloods.Contains(blood.ToUpper()))
+                {
+                    return null;
+                }
+
+
+            string bloodCount = "";
+
+            DataTable bloodTable = this.ShowBloodsTable();
+            foreach (DataRow row in bloodTable.Rows)
+            {
+                if (blood.ToUpper() == row[0].ToString())
+                {
+                    bloodCount = row[1].ToString();
+                }
+            }
+            return bloodCount;
+        }
+
     }
 }

@@ -252,6 +252,22 @@ namespace BloodBank.AccessManagers
         }
 
 
+        //public string GetBloodcount()
+        //{
+        //    //string[] bloods = new string[8] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" };
+            
+        //    //// checking that the selected parameters is contained in blood types else it will return null
+        //    //foreach (string blood in bloodTypes)
+        //    //{
+        //    //    if (!bloods.Contains(blood.ToUpper()))
+        //    //    {
+        //    //        return null;
+        //    //    }
+        //    //}
+            
+        //}
+
+
         // Execute sql query and return DataSet
         private DataSet GetDataSet(string query, SqlConnection conn)
         {
@@ -264,6 +280,8 @@ namespace BloodBank.AccessManagers
 
             return dataSet;
         }     
+
+
 
         // checking if there is a missing information or null string
         private bool CheckMissingInformation(string name, string gender, string blood, string BD, string phone, string city)
