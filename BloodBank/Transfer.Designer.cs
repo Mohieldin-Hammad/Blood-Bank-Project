@@ -36,16 +36,16 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.DSaveInsert = new Guna.UI2.WinForms.Guna2Button();
             this.PName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.transferButton = new Guna.UI2.WinForms.Guna2Button();
+            this.DName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.donateButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cmbPatientID = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbDonorID = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbPatientID = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Donor_Page = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Label();
@@ -55,8 +55,8 @@
             this.Patients_page = new System.Windows.Forms.Label();
             this.ViewDonors_Page = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PBlood = new Guna.UI2.WinForms.Guna2TextBox();
             this.DBlood = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PBlood = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -144,47 +144,6 @@
             this.guna2HtmlLabel3.TabIndex = 62;
             this.guna2HtmlLabel3.Text = "Name";
             // 
-            // DName
-            // 
-            this.DName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DName.DefaultText = "";
-            this.DName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DName.Location = new System.Drawing.Point(902, 272);
-            this.DName.Name = "DName";
-            this.DName.PasswordChar = '\0';
-            this.DName.PlaceholderText = "";
-            this.DName.SelectedText = "";
-            this.DName.Size = new System.Drawing.Size(201, 36);
-            this.DName.TabIndex = 61;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(934, 314);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(0, 20);
-            this.textBox2.TabIndex = 60;
-            // 
-            // DSaveInsert
-            // 
-            this.DSaveInsert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.DSaveInsert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.DSaveInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DSaveInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.DSaveInsert.FillColor = System.Drawing.Color.Red;
-            this.DSaveInsert.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSaveInsert.ForeColor = System.Drawing.Color.White;
-            this.DSaveInsert.Location = new System.Drawing.Point(788, 569);
-            this.DSaveInsert.Name = "DSaveInsert";
-            this.DSaveInsert.Size = new System.Drawing.Size(289, 45);
-            this.DSaveInsert.TabIndex = 65;
-            this.DSaveInsert.Text = "Transfer";
-            // 
             // PName
             // 
             this.PName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -196,14 +155,56 @@
             this.PName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PName.Location = new System.Drawing.Point(194, 272);
+            this.PName.Location = new System.Drawing.Point(902, 272);
             this.PName.Name = "PName";
             this.PName.PasswordChar = '\0';
             this.PName.PlaceholderText = "";
             this.PName.SelectedText = "";
             this.PName.Size = new System.Drawing.Size(201, 36);
-            this.PName.TabIndex = 44;
+            this.PName.TabIndex = 61;
             this.PName.TextChanged += new System.EventHandler(this.PName_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(934, 314);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(0, 20);
+            this.textBox2.TabIndex = 60;
+            // 
+            // transferButton
+            // 
+            this.transferButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.transferButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.transferButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.transferButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.transferButton.FillColor = System.Drawing.Color.Red;
+            this.transferButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transferButton.ForeColor = System.Drawing.Color.White;
+            this.transferButton.Location = new System.Drawing.Point(788, 569);
+            this.transferButton.Name = "transferButton";
+            this.transferButton.Size = new System.Drawing.Size(289, 45);
+            this.transferButton.TabIndex = 65;
+            this.transferButton.Text = "Transfer";
+            // 
+            // DName
+            // 
+            this.DName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DName.DefaultText = "";
+            this.DName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DName.Location = new System.Drawing.Point(194, 272);
+            this.DName.Name = "DName";
+            this.DName.PasswordChar = '\0';
+            this.DName.PlaceholderText = "";
+            this.DName.SelectedText = "";
+            this.DName.Size = new System.Drawing.Size(201, 36);
+            this.DName.TabIndex = 44;
+            this.DName.TextChanged += new System.EventHandler(this.DName_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -216,20 +217,21 @@
             this.guna2HtmlLabel1.TabIndex = 45;
             this.guna2HtmlLabel1.Text = "Name";
             // 
-            // guna2Button1
+            // donateButton
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(88, 569);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(289, 45);
-            this.guna2Button1.TabIndex = 66;
-            this.guna2Button1.Text = "Donate";
+            this.donateButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.donateButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.donateButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.donateButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.donateButton.FillColor = System.Drawing.Color.Red;
+            this.donateButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donateButton.ForeColor = System.Drawing.Color.White;
+            this.donateButton.Location = new System.Drawing.Point(88, 569);
+            this.donateButton.Name = "donateButton";
+            this.donateButton.Size = new System.Drawing.Size(289, 45);
+            this.donateButton.TabIndex = 66;
+            this.donateButton.Text = "Donate";
+            this.donateButton.Click += new System.EventHandler(this.donateButton_Click);
             // 
             // guna2HtmlLabel4
             // 
@@ -253,22 +255,6 @@
             this.guna2HtmlLabel6.TabIndex = 70;
             this.guna2HtmlLabel6.Text = "ID";
             // 
-            // cmbPatientID
-            // 
-            this.cmbPatientID.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPatientID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPatientID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPatientID.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPatientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbPatientID.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.cmbPatientID.ForeColor = System.Drawing.Color.Red;
-            this.cmbPatientID.ItemHeight = 30;
-            this.cmbPatientID.Location = new System.Drawing.Point(196, 189);
-            this.cmbPatientID.Name = "cmbPatientID";
-            this.cmbPatientID.Size = new System.Drawing.Size(150, 36);
-            this.cmbPatientID.TabIndex = 71;
-            this.cmbPatientID.SelectedIndexChanged += new System.EventHandler(this.cmbPatientID_SelectedIndexChanged);
-            // 
             // cmbDonorID
             // 
             this.cmbDonorID.BackColor = System.Drawing.Color.Transparent;
@@ -279,11 +265,29 @@
             this.cmbDonorID.Font = new System.Drawing.Font("Segoe UI", 20.25F);
             this.cmbDonorID.ForeColor = System.Drawing.Color.Red;
             this.cmbDonorID.ItemHeight = 30;
-            this.cmbDonorID.Location = new System.Drawing.Point(903, 189);
+            this.cmbDonorID.Location = new System.Drawing.Point(196, 189);
             this.cmbDonorID.Name = "cmbDonorID";
             this.cmbDonorID.Size = new System.Drawing.Size(150, 36);
-            this.cmbDonorID.TabIndex = 72;
+            this.cmbDonorID.TabIndex = 71;
             this.cmbDonorID.SelectedIndexChanged += new System.EventHandler(this.cmbDonorID_SelectedIndexChanged);
+            this.cmbDonorID.Click += new System.EventHandler(this.cmbDonorID_Click);
+            // 
+            // cmbPatientID
+            // 
+            this.cmbPatientID.BackColor = System.Drawing.Color.Transparent;
+            this.cmbPatientID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbPatientID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPatientID.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPatientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbPatientID.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.cmbPatientID.ForeColor = System.Drawing.Color.Red;
+            this.cmbPatientID.ItemHeight = 30;
+            this.cmbPatientID.Location = new System.Drawing.Point(903, 189);
+            this.cmbPatientID.Name = "cmbPatientID";
+            this.cmbPatientID.Size = new System.Drawing.Size(150, 36);
+            this.cmbPatientID.TabIndex = 72;
+            this.cmbPatientID.SelectedIndexChanged += new System.EventHandler(this.cmbPatientID_SelectedIndexChanged);
+            this.cmbPatientID.Click += new System.EventHandler(this.cmbPatientID_Click);
             // 
             // panel1
             // 
@@ -394,26 +398,6 @@
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // PBlood
-            // 
-            this.PBlood.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PBlood.DefaultText = "";
-            this.PBlood.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PBlood.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PBlood.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PBlood.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PBlood.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.PBlood.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PBlood.Location = new System.Drawing.Point(196, 366);
-            this.PBlood.Name = "PBlood";
-            this.PBlood.PasswordChar = '\0';
-            this.PBlood.PlaceholderText = "";
-            this.PBlood.ReadOnly = true;
-            this.PBlood.SelectedText = "";
-            this.PBlood.Size = new System.Drawing.Size(201, 36);
-            this.PBlood.TabIndex = 74;
-            // 
             // DBlood
             // 
             this.DBlood.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -425,32 +409,52 @@
             this.DBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DBlood.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DBlood.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DBlood.Location = new System.Drawing.Point(902, 366);
+            this.DBlood.Location = new System.Drawing.Point(196, 366);
             this.DBlood.Name = "DBlood";
             this.DBlood.PasswordChar = '\0';
             this.DBlood.PlaceholderText = "";
             this.DBlood.ReadOnly = true;
             this.DBlood.SelectedText = "";
             this.DBlood.Size = new System.Drawing.Size(201, 36);
-            this.DBlood.TabIndex = 75;
+            this.DBlood.TabIndex = 74;
+            // 
+            // PBlood
+            // 
+            this.PBlood.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PBlood.DefaultText = "";
+            this.PBlood.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PBlood.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PBlood.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PBlood.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PBlood.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PBlood.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PBlood.Location = new System.Drawing.Point(902, 366);
+            this.PBlood.Name = "PBlood";
+            this.PBlood.PasswordChar = '\0';
+            this.PBlood.PlaceholderText = "";
+            this.PBlood.ReadOnly = true;
+            this.PBlood.SelectedText = "";
+            this.PBlood.Size = new System.Drawing.Size(201, 36);
+            this.PBlood.TabIndex = 75;
             // 
             // Transfer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 656);
-            this.Controls.Add(this.DBlood);
             this.Controls.Add(this.PBlood);
+            this.Controls.Add(this.DBlood);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.cmbDonorID);
             this.Controls.Add(this.cmbPatientID);
+            this.Controls.Add(this.cmbDonorID);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.DSaveInsert);
+            this.Controls.Add(this.donateButton);
+            this.Controls.Add(this.transferButton);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.DName);
+            this.Controls.Add(this.PName);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel2);
@@ -458,7 +462,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.PName);
+            this.Controls.Add(this.DName);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -483,16 +487,16 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox DName;
-        private System.Windows.Forms.TextBox textBox2;
-        private Guna.UI2.WinForms.Guna2Button DSaveInsert;
         private Guna.UI2.WinForms.Guna2TextBox PName;
+        private System.Windows.Forms.TextBox textBox2;
+        private Guna.UI2.WinForms.Guna2Button transferButton;
+        private Guna.UI2.WinForms.Guna2TextBox DName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button donateButton;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbPatientID;
         private Guna.UI2.WinForms.Guna2ComboBox cmbDonorID;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbPatientID;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Exit;
         private System.Windows.Forms.Label DashBoard_Page;
@@ -501,7 +505,7 @@
         private System.Windows.Forms.Label Patients_page;
         private System.Windows.Forms.Label ViewDonors_Page;
         private System.Windows.Forms.Label Donor_Page;
-        private Guna.UI2.WinForms.Guna2TextBox PBlood;
         private Guna.UI2.WinForms.Guna2TextBox DBlood;
+        private Guna.UI2.WinForms.Guna2TextBox PBlood;
     }
 }

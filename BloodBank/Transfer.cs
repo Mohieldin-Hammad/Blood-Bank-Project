@@ -19,6 +19,7 @@ namespace BloodBank
             resetID();
         }
 
+
         private void Transfer_Load(object sender, EventArgs e)
         {
 
@@ -29,15 +30,21 @@ namespace BloodBank
         {   
             AccessManagers.Patient patient = new AccessManagers.Patient();
             DataTable patientsID = patient.SelectAllPatientID();
-            cmbPatientID.DisplayMember = "P_ID";
-            cmbPatientID.DataSource = patientsID;
-            cmbPatientID.SelectedItem = null;
+            cmbDonorID.DisplayMember = "P_ID";
+            cmbDonorID.DataSource = patientsID;
+            cmbDonorID.SelectedItem = null;
+            DName.Text = "";
+            DBlood.Text = "";
+
+            
 
             AccessManagers.Donor donor = new AccessManagers.Donor();
             DataTable donorsID = donor.SelectAllDonorID();
-            cmbDonorID.DisplayMember = "P_ID";
-            cmbDonorID.DataSource = donorsID;
-            cmbDonorID.SelectedItem = null;
+            cmbPatientID.DisplayMember = "P_ID";
+            cmbPatientID.DataSource = donorsID;
+            cmbPatientID.SelectedItem = null;
+            PName.Text = "";
+            PBlood.Text = "";
         }
 
 
@@ -84,60 +91,112 @@ namespace BloodBank
             this.Hide();
         }
 
-        private void cmbPatientID_SelectedIndexChanged(object sender, EventArgs e)
+
+        // this two boolean variable will control the logic if clicking and typing in labels and comboboxes
+        private bool AllowPatientHandeler = true;
+        private bool AllowDonorHandeler = true;
+
+        private void cmbDonorID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbPatientID.SelectedItem == null)
+            if (AllowDonorHandeler)
             {
-                PName.Text = "";
-                PBlood.Text = "";
-            }
-            else
-            {
-                int id = int.Parse(cmbPatientID.Text.ToString());
-                AccessManagers.Patient patient = new AccessManagers.Patient();
-                if (patient.CheckPatientByID(id) == "FOUND")
+                if (cmbPatientID.SelectedIndex != -1)
                 {
-                    PName.Text = patient.ValuesOfPatientRow(id, "PName")[0];
-                    PBlood.Text = patient.ValuesOfPatientRow(id, "PBlood")[0];
+                    int id = int.Parse(cmbPatientID.Text.ToString());
+                    AccessManagers.Donor donor = new AccessManagers.Donor();
+                    if (donor.CheckDonorByID(id) == "FOUND")
+                    {
+                        PName.Text = donor.ValuesOfDonorRow(id, "PName")[0];
+                        PBlood.Text = donor.ValuesOfDonorRow(id, "PBlood")[0];
+                    }
                 }
             }
         }
 
-        private void cmbDonorID_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbPatientID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbDonorID.SelectedItem == null)
+            if (AllowPatientHandeler)
             {
-                DName.Text = "";
-                DBlood.Text = "";
+                if (cmbDonorID.SelectedIndex != -1)
+                {
+                    int id = int.Parse(cmbDonorID.Text.ToString());
+                    AccessManagers.Patient patient = new AccessManagers.Patient();
+                    if (patient.CheckPatientByID(id) == "FOUND")
+                    {
+                        DName.Text = patient.ValuesOfPatientRow(id, "PName")[0];
+                        DBlood.Text = patient.ValuesOfPatientRow(id, "PBlood")[0];
+                    }
+                }
+            }
+        }
+
+
+
+        private void DName_TextChanged(object sender, EventArgs e)
+        {
+            AccessManagers.Donor donor = new AccessManagers.Donor();
+            string name = PName.Text.ToString();
+
+            if (donor.CheckDonorByName(name) == "FOUND")
+            {
+                AllowDonorHandeler = true;
+                int id = donor.DonorIDOfName(name);
+
+                cmbPatientID.SelectedIndex = cmbPatientID.FindStringExact(id.ToString());
+                PBlood.Text = donor.ValuesOfDonorRow(id, "PBlood")[0];
             }
             else
             {
-                int id = int.Parse(cmbDonorID.Text.ToString());
-                AccessManagers.Donor donor = new AccessManagers.Donor();
-                if (donor.CheckDonorByID(id) == "FOUND")
-                {
-                    DName.Text = donor.ValuesOfDonorRow(id, "PName")[0];
-                    DBlood.Text = donor.ValuesOfDonorRow(id, "PBlood")[0];
-                }
+                AllowDonorHandeler = false;
+                cmbPatientID.SelectedIndex = -1;
+                cmbPatientID.SelectedIndex = -1;
+                PBlood.Text = "";
             }
         }
 
         private void PName_TextChanged(object sender, EventArgs e)
         {
             AccessManagers.Patient patient = new AccessManagers.Patient();
-            string name = PName.Text.ToString();
+            string name = DName.Text.ToString();
+
             if (patient.CheckPatientByName(name) == "FOUND")
             {
+                AllowPatientHandeler = true;
                 int id = patient.patientIDOfName(name);
-                cmbPatientID.Text = id.ToString();
-                PBlood.Text = patient.ValuesOfPatientRow(id, "PBlood")[0];
+
+                cmbDonorID.SelectedIndex = cmbDonorID.FindStringExact(id.ToString());
+                DBlood.Text = patient.ValuesOfPatientRow(id, "PBlood")[0];
             }
             else
             {
-
-                cmbPatientID.SelectedIndex = -1;
-                PBlood.Text = "";
+                AllowPatientHandeler = false;
+                cmbDonorID.SelectedIndex = -1;
+                cmbDonorID.SelectedIndex = -1;
+                DBlood.Text = "";
             }
         }
+
+
+        private void cmbDonorID_Click(object sender, EventArgs e)
+        {
+            AllowDonorHandeler = true;
+        }
+
+        private void cmbPatientID_Click(object sender, EventArgs e)
+        {
+            AllowPatientHandeler = true;
+        }
+
+
+
+        private void donateButton_Click(object sender, EventArgs e)
+        {
+            //if (cmpDonor)
+            //AccessManagers.Donor donor = new AccessManagers.Donor();
+            //int id = int.Parse(cmbPatientID.Text.ToString());
+            //string name = donor.ValuesOfDonorRow(id, )
+        }
+
+        
     }
 }
