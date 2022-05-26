@@ -62,3 +62,10 @@ create table Users(
 	UserName varchar(50) not null,
 	Password varchar(50) not null,
 )
+
+
+
+
+-- adding unique constraint to Name in people table as a combination with personType
+ALTER TABLE dbo.People
+  ADD CONSTRAINT uq_people UNIQUE(PName, PType);

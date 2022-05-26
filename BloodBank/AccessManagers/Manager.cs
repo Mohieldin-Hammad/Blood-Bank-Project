@@ -57,6 +57,29 @@ namespace BloodBank.AccessManagers
             }
         }
 
+
+        public DataTable SelectAllPeopleID(string type)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                try
+                {
+                    string Query = $"exec sp_SelectAllPeopleId {type}";
+                    DataSet dataSet = GetDataSet(Query, conn);
+                    return dataSet.Tables[0];
+                }
+                catch (Exception ex)
+                {
+                    conn.Close();
+                    MessageBox.Show(ex.ToString());
+                }
+                return null;
+                
+            }
+        }
+
+
+
         public List<string> getColumnsByID(char type, int id, params string[] cols)
         {
             // checking that the id exists
@@ -188,11 +211,21 @@ namespace BloodBank.AccessManagers
         }
 
 
-        public string CheckPerson(int id, string personType)
+        public string CheckPersonByID(int id, string personType)
         {
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
-                string Query = $"exec sp_CheckPerson {id}, '{personType}'";
+                string Query = $"exec sp_CheckPersonByID {id}, '{personType}'";
+                DataSet dataSet = GetDataSet(Query, conn);
+                return dataSet.Tables[0].Rows[0][0].ToString();
+            }
+        }
+
+        public string CheckPersonByName(string name, string personType)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                string Query = $"exec sp_CheckPersonByName {name}, '{personType}'";
                 DataSet dataSet = GetDataSet(Query, conn);
                 return dataSet.Tables[0].Rows[0][0].ToString();
             }

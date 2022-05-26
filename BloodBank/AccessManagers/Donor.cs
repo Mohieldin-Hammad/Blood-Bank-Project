@@ -18,18 +18,16 @@ namespace BloodBank.AccessManagers
             string result = manager.Insert("sp_InsertDonor", name, gender, blood, BD, phone, city);
             if (result == "Failed")
             {
-                MessageBox.Show("Missing Information");
                 return "MissInformation";
             }
             else if (result == "Succeed")
             {
-                MessageBox.Show("Donor Successfully Seved");
                 return "Done";
             }
-            else
-                MessageBox.Show(result);
-
-            return null;
+            else 
+            {
+                return result;
+            }
         }
 
 
@@ -88,6 +86,28 @@ namespace BloodBank.AccessManagers
             }
 
             return "Failed";
+        }
+
+
+        public DataTable SelectAllDonorID()
+        {
+            Manager manager = new Manager();
+            return manager.SelectAllPeopleID("D");
+        }
+
+
+        public string CheckDonorByID(int id)
+        {
+            Manager manager = new Manager();
+            string result = manager.CheckPersonByID(id, "D");
+            return result;
+        }
+
+        public string CheckDonorByName(string name)
+        {
+            Manager manager = new Manager();
+            string result = manager.CheckPersonByName(name, "D");
+            return result;
         }
 
     }

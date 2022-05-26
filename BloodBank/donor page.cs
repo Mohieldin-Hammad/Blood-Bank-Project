@@ -30,10 +30,21 @@ namespace BloodBank
             DBirthDateInsert.CustomFormat = "yyyy-MM-dd";
 
             string CheckMassage = DonorInsert.InsertNewDonor(DNameInsert.Text, DGenderInsert.Text, DBloodInsert.Text, DBirthDateInsert.Text, DPhoneInsert.Text, DCityInsert.Text);
+
             if (CheckMassage == "Done" && CheckMassage != null)
             {
+                MessageBox.Show("Donor Successfully Seved");
                 ResetDonor();
             }
+            else if (CheckMassage == "MissInformation")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                MessageBox.Show(CheckMassage);
+            }
+
         }
 
             private void ResetDonor()

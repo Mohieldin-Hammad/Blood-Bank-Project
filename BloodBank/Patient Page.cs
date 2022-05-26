@@ -42,9 +42,19 @@ namespace BloodBank
             PBirthDateInsert.CustomFormat = "yyyy-MM-dd";
 
             string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PBirthDateInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
+            
             if (CheckMassage == "Done" && CheckMassage != null)
             {
+                MessageBox.Show("Patient Successfully Seved");
                 ResetPatient();
+            }
+            else if (CheckMassage == "MissInformation")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                MessageBox.Show(CheckMassage);
             }
 
         }

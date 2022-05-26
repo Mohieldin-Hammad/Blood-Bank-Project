@@ -130,28 +130,36 @@ namespace BloodBank
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            int currentRowIndex = DTshow.CurrentCell.RowIndex;
-            int id = (int)DTshow.Rows[currentRowIndex].Cells[0].Value;
+            if (DTshow.SelectedRows.Count > 0) 
+            { 
+                int currentRowIndex = DTshow.CurrentCell.RowIndex;
+                int id = (int)DTshow.Rows[currentRowIndex].Cells[0].Value;
 
-            AccessManagers.Donor donor = new AccessManagers.Donor();
+                AccessManagers.Donor donor = new AccessManagers.Donor();
 
-            VDBD.Format = DateTimePickerFormat.Custom;
-            VDBD.CustomFormat = "yyyy-MM-dd";
-            string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDPhone.Text, VDCity.Text);
+                VDBD.Format = DateTimePickerFormat.Custom;
+                VDBD.CustomFormat = "yyyy-MM-dd";
+                string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDPhone.Text, VDCity.Text);
 
-            if (checkEdit == "MissInformation")
-            {
-                MessageBox.Show("Missing Information");
-            }
-            else if (checkEdit == "Done")
-            {
-                MessageBox.Show("Donor is Successfully Updated");
+                if (checkEdit == "MissInformation")
+                {
+                    MessageBox.Show("Missing Information");
+                }
+                else if (checkEdit == "Done")
+                {
+                    MessageBox.Show("Donor is Successfully Updated");
+                }
+                else
+                {
+                    MessageBox.Show(checkEdit);
+                }
+                showtable();
             }
             else
             {
-                MessageBox.Show(checkEdit);
+                MessageBox.Show("Row is not selected!");
             }
-            showtable();
+
         }
 
         private void DTshow_SelectionChanged(object sender, EventArgs e)
@@ -172,22 +180,30 @@ namespace BloodBank
 
         private void DelButton_Click(object sender, EventArgs e)
         {
-            AccessManagers.Donor donor = new AccessManagers.Donor();
-            int currentRowIndex = DTshow.CurrentCell.RowIndex;
-            int id = (int)DTshow.Rows[currentRowIndex].Cells[0].Value;
-            string[] col = getRowValues(currentRowIndex);
+            if (DTshow.SelectedRows.Count > 0)
+            {
+                AccessManagers.Donor donor = new AccessManagers.Donor();
+                int currentRowIndex = DTshow.CurrentCell.RowIndex;
+                int id = (int)DTshow.Rows[currentRowIndex].Cells[0].Value;
+                string[] col = getRowValues(currentRowIndex);
 
-            // Because the getRowValues switch between gender and blood, So I will swith it while I type the parameter
-            string checkRemove = donor.RemoveDonor(id, col[0], col[2], col[1], col[3], col[4], col[5]);
+                // Because the getRowValues switch between gender and blood, So I will swith it while I type the parameter
+                string checkRemove = donor.RemoveDonor(id, col[0], col[2], col[1], col[3], col[4], col[5]);
 
-            if (checkRemove == "Done")
-                MessageBox.Show("Donor Successfully Deleted");
-            else if
-                (checkRemove == "Failed") MessageBox.Show("Age are not Matched");
+                if (checkRemove == "Done")
+                    MessageBox.Show("Donor Successfully Deleted");
+                else if
+                    (checkRemove == "Failed") MessageBox.Show("Age are not Matched");
+                else
+                    MessageBox.Show(checkRemove);
+                showtable();
+            }
             else
-                MessageBox.Show(checkRemove);
-
-            showtable();
+            {
+                MessageBox.Show("Row is not selected!");
+            }
         }
+
+        
     }
 }
