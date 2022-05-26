@@ -57,6 +57,29 @@ namespace BloodBank.AccessManagers
             }
         }
 
+
+        public DataTable SelectAllPeopleID(string type)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                try
+                {
+                    string Query = $"exec sp_SelectAllPeopleId {type}";
+                    DataSet dataSet = GetDataSet(Query, conn);
+                    return dataSet.Tables[0];
+                }
+                catch (Exception ex)
+                {
+                    conn.Close();
+                    MessageBox.Show(ex.ToString());
+                }
+                return null;
+                
+            }
+        }
+
+
+
         public List<string> getColumnsByID(char type, int id, params string[] cols)
         {
             // checking that the id exists
@@ -65,7 +88,7 @@ namespace BloodBank.AccessManagers
 
             //*************************
 
-            string[] all_items = new string[6] { "PName", "PBlood", "PGender", "PBirthDate", "PPhone", "PCity" };
+            string[] all_items = new string[7] { "PName", "PBlood", "PGender", "PBirthDate", "PPhone", "PCity", "P_Age"};
 
             foreach (string item in cols)
             {
@@ -130,6 +153,8 @@ namespace BloodBank.AccessManagers
             }
         }
 
+
+
         public string Delete(string procedure, int ID, string name, string gender, string blood, string BD, string phone, string city)
         {
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
@@ -186,11 +211,21 @@ namespace BloodBank.AccessManagers
         }
 
 
-        public string CheckPerson(int id, string personType)
+        public string CheckPersonByID(int id, string personType)
         {
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
-                string Query = $"exec sp_CheckPerson {id}, '{personType}'";
+                string Query = $"exec sp_CheckPersonByID {id}, '{personType}'";
+                DataSet dataSet = GetDataSet(Query, conn);
+                return dataSet.Tables[0].Rows[0][0].ToString();
+            }
+        }
+
+        public string CheckPersonByName(string name, string personType)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                string Query = $"exec sp_CheckPersonByName {name}, '{personType}'";
                 DataSet dataSet = GetDataSet(Query, conn);
                 return dataSet.Tables[0].Rows[0][0].ToString();
             }
@@ -252,6 +287,22 @@ namespace BloodBank.AccessManagers
         }
 
 
+        //public string GetBloodcount()
+        //{
+        //    //string[] bloods = new string[8] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" };
+            
+        //    //// checking that the selected parameters is contained in blood types else it will return null
+        //    //foreach (string blood in bloodTypes)
+        //    //{
+        //    //    if (!bloods.Contains(blood.ToUpper()))
+        //    //    {
+        //    //        return null;
+        //    //    }
+        //    //}
+            
+        //}
+
+
         // Execute sql query and return DataSet
         private DataSet GetDataSet(string query, SqlConnection conn)
         {
@@ -264,6 +315,8 @@ namespace BloodBank.AccessManagers
 
             return dataSet;
         }     
+
+
 
         // checking if there is a missing information or null string
         private bool CheckMissingInformation(string name, string gender, string blood, string BD, string phone, string city)

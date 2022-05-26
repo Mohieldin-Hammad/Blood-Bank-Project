@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.VPblood = new Guna.UI2.WinForms.Guna2ComboBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.VPBlood = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,55 +41,57 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.VPname = new Guna.UI2.WinForms.Guna2TextBox();
+            this.VPName = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.PTshow = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.VPbd = new Guna.UI2.WinForms.Guna2TextBox();
-            this.VPgender = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DelButton = new Guna.UI2.WinForms.Guna2Button();
+            this.EditButton = new Guna.UI2.WinForms.Guna2Button();
             this.VPPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.DCity = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.VPCity = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ptlabel = new System.Windows.Forms.Label();
-            this.patient = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Donor_Page = new System.Windows.Forms.Label();
+            this.Exit = new System.Windows.Forms.Label();
+            this.DashBoard_Page = new System.Windows.Forms.Label();
+            this.BloodTransfer_Page = new System.Windows.Forms.Label();
+            this.ViewPatients_Page = new System.Windows.Forms.Label();
+            this.Patients_page = new System.Windows.Forms.Label();
+            this.ViewDonors_Page = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.VPBD = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.VPGender = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.PTshow)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // VPblood
+            // VPBlood
             // 
-            this.VPblood.BackColor = System.Drawing.Color.Transparent;
-            this.VPblood.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.VPblood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.VPblood.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPblood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPblood.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.VPblood.ForeColor = System.Drawing.Color.Red;
-            this.VPblood.ItemHeight = 30;
-            this.VPblood.Items.AddRange(new object[] {
+            this.VPBlood.BackColor = System.Drawing.Color.Transparent;
+            this.VPBlood.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.VPBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.VPBlood.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPBlood.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.VPBlood.ForeColor = System.Drawing.Color.Red;
+            this.VPBlood.ItemHeight = 30;
+            this.VPBlood.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
             "AB+",
-            "AB",
-            "O",
+            "AB-",
             "O+",
-            "A",
-            "A-"});
-            this.VPblood.Location = new System.Drawing.Point(292, 220);
-            this.VPblood.Name = "VPblood";
-            this.VPblood.Size = new System.Drawing.Size(150, 36);
-            this.VPblood.TabIndex = 54;
+            "O-"});
+            this.VPBlood.Location = new System.Drawing.Point(292, 220);
+            this.VPBlood.Name = "VPBlood";
+            this.VPBlood.Size = new System.Drawing.Size(150, 36);
+            this.VPBlood.TabIndex = 54;
             // 
             // guna2HtmlLabel5
             // 
@@ -119,7 +121,6 @@
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(86, 33);
             this.guna2HtmlLabel6.TabIndex = 51;
             this.guna2HtmlLabel6.Text = "Phone ";
-            this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel6_Click);
             // 
             // textBox4
             // 
@@ -153,9 +154,9 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(152, 99);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(54, 33);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(126, 33);
             this.guna2HtmlLabel2.TabIndex = 45;
-            this.guna2HtmlLabel2.Text = "Age";
+            this.guna2HtmlLabel2.Text = "BirthDate";
             // 
             // textBox2
             // 
@@ -175,25 +176,24 @@
             this.guna2HtmlLabel1.TabIndex = 42;
             this.guna2HtmlLabel1.Text = "Name";
             // 
-            // VPname
+            // VPName
             // 
-            this.VPname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VPname.DefaultText = "";
-            this.VPname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.VPname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.VPname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.VPname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPname.Location = new System.Drawing.Point(12, 140);
-            this.VPname.Name = "VPname";
-            this.VPname.PasswordChar = '\0';
-            this.VPname.PlaceholderText = "";
-            this.VPname.SelectedText = "";
-            this.VPname.Size = new System.Drawing.Size(134, 36);
-            this.VPname.TabIndex = 41;
-            this.VPname.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.VPName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.VPName.DefaultText = "";
+            this.VPName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.VPName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.VPName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.VPName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.VPName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VPName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPName.Location = new System.Drawing.Point(12, 140);
+            this.VPName.Name = "VPName";
+            this.VPName.PasswordChar = '\0';
+            this.VPName.PlaceholderText = "";
+            this.VPName.SelectedText = "";
+            this.VPName.Size = new System.Drawing.Size(134, 36);
+            this.VPName.TabIndex = 41;
             // 
             // textBox1
             // 
@@ -204,34 +204,41 @@
             // 
             // PTshow
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.PTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.PTshow.AllowUserToAddRows = false;
+            this.PTshow.AllowUserToDeleteRows = false;
+            this.PTshow.AllowUserToResizeColumns = false;
+            this.PTshow.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.PTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.PTshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PTshow.BackgroundColor = System.Drawing.Color.White;
             this.PTshow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PTshow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.PTshow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.PTshow.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PTshow.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.PTshow.ColumnHeadersHeight = 20;
+            this.PTshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PTshow.DefaultCellStyle = dataGridViewCellStyle3;
             this.PTshow.EnableHeadersVisualStyles = false;
             this.PTshow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PTshow.Location = new System.Drawing.Point(23, 273);
+            this.PTshow.MultiSelect = false;
             this.PTshow.Name = "PTshow";
+            this.PTshow.ReadOnly = true;
             this.PTshow.RowHeadersVisible = false;
             this.PTshow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.PTshow.Size = new System.Drawing.Size(1096, 363);
@@ -247,9 +254,9 @@
             this.PTshow.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.PTshow.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.PTshow.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.PTshow.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.PTshow.ThemeStyle.HeaderStyle.Height = 4;
-            this.PTshow.ThemeStyle.ReadOnly = false;
+            this.PTshow.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.PTshow.ThemeStyle.HeaderStyle.Height = 20;
+            this.PTshow.ThemeStyle.ReadOnly = true;
             this.PTshow.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.PTshow.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.PTshow.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -258,7 +265,7 @@
             this.PTshow.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PTshow.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.PTshow.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PTshow_CellClick);
-            this.PTshow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PTshow_CellContentClick);
+            this.PTshow.SelectionChanged += new System.EventHandler(this.PTshow_SelectionChanged);
             // 
             // label7
             // 
@@ -270,7 +277,6 @@
             this.label7.Size = new System.Drawing.Size(169, 31);
             this.label7.TabIndex = 38;
             this.label7.Text = "Patient List ";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -282,74 +288,37 @@
             this.label6.Size = new System.Drawing.Size(0, 31);
             this.label6.TabIndex = 37;
             // 
-            // guna2Button1
+            // DelButton
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(510, 182);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(99, 36);
-            this.guna2Button1.TabIndex = 55;
-            this.guna2Button1.Text = "del";
+            this.DelButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DelButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DelButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DelButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DelButton.FillColor = System.Drawing.Color.Red;
+            this.DelButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DelButton.ForeColor = System.Drawing.Color.White;
+            this.DelButton.Location = new System.Drawing.Point(510, 182);
+            this.DelButton.Name = "DelButton";
+            this.DelButton.Size = new System.Drawing.Size(99, 36);
+            this.DelButton.TabIndex = 55;
+            this.DelButton.Text = "del";
+            this.DelButton.Click += new System.EventHandler(this.DelButton_Click);
             // 
-            // guna2Button2
+            // EditButton
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Red;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(510, 139);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(99, 36);
-            this.guna2Button2.TabIndex = 56;
-            this.guna2Button2.Text = "edit ";
-            // 
-            // VPbd
-            // 
-            this.VPbd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VPbd.DefaultText = "";
-            this.VPbd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.VPbd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.VPbd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPbd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPbd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPbd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.VPbd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPbd.Location = new System.Drawing.Point(152, 139);
-            this.VPbd.Name = "VPbd";
-            this.VPbd.PasswordChar = '\0';
-            this.VPbd.PlaceholderText = "";
-            this.VPbd.SelectedText = "";
-            this.VPbd.Size = new System.Drawing.Size(134, 37);
-            this.VPbd.TabIndex = 57;
-            this.VPbd.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged_1);
-            // 
-            // VPgender
-            // 
-            this.VPgender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VPgender.DefaultText = "";
-            this.VPgender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.VPgender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.VPgender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPgender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPgender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPgender.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.VPgender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPgender.Location = new System.Drawing.Point(292, 139);
-            this.VPgender.Name = "VPgender";
-            this.VPgender.PasswordChar = '\0';
-            this.VPgender.PlaceholderText = "";
-            this.VPgender.SelectedText = "";
-            this.VPgender.Size = new System.Drawing.Size(134, 37);
-            this.VPgender.TabIndex = 58;
+            this.EditButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.EditButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.EditButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.EditButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.EditButton.FillColor = System.Drawing.Color.Red;
+            this.EditButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditButton.ForeColor = System.Drawing.Color.White;
+            this.EditButton.Location = new System.Drawing.Point(510, 139);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(99, 36);
+            this.EditButton.TabIndex = 56;
+            this.EditButton.Text = "Edit";
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // VPPhone
             // 
@@ -381,121 +350,125 @@
             this.DCity.TabIndex = 60;
             this.DCity.Text = "City ";
             // 
-            // guna2TextBox1
+            // VPCity
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(152, 220);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(134, 36);
-            this.guna2TextBox1.TabIndex = 61;
+            this.VPCity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.VPCity.DefaultText = "";
+            this.VPCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.VPCity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.VPCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.VPCity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.VPCity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPCity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VPCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPCity.Location = new System.Drawing.Point(152, 220);
+            this.VPCity.Name = "VPCity";
+            this.VPCity.PasswordChar = '\0';
+            this.VPCity.PlaceholderText = "";
+            this.VPCity.SelectedText = "";
+            this.VPCity.Size = new System.Drawing.Size(134, 36);
+            this.VPCity.TabIndex = 61;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.ptlabel);
-            this.panel1.Controls.Add(this.patient);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.Donor_Page);
+            this.panel1.Controls.Add(this.Exit);
+            this.panel1.Controls.Add(this.DashBoard_Page);
+            this.panel1.Controls.Add(this.BloodTransfer_Page);
+            this.panel1.Controls.Add(this.ViewPatients_Page);
+            this.panel1.Controls.Add(this.Patients_page);
+            this.panel1.Controls.Add(this.ViewDonors_Page);
             this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1152, 82);
             this.panel1.TabIndex = 74;
             // 
-            // label4
+            // Donor_Page
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(230, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 29);
-            this.label4.TabIndex = 10;
-            this.label4.Text = " Donor";
+            this.Donor_Page.AutoSize = true;
+            this.Donor_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Donor_Page.ForeColor = System.Drawing.Color.White;
+            this.Donor_Page.Location = new System.Drawing.Point(230, 26);
+            this.Donor_Page.Name = "Donor_Page";
+            this.Donor_Page.Size = new System.Drawing.Size(91, 29);
+            this.Donor_Page.TabIndex = 10;
+            this.Donor_Page.Text = " Donor";
+            this.Donor_Page.Click += new System.EventHandler(this.Donor_Page_Click);
             // 
-            // label33
+            // Exit
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(1109, 9);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(31, 29);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "X";
-            this.label33.Click += new System.EventHandler(this.label33_Click);
+            this.Exit.AutoSize = true;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.Color.White;
+            this.Exit.Location = new System.Drawing.Point(1109, 9);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(31, 29);
+            this.Exit.TabIndex = 9;
+            this.Exit.Text = "X";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // label1
+            // DashBoard_Page
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Red;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(30, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 29);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Dashboard";
+            this.DashBoard_Page.AutoSize = true;
+            this.DashBoard_Page.BackColor = System.Drawing.Color.Red;
+            this.DashBoard_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashBoard_Page.ForeColor = System.Drawing.Color.White;
+            this.DashBoard_Page.Location = new System.Drawing.Point(30, 28);
+            this.DashBoard_Page.Name = "DashBoard_Page";
+            this.DashBoard_Page.Size = new System.Drawing.Size(142, 29);
+            this.DashBoard_Page.TabIndex = 8;
+            this.DashBoard_Page.Text = "DashBoard";
+            this.DashBoard_Page.Click += new System.EventHandler(this.DashBoard_Page_Click);
             // 
-            // label5
+            // BloodTransfer_Page
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(899, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 29);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Blood Transfer";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.BloodTransfer_Page.AutoSize = true;
+            this.BloodTransfer_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodTransfer_Page.ForeColor = System.Drawing.Color.White;
+            this.BloodTransfer_Page.Location = new System.Drawing.Point(899, 26);
+            this.BloodTransfer_Page.Name = "BloodTransfer_Page";
+            this.BloodTransfer_Page.Size = new System.Drawing.Size(187, 29);
+            this.BloodTransfer_Page.TabIndex = 7;
+            this.BloodTransfer_Page.Text = "Blood Transfer";
+            this.BloodTransfer_Page.Click += new System.EventHandler(this.BloodTransfer_Page_Click);
             // 
-            // ptlabel
+            // ViewPatients_Page
             // 
-            this.ptlabel.AutoSize = true;
-            this.ptlabel.BackColor = System.Drawing.Color.DarkRed;
-            this.ptlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ptlabel.ForeColor = System.Drawing.Color.White;
-            this.ptlabel.Location = new System.Drawing.Point(707, 26);
-            this.ptlabel.Name = "ptlabel";
-            this.ptlabel.Size = new System.Drawing.Size(171, 29);
-            this.ptlabel.TabIndex = 5;
-            this.ptlabel.Text = "View Patients";
+            this.ViewPatients_Page.AutoSize = true;
+            this.ViewPatients_Page.BackColor = System.Drawing.Color.DarkRed;
+            this.ViewPatients_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewPatients_Page.ForeColor = System.Drawing.Color.White;
+            this.ViewPatients_Page.Location = new System.Drawing.Point(707, 26);
+            this.ViewPatients_Page.Name = "ViewPatients_Page";
+            this.ViewPatients_Page.Size = new System.Drawing.Size(171, 29);
+            this.ViewPatients_Page.TabIndex = 5;
+            this.ViewPatients_Page.Text = "View Patients";
+            this.ViewPatients_Page.Click += new System.EventHandler(this.ViewPatients_Page_Click);
             // 
-            // patient
+            // Patients_page
             // 
-            this.patient.AutoSize = true;
-            this.patient.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patient.ForeColor = System.Drawing.Color.White;
-            this.patient.Location = new System.Drawing.Point(570, 28);
-            this.patient.Name = "patient";
-            this.patient.Size = new System.Drawing.Size(107, 29);
-            this.patient.TabIndex = 4;
-            this.patient.Text = "Patients";
+            this.Patients_page.AutoSize = true;
+            this.Patients_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patients_page.ForeColor = System.Drawing.Color.White;
+            this.Patients_page.Location = new System.Drawing.Point(570, 28);
+            this.Patients_page.Name = "Patients_page";
+            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.TabIndex = 4;
+            this.Patients_page.Text = "Patients";
+            this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
-            // label2
+            // ViewDonors_Page
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(374, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "View Donors";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.ViewDonors_Page.AutoSize = true;
+            this.ViewDonors_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewDonors_Page.ForeColor = System.Drawing.Color.White;
+            this.ViewDonors_Page.Location = new System.Drawing.Point(374, 26);
+            this.ViewDonors_Page.Name = "ViewDonors_Page";
+            this.ViewDonors_Page.Size = new System.Drawing.Size(161, 29);
+            this.ViewDonors_Page.TabIndex = 3;
+            this.ViewDonors_Page.Text = "View Donors";
+            this.ViewDonors_Page.Click += new System.EventHandler(this.ViewDonors_Page_Click);
             // 
             // guna2PictureBox1
             // 
@@ -517,23 +490,59 @@
             this.guna2PictureBox2.TabIndex = 76;
             this.guna2PictureBox2.TabStop = false;
             // 
+            // VPBD
+            // 
+            this.VPBD.Checked = true;
+            this.VPBD.CustomFormat = "yyyy-MM-dd";
+            this.VPBD.FillColor = System.Drawing.Color.Red;
+            this.VPBD.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VPBD.ForeColor = System.Drawing.Color.White;
+            this.VPBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.VPBD.Location = new System.Drawing.Point(152, 140);
+            this.VPBD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.VPBD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.VPBD.Name = "VPBD";
+            this.VPBD.Size = new System.Drawing.Size(134, 36);
+            this.VPBD.TabIndex = 77;
+            this.VPBD.Value = new System.DateTime(2022, 5, 25, 23, 30, 38, 0);
+            // 
+            // VPGender
+            // 
+            this.VPGender.BackColor = System.Drawing.Color.Transparent;
+            this.VPGender.BorderColor = System.Drawing.Color.Red;
+            this.VPGender.BorderThickness = 2;
+            this.VPGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.VPGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.VPGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPGender.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.VPGender.ForeColor = System.Drawing.Color.Red;
+            this.VPGender.ItemHeight = 30;
+            this.VPGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.VPGender.Location = new System.Drawing.Point(292, 138);
+            this.VPGender.Name = "VPGender";
+            this.VPGender.Size = new System.Drawing.Size(175, 36);
+            this.VPGender.TabIndex = 78;
+            // 
             // view_patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 656);
+            this.Controls.Add(this.VPGender);
+            this.Controls.Add(this.VPBD);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.VPCity);
             this.Controls.Add(this.DCity);
             this.Controls.Add(this.VPPhone);
-            this.Controls.Add(this.VPgender);
-            this.Controls.Add(this.VPbd);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.VPblood);
+            this.Controls.Add(this.EditButton);
+            this.Controls.Add(this.DelButton);
+            this.Controls.Add(this.VPBlood);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.guna2HtmlLabel6);
@@ -543,14 +552,13 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.VPname);
+            this.Controls.Add(this.VPName);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.PTshow);
             this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "view_patient";
             this.Text = "view_patient";
-            this.Load += new System.EventHandler(this.view_patient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PTshow)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -563,7 +571,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ComboBox VPblood;
+        private Guna.UI2.WinForms.Guna2ComboBox VPBlood;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private System.Windows.Forms.TextBox textBox5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
@@ -573,27 +581,27 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.TextBox textBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox VPname;
+        private Guna.UI2.WinForms.Guna2TextBox VPName;
         private System.Windows.Forms.TextBox textBox1;
         private Guna.UI2.WinForms.Guna2DataGridView PTshow;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2TextBox VPbd;
-        private Guna.UI2.WinForms.Guna2TextBox VPgender;
+        private Guna.UI2.WinForms.Guna2Button DelButton;
+        private Guna.UI2.WinForms.Guna2Button EditButton;
         private Guna.UI2.WinForms.Guna2TextBox VPPhone;
         private Guna.UI2.WinForms.Guna2HtmlLabel DCity;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox VPCity;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label ptlabel;
-        private System.Windows.Forms.Label patient;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Donor_Page;
+        private System.Windows.Forms.Label Exit;
+        private System.Windows.Forms.Label DashBoard_Page;
+        private System.Windows.Forms.Label BloodTransfer_Page;
+        private System.Windows.Forms.Label ViewPatients_Page;
+        private System.Windows.Forms.Label Patients_page;
+        private System.Windows.Forms.Label ViewDonors_Page;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker VPBD;
+        private Guna.UI2.WinForms.Guna2ComboBox VPGender;
     }
 }

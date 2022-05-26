@@ -30,10 +30,21 @@ namespace BloodBank
             DBirthDateInsert.CustomFormat = "yyyy-MM-dd";
 
             string CheckMassage = DonorInsert.InsertNewDonor(DNameInsert.Text, DGenderInsert.Text, DBloodInsert.Text, DBirthDateInsert.Text, DPhoneInsert.Text, DCityInsert.Text);
+
             if (CheckMassage == "Done" && CheckMassage != null)
             {
+                MessageBox.Show("Donor Successfully Seved");
                 ResetDonor();
             }
+            else if (CheckMassage == "MissInformation")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                MessageBox.Show(CheckMassage);
+            }
+
         }
 
             private void ResetDonor()
@@ -45,73 +56,44 @@ namespace BloodBank
                 DCityInsert.Text = "";
             }
 
-        private void donor_page_Load(object sender, EventArgs e)
+        private void DashBoard_Page_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void PBirthDateInsert_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DBloodInsert_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DGender_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DBlood_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DGenderInsert_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            view_donor D2 = new view_donor();
-            D2.Show();
+            Dashboard DashBoardPage = new Dashboard();
+            DashBoardPage.Show();
             this.Hide();
         }
 
-        private void patient_Click(object sender, EventArgs e)
+        private void ViewDonors_Page_Click(object sender, EventArgs e)
         {
-            Patient_Page P1 = new Patient_Page();
-            P1.Show();
+            view_donor VDPage = new view_donor();
+            VDPage.Show();
             this.Hide();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Patients_page_Click(object sender, EventArgs e)
         {
-
+            Patient_Page PPage = new Patient_Page();
+            PPage.Show();
+            this.Hide();
         }
 
-        private void label33_Click(object sender, EventArgs e)
+        private void ViewPatients_Page_Click(object sender, EventArgs e)
         {
+            view_patient VPPage = new view_patient();
+            VPPage.Show();
             this.Hide();
+        }
+
+        private void BloodTransfer_Page_Click(object sender, EventArgs e)
+        {
+            Transfer TPage = new Transfer();
+            TPage.Show();
+            this.Hide();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

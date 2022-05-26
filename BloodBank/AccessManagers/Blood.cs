@@ -20,43 +20,69 @@ namespace BloodBank.AccessManagers
         }
     
         
-        public void Donate(int id)
+        //public void Donate(int id)
+        //{
+        //    string msg;
+        //    Manager manager = new Manager();
+        //    if (manager.CheckPersonByID(id, "D") == "FOUND")
+        //    {
+        //        msg = manager.InsertDonation(id);
+
+        //        if (msg == "Failed_To_Increment_Blood")
+        //            MessageBox.Show("Error: Failed To Increment Blood");
+        //        else if (msg == "Succeed")
+        //            MessageBox.Show("The donation has successfully happened");
+        //        else
+        //            MessageBox.Show(msg);
+        //    }
+        //    else
+        //        MessageBox.Show("There is no donors found with this ID");
+        //}
+
+
+        //public void Transfer(int id)
+        //{
+        //    string msg;
+        //    Manager manager = new Manager();
+        //    if (manager.CheckPersonByID(id, "P") == "FOUND")
+        //    {
+        //        msg = manager.InsertInjection(id);
+
+        //        if (msg == "Failed_To_Decrement_Blood")
+        //            MessageBox.Show("Error: There Is No Bloods Found From This Type!");
+        //        else if (msg == "Succeed")
+        //            MessageBox.Show("The transfer has successfully happened");
+        //        else
+        //            MessageBox.Show(msg);
+        //    }
+        //    else
+        //        MessageBox.Show("There is no patients found with this ID");
+        //}
+
+
+
+        public string getCountOfBloods(string blood)
         {
-            string msg;
-            Manager manager = new Manager();
-            if (manager.CheckPerson(id, "D") == "FOUND")
+            string[] bloods = new string[8] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" };
+
+            // checking that the selected parameter is contained in blood types else it will return null
+                if (!bloods.Contains(blood.ToUpper()))
+                {
+                    return null;
+                }
+
+
+            string bloodCount = "";
+
+            DataTable bloodTable = this.ShowBloodsTable();
+            foreach (DataRow row in bloodTable.Rows)
             {
-                msg = manager.InsertDonation(id);
-
-                if (msg == "Failed_To_Increment_Blood")
-                    MessageBox.Show("Error: Failed To Increment Blood");
-                else if (msg == "Succeed")
-                    MessageBox.Show("The donation has successfully happened");
-                else
-                    MessageBox.Show(msg);
+                if (blood.ToUpper() == row[0].ToString())
+                {
+                    bloodCount = row[1].ToString();
+                }
             }
-            else
-                MessageBox.Show("There is no donors found with this ID");
-        }
-
-
-        public void Transfer(int id)
-        {
-            string msg;
-            Manager manager = new Manager();
-            if (manager.CheckPerson(id, "P") == "FOUND")
-            {
-                msg = manager.InsertInjection(id);
-
-                if (msg == "Failed_To_Decrement_Blood")
-                    MessageBox.Show("Error: There Is No Bloods Found From This Type!");
-                else if (msg == "Succeed")
-                    MessageBox.Show("The transfer has successfully happened");
-                else
-                    MessageBox.Show(msg);
-            }
-            else
-                MessageBox.Show("There is no patients found with this ID");
+            return bloodCount;
         }
 
     }
