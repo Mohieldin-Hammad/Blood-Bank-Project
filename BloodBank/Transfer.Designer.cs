@@ -47,13 +47,13 @@
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ptlabel = new System.Windows.Forms.Label();
-            this.patient = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Donor_Page = new System.Windows.Forms.Label();
+            this.Exit = new System.Windows.Forms.Label();
+            this.DashBoard_Page = new System.Windows.Forms.Label();
+            this.BloodTransfer_Page = new System.Windows.Forms.Label();
+            this.ViewPatients_Page = new System.Windows.Forms.Label();
+            this.Patients_page = new System.Windows.Forms.Label();
+            this.ViewDonors_Page = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -99,7 +99,6 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Donor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             this.label1.Paint += new System.Windows.Forms.PaintEventHandler(this.Donor);
             // 
             // label3
@@ -286,100 +285,101 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.ptlabel);
-            this.panel1.Controls.Add(this.patient);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.Donor_Page);
+            this.panel1.Controls.Add(this.Exit);
+            this.panel1.Controls.Add(this.DashBoard_Page);
+            this.panel1.Controls.Add(this.BloodTransfer_Page);
+            this.panel1.Controls.Add(this.ViewPatients_Page);
+            this.panel1.Controls.Add(this.Patients_page);
+            this.panel1.Controls.Add(this.ViewDonors_Page);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1152, 82);
             this.panel1.TabIndex = 73;
             // 
-            // label33
+            // Donor_Page
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(1109, 9);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(31, 29);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "X";
-            this.label33.Click += new System.EventHandler(this.label33_Click);
+            this.Donor_Page.AutoSize = true;
+            this.Donor_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Donor_Page.ForeColor = System.Drawing.Color.White;
+            this.Donor_Page.Location = new System.Drawing.Point(230, 26);
+            this.Donor_Page.Name = "Donor_Page";
+            this.Donor_Page.Size = new System.Drawing.Size(91, 29);
+            this.Donor_Page.TabIndex = 10;
+            this.Donor_Page.Text = " Donor";
+            this.Donor_Page.Click += new System.EventHandler(this.Donor_Page_Click);
             // 
-            // label6
+            // Exit
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Red;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(30, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 29);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Dashboard";
+            this.Exit.AutoSize = true;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.Color.White;
+            this.Exit.Location = new System.Drawing.Point(1109, 9);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(31, 29);
+            this.Exit.TabIndex = 9;
+            this.Exit.Text = "X";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // label5
+            // DashBoard_Page
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.DarkRed;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(899, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 29);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Blood Transfer";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.DashBoard_Page.AutoSize = true;
+            this.DashBoard_Page.BackColor = System.Drawing.Color.Red;
+            this.DashBoard_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashBoard_Page.ForeColor = System.Drawing.Color.White;
+            this.DashBoard_Page.Location = new System.Drawing.Point(30, 28);
+            this.DashBoard_Page.Name = "DashBoard_Page";
+            this.DashBoard_Page.Size = new System.Drawing.Size(142, 29);
+            this.DashBoard_Page.TabIndex = 8;
+            this.DashBoard_Page.Text = "DashBoard";
             // 
-            // ptlabel
+            // BloodTransfer_Page
             // 
-            this.ptlabel.AutoSize = true;
-            this.ptlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ptlabel.ForeColor = System.Drawing.Color.White;
-            this.ptlabel.Location = new System.Drawing.Point(707, 26);
-            this.ptlabel.Name = "ptlabel";
-            this.ptlabel.Size = new System.Drawing.Size(171, 29);
-            this.ptlabel.TabIndex = 5;
-            this.ptlabel.Text = "View Patients";
+            this.BloodTransfer_Page.AutoSize = true;
+            this.BloodTransfer_Page.BackColor = System.Drawing.Color.DarkRed;
+            this.BloodTransfer_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodTransfer_Page.ForeColor = System.Drawing.Color.White;
+            this.BloodTransfer_Page.Location = new System.Drawing.Point(899, 26);
+            this.BloodTransfer_Page.Name = "BloodTransfer_Page";
+            this.BloodTransfer_Page.Size = new System.Drawing.Size(187, 29);
+            this.BloodTransfer_Page.TabIndex = 7;
+            this.BloodTransfer_Page.Text = "Blood Transfer";
             // 
-            // patient
+            // ViewPatients_Page
             // 
-            this.patient.AutoSize = true;
-            this.patient.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patient.ForeColor = System.Drawing.Color.White;
-            this.patient.Location = new System.Drawing.Point(570, 28);
-            this.patient.Name = "patient";
-            this.patient.Size = new System.Drawing.Size(107, 29);
-            this.patient.TabIndex = 4;
-            this.patient.Text = "Patients";
-            this.patient.Click += new System.EventHandler(this.patient_Click);
+            this.ViewPatients_Page.AutoSize = true;
+            this.ViewPatients_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewPatients_Page.ForeColor = System.Drawing.Color.White;
+            this.ViewPatients_Page.Location = new System.Drawing.Point(707, 26);
+            this.ViewPatients_Page.Name = "ViewPatients_Page";
+            this.ViewPatients_Page.Size = new System.Drawing.Size(171, 29);
+            this.ViewPatients_Page.TabIndex = 5;
+            this.ViewPatients_Page.Text = "View Patients";
+            this.ViewPatients_Page.Click += new System.EventHandler(this.ViewPatients_Page_Click);
             // 
-            // label2
+            // Patients_page
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(374, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "View Donors";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Patients_page.AutoSize = true;
+            this.Patients_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patients_page.ForeColor = System.Drawing.Color.White;
+            this.Patients_page.Location = new System.Drawing.Point(570, 28);
+            this.Patients_page.Name = "Patients_page";
+            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.TabIndex = 4;
+            this.Patients_page.Text = "Patients";
+            this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
-            // label4
+            // ViewDonors_Page
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(230, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 29);
-            this.label4.TabIndex = 10;
-            this.label4.Text = " Donor";
+            this.ViewDonors_Page.AutoSize = true;
+            this.ViewDonors_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewDonors_Page.ForeColor = System.Drawing.Color.White;
+            this.ViewDonors_Page.Location = new System.Drawing.Point(374, 26);
+            this.ViewDonors_Page.Name = "ViewDonors_Page";
+            this.ViewDonors_Page.Size = new System.Drawing.Size(161, 29);
+            this.ViewDonors_Page.TabIndex = 3;
+            this.ViewDonors_Page.Text = "View Donors";
+            this.ViewDonors_Page.Click += new System.EventHandler(this.ViewDonors_Page_Click);
             // 
             // guna2PictureBox1
             // 
@@ -489,13 +489,13 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label ptlabel;
-        private System.Windows.Forms.Label patient;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Exit;
+        private System.Windows.Forms.Label DashBoard_Page;
+        private System.Windows.Forms.Label BloodTransfer_Page;
+        private System.Windows.Forms.Label ViewPatients_Page;
+        private System.Windows.Forms.Label Patients_page;
+        private System.Windows.Forms.Label ViewDonors_Page;
+        private System.Windows.Forms.Label Donor_Page;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
     }

@@ -67,6 +67,11 @@ namespace BloodBank
         }
 
 
+        private void DashBoard_Page_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Donor_Page_Click(object sender, EventArgs e)
         {
             donor_page DPage = new donor_page();
@@ -107,5 +112,6 @@ namespace BloodBank
             this.Close();
         }
 
+        
     }
 }

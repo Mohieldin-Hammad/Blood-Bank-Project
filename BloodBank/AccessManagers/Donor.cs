@@ -52,26 +52,42 @@ namespace BloodBank.AccessManagers
 
 
 
-        public void EditDonor(int ID, string name, string gender, string blood, string BD, string phone, string city)
+        public string EditDonor(int ID, string name, string gender, string blood, string BD, string phone, string city)
         {
             Manager manager = new Manager();
             string result = manager.Edit("sp_EditDRowOfId", ID, name, gender, blood, BD, phone, city);
 
-            if (result == "Failed") MessageBox.Show("Missing Information");
-            else if (result == "Succeed") MessageBox.Show("Donor is Successfully Updated");
-            else MessageBox.Show(result);
+            if (result == "Failed")
+            {
+                return "MissInformation";
+            }
+            else if (result == "Succeed")
+            {
+                return "Done";
+            }
+            else
+            {
+                return result;
+            }
         }
 
 
-        public void RemoveDonor(int ID, string name, string gender, string blood, string BD, string phone, string city)
+        public string RemoveDonor(int ID, string name, string gender, string blood, string age, string phone, string city)
         {
             Manager manager = new Manager();
-            string result = manager.Delete("sp_DeleteDonorRow", ID, name, gender, blood, BD, phone, city);
+            List<string> checkAge = ValuesOfDonorRow(ID, "P_Age", "PBirthDate");
 
-            if (result == "FailedAll") MessageBox.Show("Select the Donor to Delete");
-            else if (result == "Failed") MessageBox.Show("Missing Information");
-            else if (result == "Succeed") MessageBox.Show("Donor Successfully Deleted");
-            else MessageBox.Show(result);
+            if (checkAge[0] == age)
+            {
+                string result = manager.Delete("sp_DeleteDonorRow", ID, name, gender, blood, checkAge[1], phone, city);
+
+                if
+                    (result == "Succeed") return "Done";
+                else
+                    return result;
+            }
+
+            return "Failed";
         }
 
     }

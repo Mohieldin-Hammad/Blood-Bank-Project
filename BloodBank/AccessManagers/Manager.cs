@@ -65,7 +65,7 @@ namespace BloodBank.AccessManagers
 
             //*************************
 
-            string[] all_items = new string[6] { "PName", "PBlood", "PGender", "PBirthDate", "PPhone", "PCity" };
+            string[] all_items = new string[7] { "PName", "PBlood", "PGender", "PBirthDate", "PPhone", "PCity", "P_Age"};
 
             foreach (string item in cols)
             {
@@ -129,6 +129,8 @@ namespace BloodBank.AccessManagers
                 }
             }
         }
+
+
 
         public string Delete(string procedure, int ID, string name, string gender, string blood, string BD, string phone, string city)
         {

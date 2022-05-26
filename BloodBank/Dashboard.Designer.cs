@@ -127,6 +127,7 @@
             this.DashBoard_Page.Size = new System.Drawing.Size(142, 29);
             this.DashBoard_Page.TabIndex = 8;
             this.DashBoard_Page.Text = "DashBoard";
+            this.DashBoard_Page.Click += new System.EventHandler(this.DashBoard_Page_Click);
             // 
             // BloodTransfer_Page
             // 

@@ -37,10 +37,10 @@ namespace BloodBank.AccessManagers
                 MessageBox.Show("Patient Successfully Seved");
                 return "Done";
             }
-            else  
-                MessageBox.Show(result);
-            
-            return null;
+            else
+            {
+                return result;
+            }
         }
 
 
@@ -63,29 +63,53 @@ namespace BloodBank.AccessManagers
 
 
 
-        public void EditPatient(int ID, string name, string gender, string blood, string BD, string phone, string city)
+        public string EditPatient(int ID, string name, string gender, string blood, string BD, string phone, string city)
         {
             Manager manager = new Manager();
             string result = manager.Edit("sp_EditPRowOfId", ID, name, gender, blood, BD, phone, city);
 
-            if (result == "Failed") 
-                MessageBox.Show("Missing Information");
-            else if (result == "Succeed") 
-                MessageBox.Show("Patient is Successfully Updated");
+            if (result == "Failed")
+            {
+                return "MissInformation";
+            }
+            else if (result == "Succeed")
+            {
+                return "Done";
+            }
             else 
-                MessageBox.Show(result);
+            {
+                return result;
+            }
         }
 
         
-        public void RemovePatient(int ID, string name, string gender, string blood, string BD, string phone, string city)
+        public string RemovePatient(int ID, string name, string gender, string blood, string age, string phone, string city)
         {
             Manager manager = new Manager();
-            string result = manager.Delete("sp_DeletePatientRow", ID, name, gender, blood, BD, phone, city);
+            List<string> checkAge = ValuesOfPatientRow(ID, "P_Age", "PBirthDate");
+            
+            if (checkAge[0] == age) { 
 
-            if (result == "FailedAll") MessageBox.Show("Select the Patient to Delete");
-            else if (result == "Failed") MessageBox.Show("Missing Information");
-            else if (result == "Succeed") MessageBox.Show("Patient Successfully Deleted");
-            else MessageBox.Show(result);
+
+                // For Debuging
+                //-------------------------------
+                //MessageBox.Show(ID.ToString());
+                //MessageBox.Show(name);
+                //MessageBox.Show(gender);
+                //MessageBox.Show(blood);
+                //MessageBox.Show(phone);
+                //MessageBox.Show(city);
+                //-------------------------------
+                string result = manager.Delete("sp_DeletePatientRow", ID, name, gender, blood, checkAge[1], phone, city);
+
+                if
+                    (result == "Succeed") return "Done";
+                else
+                    return result;
+            }
+            
+            return "Failed";
+            
         }
     }
 }

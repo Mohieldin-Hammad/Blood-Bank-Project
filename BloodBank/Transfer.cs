@@ -31,39 +31,36 @@ namespace BloodBank
             e.Graphics.DrawString("Donor", myfont, mybrush, 0, 0);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ViewDonors_Page_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            view_donor D2 = new view_donor();
-            D2.Show();
+            view_donor VDPage = new view_donor();
+            VDPage.Show();
             this.Hide();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void Patients_page_Click(object sender, EventArgs e)
         {
-            Transfer T1 = new Transfer();
-            T1.Show();
+            Patient_Page PPage = new Patient_Page();
+            PPage.Show();
             this.Hide();
         }
 
-        private void patient_Click(object sender, EventArgs e)
+        private void ViewPatients_Page_Click(object sender, EventArgs e)
         {
-            Patient_Page P1 = new Patient_Page();
-            P1.Show();
+            view_patient VPPage = new view_patient();
+            VPPage.Show();
             this.Hide();
         }
 
-        private void label33_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void Donor_Page_Click(object sender, EventArgs e)
+        {
+            donor_page DPage = new donor_page();
+            DPage.Show();
             this.Hide();
         }
     }

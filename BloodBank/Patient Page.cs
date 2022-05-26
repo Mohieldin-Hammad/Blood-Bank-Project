@@ -36,7 +36,9 @@ namespace BloodBank
 
         private void PSaveInsert_Click(object sender, EventArgs e)
         {
-            AccessManagers.Patient PatientInsert = new AccessManagers.Patient(); PBirthDateInsert.Format = DateTimePickerFormat.Custom;
+            AccessManagers.Patient PatientInsert = new AccessManagers.Patient(); 
+            
+            PBirthDateInsert.Format = DateTimePickerFormat.Custom;
             PBirthDateInsert.CustomFormat = "yyyy-MM-dd";
 
             string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PBirthDateInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
@@ -57,9 +59,46 @@ namespace BloodBank
             PCityInsert.Text = "";
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void DashBoard_Page_Click(object sender, EventArgs e)
         {
-
+            Dashboard DashBoardPage = new Dashboard();
+            DashBoardPage.Show();
+            this.Hide();
         }
+
+        private void ViewDonors_Page_Click(object sender, EventArgs e)
+        {
+            view_donor VDPage = new view_donor();
+            VDPage.Show();
+            this.Hide();
+        }
+
+        private void Patients_page_Click(object sender, EventArgs e)
+        {
+            Patient_Page PPage = new Patient_Page();
+            PPage.Show();
+            this.Hide();
+        }
+
+        private void ViewPatients_Page_Click(object sender, EventArgs e)
+        {
+            view_patient VPPage = new view_patient();
+            VPPage.Show();
+            this.Hide();
+        }
+
+        private void BloodTransfer_Page_Click(object sender, EventArgs e)
+        {
+            Transfer TPage = new Transfer();
+            TPage.Show();
+            this.Hide();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
     }
 }
