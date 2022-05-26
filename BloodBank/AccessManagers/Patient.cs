@@ -129,5 +129,12 @@ namespace BloodBank.AccessManagers
             return manager.SelectAllPeopleID("P");
         }
 
+
+        public int patientIDOfName(string name)
+        {
+            Manager manager = new Manager();
+            return manager.selectIDOfName(name, "P");
+        }
+
     }
 }

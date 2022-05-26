@@ -64,7 +64,7 @@ namespace BloodBank.AccessManagers
             {
                 try
                 {
-                    string Query = $"exec sp_SelectAllPeopleId {type}";
+                    string Query = $"exec sp_SelectAllPeopleId '{type}'";
                     DataSet dataSet = GetDataSet(Query, conn);
                     return dataSet.Tables[0];
                 }
@@ -78,6 +78,26 @@ namespace BloodBank.AccessManagers
             }
         }
 
+
+        public int selectIDOfName(string name, string type)
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                try
+                {
+                    string Query = $"exec sp_SelectIDOfName '{name}', '{type}'";
+                    DataSet dataSet = GetDataSet(Query, conn);
+                    return int.Parse(dataSet.Tables[0].Rows[0]["P_ID"].ToString());
+                }
+                catch (Exception ex)
+                {
+                    conn.Close();
+                    MessageBox.Show(ex.ToString());
+                }
+                return -1;
+
+            }
+        }
 
 
         public List<string> getColumnsByID(char type, int id, params string[] cols)
@@ -218,6 +238,7 @@ namespace BloodBank.AccessManagers
                 string Query = $"exec sp_CheckPersonByID {id}, '{personType}'";
                 DataSet dataSet = GetDataSet(Query, conn);
                 return dataSet.Tables[0].Rows[0][0].ToString();
+
             }
         }
 
@@ -225,7 +246,7 @@ namespace BloodBank.AccessManagers
         {
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
-                string Query = $"exec sp_CheckPersonByName {name}, '{personType}'";
+                string Query = $"exec sp_CheckPersonByName '{name}', '{personType}'";
                 DataSet dataSet = GetDataSet(Query, conn);
                 return dataSet.Tables[0].Rows[0][0].ToString();
             }

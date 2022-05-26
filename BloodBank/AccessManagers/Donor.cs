@@ -110,5 +110,11 @@ namespace BloodBank.AccessManagers
             return result;
         }
 
+
+        public int DonorIDOfName(string name)
+        {
+            Manager manager = new Manager();
+            return manager.selectIDOfName(name, "D");
+        }
     }
 }

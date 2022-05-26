@@ -203,6 +203,7 @@
             this.PName.SelectedText = "";
             this.PName.Size = new System.Drawing.Size(201, 36);
             this.PName.TabIndex = 44;
+            this.PName.TextChanged += new System.EventHandler(this.PName_TextChanged);
             // 
             // guna2HtmlLabel1
             // 

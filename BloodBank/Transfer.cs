@@ -121,5 +121,23 @@ namespace BloodBank
                 }
             }
         }
+
+        private void PName_TextChanged(object sender, EventArgs e)
+        {
+            AccessManagers.Patient patient = new AccessManagers.Patient();
+            string name = PName.Text.ToString();
+            if (patient.CheckPatientByName(name) == "FOUND")
+            {
+                int id = patient.patientIDOfName(name);
+                cmbPatientID.Text = id.ToString();
+                PBlood.Text = patient.ValuesOfPatientRow(id, "PBlood")[0];
+            }
+            else
+            {
+
+                cmbPatientID.SelectedIndex = -1;
+                PBlood.Text = "";
+            }
+        }
     }
 }
