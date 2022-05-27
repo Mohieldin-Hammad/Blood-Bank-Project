@@ -18,46 +18,46 @@ namespace BloodBank.AccessManagers
             
             return manager.Select("sp_ShowBloodsTable");
         }
-    
-        
-        //public void Donate(int id)
-        //{
-        //    string msg;
-        //    Manager manager = new Manager();
-        //    if (manager.CheckPersonByID(id, "D") == "FOUND")
-        //    {
-        //        msg = manager.InsertDonation(id);
-
-        //        if (msg == "Failed_To_Increment_Blood")
-        //            MessageBox.Show("Error: Failed To Increment Blood");
-        //        else if (msg == "Succeed")
-        //            MessageBox.Show("The donation has successfully happened");
-        //        else
-        //            MessageBox.Show(msg);
-        //    }
-        //    else
-        //        MessageBox.Show("There is no donors found with this ID");
-        //}
 
 
-        //public void Transfer(int id)
-        //{
-        //    string msg;
-        //    Manager manager = new Manager();
-        //    if (manager.CheckPersonByID(id, "P") == "FOUND")
-        //    {
-        //        msg = manager.InsertInjection(id);
+        public string Donate(int id)
+        {
+            string msg;
+            Manager manager = new Manager();
+            if (manager.CheckPersonByID(id, "D") == "FOUND")
+            {
+                msg = manager.InsertDonation(id);
 
-        //        if (msg == "Failed_To_Decrement_Blood")
-        //            MessageBox.Show("Error: There Is No Bloods Found From This Type!");
-        //        else if (msg == "Succeed")
-        //            MessageBox.Show("The transfer has successfully happened");
-        //        else
-        //            MessageBox.Show(msg);
-        //    }
-        //    else
-        //        MessageBox.Show("There is no patients found with this ID");
-        //}
+                if (msg == "Failed_To_Increment_Blood")
+                    return "IncrementFailed";
+                else if (msg == "Succeed")
+                    return "Done";
+                else
+                    return msg;
+            }
+            else
+                return "There is no donors found with this ID";
+        }
+
+
+        public string Transfer(int id)
+        {
+            string msg;
+            Manager manager = new Manager();
+            if (manager.CheckPersonByID(id, "P") == "FOUND")
+            {
+                msg = manager.InsertInjection(id);
+
+                if (msg == "Failed_To_Decrement_Blood")
+                    return "DecrementFailed";
+                else if (msg == "Succeed")
+                    return "Done";
+                else
+                    return msg;
+            }
+            else
+                return "There is no patients found with this ID";
+        }
 
 
 

@@ -99,7 +99,6 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Donor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Paint += new System.Windows.Forms.PaintEventHandler(this.Donor);
             // 
             // label3
             // 
@@ -185,6 +184,7 @@
             this.transferButton.Size = new System.Drawing.Size(289, 45);
             this.transferButton.TabIndex = 65;
             this.transferButton.Text = "Transfer";
+            this.transferButton.Click += new System.EventHandler(this.transferButton_Click);
             // 
             // DName
             // 
@@ -339,6 +339,7 @@
             this.DashBoard_Page.Size = new System.Drawing.Size(142, 29);
             this.DashBoard_Page.TabIndex = 8;
             this.DashBoard_Page.Text = "DashBoard";
+            this.DashBoard_Page.Click += new System.EventHandler(this.DashBoard_Page_Click);
             // 
             // BloodTransfer_Page
             // 
