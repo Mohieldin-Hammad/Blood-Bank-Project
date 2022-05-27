@@ -16,7 +16,9 @@ constraint PTypeCheck check(PType in ('D', 'P')), --0 for patients and 1 for Don
 constraint PBloodCheck check(PBlood in ('A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'))
 )
 
-
+-- adding unique constraint to Name in people table as a combination with personType
+ALTER TABLE dbo.People
+  ADD CONSTRAINT uq_people UNIQUE(PName, PType);
 
 -- create Donoations History Table
 create table Donations(
@@ -58,14 +60,17 @@ insert into Bloods(BGroup) values('O-')
 
 
 create table Users(
-	P_ID int identity primary key,
-	UserName varchar(50) not null,
-	Password varchar(50) not null,
+	ID int identity ,
+	UserName varchar(50) not null unique,
+	Email varchar(320) not null unique,
+	Password BINARY(64) NOT NULL,
+	Gender varchar(50) not null,
+	BirthDate date not null
+	constraint UserPK primary key(ID),
+	constraint UserGenderCheck check(Gender in ('Male', 'Female'))
 )
 
 
 
 
--- adding unique constraint to Name in people table as a combination with personType
-ALTER TABLE dbo.People
-  ADD CONSTRAINT uq_people UNIQUE(PName, PType);
+
