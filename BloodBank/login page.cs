@@ -35,5 +35,39 @@ namespace BloodBank
             dash1.Show();
             this.Hide();
         }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            SignUp SPage = new SignUp();
+            SPage.Show();
+            this.Hide();
+        }
+
+        private void DSaveInsert_Click(object sender, EventArgs e)
+        {
+            Dashboard DPage = new Dashboard();
+            DPage.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewDonors_Page_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

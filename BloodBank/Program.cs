@@ -21,10 +21,11 @@ namespace BloodBank
             //Application.Run(new donor_page());
             //Application.Run(new Patient_Page());    
             //Application.Run(new loading_page());
-            //Application.Run(new Dashboard());
+            Application.Run(new Dashboard());
             //Application.Run(new view_patient());
             //Application.Run(new view_donor());
-            Application.Run(new Transfer());
+            // Application.Run(new Transfer());
+            //Application.Run(new SignUp());
         }
     }
 }
