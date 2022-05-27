@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodBank
 {
-    public partial class login_page : Form
+    public partial class Login : Form
     {
-        public login_page()
+        public Login()
         {
             InitializeComponent();
         }
@@ -22,12 +22,7 @@ namespace BloodBank
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            admin_login log2 = new admin_login();
-            log2.Show();
-            this.Hide();
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -39,15 +39,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.donorCount = new System.Windows.Forms.Label();
+            this.donorLabel = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.transferCount = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.patientCount = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -204,8 +204,8 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Tomato;
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Controls.Add(this.label8);
-            this.guna2Panel1.Controls.Add(this.label7);
+            this.guna2Panel1.Controls.Add(this.donorCount);
+            this.guna2Panel1.Controls.Add(this.donorLabel);
             this.guna2Panel1.Location = new System.Drawing.Point(126, 100);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(276, 129);
@@ -221,33 +221,33 @@
             this.guna2PictureBox1.TabIndex = 43;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label8
+            // donorCount
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(124, 78);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 33);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Donor";
+            this.donorCount.AutoSize = true;
+            this.donorCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donorCount.ForeColor = System.Drawing.Color.Black;
+            this.donorCount.Location = new System.Drawing.Point(156, 78);
+            this.donorCount.Name = "donorCount";
+            this.donorCount.Size = new System.Drawing.Size(32, 33);
+            this.donorCount.TabIndex = 10;
+            this.donorCount.Text = "0";
             // 
-            // label7
+            // donorLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(35, 26);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 33);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Donor";
+            this.donorLabel.AutoSize = true;
+            this.donorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donorLabel.ForeColor = System.Drawing.Color.Black;
+            this.donorLabel.Location = new System.Drawing.Point(35, 26);
+            this.donorLabel.Name = "donorLabel";
+            this.donorLabel.Size = new System.Drawing.Size(115, 33);
+            this.donorLabel.TabIndex = 9;
+            this.donorLabel.Text = "Donors";
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Salmon;
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
-            this.guna2Panel2.Controls.Add(this.label9);
+            this.guna2Panel2.Controls.Add(this.transferCount);
             this.guna2Panel2.Controls.Add(this.label10);
             this.guna2Panel2.Location = new System.Drawing.Point(441, 100);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -264,16 +264,16 @@
             this.guna2PictureBox2.TabIndex = 44;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // label9
+            // transferCount
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(88, 78);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(132, 33);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Transfer";
+            this.transferCount.AutoSize = true;
+            this.transferCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transferCount.ForeColor = System.Drawing.Color.Black;
+            this.transferCount.Location = new System.Drawing.Point(88, 78);
+            this.transferCount.Name = "transferCount";
+            this.transferCount.Size = new System.Drawing.Size(32, 33);
+            this.transferCount.TabIndex = 13;
+            this.transferCount.Text = "0";
             // 
             // label10
             // 
@@ -282,15 +282,15 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(35, 26);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(132, 33);
+            this.label10.Size = new System.Drawing.Size(148, 33);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Transfer";
+            this.label10.Text = "Transfers";
             // 
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.DarkSalmon;
             this.guna2Panel3.Controls.Add(this.guna2PictureBox3);
-            this.guna2Panel3.Controls.Add(this.label13);
+            this.guna2Panel3.Controls.Add(this.patientCount);
             this.guna2Panel3.Controls.Add(this.label11);
             this.guna2Panel3.Controls.Add(this.label12);
             this.guna2Panel3.Location = new System.Drawing.Point(766, 100);
@@ -308,17 +308,18 @@
             this.guna2PictureBox3.TabIndex = 44;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // label13
+            // patientCount
             // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label13.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Polite;
-            this.label13.Location = new System.Drawing.Point(72, 78);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(132, 33);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Patients";
+            this.patientCount.AutoSize = true;
+            this.patientCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientCount.ForeColor = System.Drawing.Color.Black;
+            this.patientCount.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.patientCount.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Polite;
+            this.patientCount.Location = new System.Drawing.Point(72, 78);
+            this.patientCount.Name = "patientCount";
+            this.patientCount.Size = new System.Drawing.Size(32, 33);
+            this.patientCount.TabIndex = 14;
+            this.patientCount.Text = "0";
             // 
             // label11
             // 
@@ -879,15 +880,15 @@
         private System.Windows.Forms.Label Donor_Page;
         private System.Windows.Forms.Label DashBoard_Page;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label donorLabel;
+        private System.Windows.Forms.Label donorCount;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label transferCount;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label patientCount;
         private System.Windows.Forms.Label label14;
         private CircularProgressBar.CircularProgressBar circularProgressBarAP;
         private CircularProgressBar.CircularProgressBar circularProgressBarAM;

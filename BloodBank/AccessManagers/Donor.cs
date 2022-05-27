@@ -116,5 +116,12 @@ namespace BloodBank.AccessManagers
             Manager manager = new Manager();
             return manager.selectIDOfName(name, "D");
         }
+
+
+        public int donorsCount()
+        {
+            DataTable dt = SelectAllDonorID();
+            return dt.Rows.Count;
+        }
     }
 }

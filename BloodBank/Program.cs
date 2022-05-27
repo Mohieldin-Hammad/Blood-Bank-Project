@@ -24,7 +24,8 @@ namespace BloodBank
             //Application.Run(new Dashboard());
             //Application.Run(new view_patient());
             //Application.Run(new view_donor());
-            Application.Run(new Transfer());
+            //Application.Run(new Transfer());
+            Application.Run(new Login());
         }
     }
 }
