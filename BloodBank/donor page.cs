@@ -47,14 +47,14 @@ namespace BloodBank
 
         }
 
-            private void ResetDonor()
-            {
-                DNameInsert.Text = "";
-                DBloodInsert.SelectedIndex = -1;
-                DGenderInsert.SelectedIndex = -1;
-                DPhoneInsert.Text = "";
-                DCityInsert.Text = "";
-            }
+        private void ResetDonor()
+        {
+            DNameInsert.Text = "";
+            DBloodInsert.SelectedIndex = -1;
+            DGenderInsert.SelectedIndex = -1;
+            DPhoneInsert.Text = "";
+            DCityInsert.Text = "";
+        }
 
         private void DashBoard_Page_Click(object sender, EventArgs e)
         {

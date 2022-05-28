@@ -16,11 +16,11 @@ namespace BloodBank
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loading_page());
+            //Application.Run(new loading_page());
             //Application.Run(new login_page());
             //Application.Run(new donor_page());
             //Application.Run(new Patient_Page());    
-            //Application.Run(new loading_page());
+            Application.Run(new Login());
             //Application.Run(new Dashboard());
             //Application.Run(new view_patient());
             //Application.Run(new view_donor());

@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.INEmaiInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.INPasswordInsert = new Guna.UI2.WinForms.Guna2TextBox();
-            this.DSaveInsert = new Guna.UI2.WinForms.Guna2Button();
+            this.INSignIN = new Guna.UI2.WinForms.Guna2Button();
             this.INSignUP = new Guna.UI2.WinForms.Guna2Button();
             this.ViewDonors_Page = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.INEmaiInsert.ForeColor = System.Drawing.Color.Red;
             this.INEmaiInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.INEmaiInsert.Location = new System.Drawing.Point(43, 197);
-            this.INEmaiInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.INEmaiInsert.Margin = new System.Windows.Forms.Padding(4);
             this.INEmaiInsert.Name = "INEmaiInsert";
             this.INEmaiInsert.PasswordChar = '\0';
             this.INEmaiInsert.PlaceholderText = "";
@@ -90,30 +90,30 @@
             this.INPasswordInsert.ForeColor = System.Drawing.Color.Red;
             this.INPasswordInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.INPasswordInsert.Location = new System.Drawing.Point(43, 281);
-            this.INPasswordInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.INPasswordInsert.Margin = new System.Windows.Forms.Padding(4);
             this.INPasswordInsert.Name = "INPasswordInsert";
-            this.INPasswordInsert.PasswordChar = '\0';
+            this.INPasswordInsert.PasswordChar = '*';
             this.INPasswordInsert.PlaceholderText = "";
             this.INPasswordInsert.SelectedText = "";
             this.INPasswordInsert.Size = new System.Drawing.Size(370, 34);
             this.INPasswordInsert.TabIndex = 67;
             // 
-            // DSaveInsert
+            // INSignIN
             // 
-            this.DSaveInsert.BorderRadius = 10;
-            this.DSaveInsert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.DSaveInsert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.DSaveInsert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DSaveInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.DSaveInsert.FillColor = System.Drawing.Color.Red;
-            this.DSaveInsert.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSaveInsert.ForeColor = System.Drawing.Color.White;
-            this.DSaveInsert.Location = new System.Drawing.Point(92, 375);
-            this.DSaveInsert.Name = "DSaveInsert";
-            this.DSaveInsert.Size = new System.Drawing.Size(135, 44);
-            this.DSaveInsert.TabIndex = 68;
-            this.DSaveInsert.Text = "Sign In";
-            this.DSaveInsert.Click += new System.EventHandler(this.DSaveInsert_Click);
+            this.INSignIN.BorderRadius = 10;
+            this.INSignIN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.INSignIN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.INSignIN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.INSignIN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.INSignIN.FillColor = System.Drawing.Color.Red;
+            this.INSignIN.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.INSignIN.ForeColor = System.Drawing.Color.White;
+            this.INSignIN.Location = new System.Drawing.Point(92, 375);
+            this.INSignIN.Name = "INSignIN";
+            this.INSignIN.Size = new System.Drawing.Size(135, 44);
+            this.INSignIN.TabIndex = 68;
+            this.INSignIN.Text = "Sign In";
+            this.INSignIN.Click += new System.EventHandler(this.DSaveInsert_Click);
             // 
             // INSignUP
             // 
@@ -130,7 +130,7 @@
             this.INSignUP.Size = new System.Drawing.Size(135, 44);
             this.INSignUP.TabIndex = 70;
             this.INSignUP.Text = "Sign Up";
-            this.INSignUP.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.INSignUP.Click += new System.EventHandler(this.INSignUP_Click);
             // 
             // ViewDonors_Page
             // 
@@ -187,7 +187,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ViewDonors_Page);
             this.Controls.Add(this.INSignUP);
-            this.Controls.Add(this.DSaveInsert);
+            this.Controls.Add(this.INSignIN);
             this.Controls.Add(this.INPasswordInsert);
             this.Controls.Add(this.INEmaiInsert);
             this.Controls.Add(this.guna2PictureBox1);
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox INEmaiInsert;
         private Guna.UI2.WinForms.Guna2TextBox INPasswordInsert;
-        private Guna.UI2.WinForms.Guna2Button DSaveInsert;
+        private Guna.UI2.WinForms.Guna2Button INSignIN;
         private Guna.UI2.WinForms.Guna2Button INSignUP;
         private System.Windows.Forms.Label ViewDonors_Page;
         private System.Windows.Forms.Label label2;

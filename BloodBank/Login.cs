@@ -20,28 +20,55 @@ namespace BloodBank
 
         
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+
+ 
+
+        private void DSaveInsert_Click(object sender, EventArgs e)
         {
-            Dashboard dash1 = new Dashboard();  
-            dash1.Show();
-            this.Hide();
+
+            AccessManagers.User user = new AccessManagers.User();
+            string email = INEmaiInsert.Text;
+            string pass = INPasswordInsert.Text;
+
+            
+            string checkLogin = user.Login(email, pass);
+            if (checkLogin == "Done")
+            {
+                ResetLoginPage();
+                Dashboard DPage = new Dashboard();
+                DPage.Show();
+                this.Hide();
+                
+            }
+            else if (checkLogin == "EmailIsNotExists")
+            {
+                MessageBox.Show("The email address you entered isn't connected to an account");
+            }
+            else if (checkLogin == "PasswordIsIncorrect")
+            {
+                MessageBox.Show("The password that you've entered is incorrect");
+            }
+            else
+            {
+                MessageBox.Show(checkLogin);
+            }
+
+            
         }
 
+        private void ResetLoginPage()
+        {
+            INEmaiInsert.Text = "";
+            INPasswordInsert.Text = "";
+        }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void INSignUP_Click(object sender, EventArgs e)
         {
             SignUp SPage = new SignUp();
             SPage.Show();
             this.Hide();
         }
-
-        private void DSaveInsert_Click(object sender, EventArgs e)
-        {
-            Dashboard DPage = new Dashboard();
-            DPage.Show();
-            this.Hide();
-        }
-
-
     }
 }

@@ -11,10 +11,16 @@ namespace BloodBank.AccessManagers
 {
     class User
     {
-        public string signUp(string email, string pass, string name, string gender, string BD)
+        public string SignUp(string email, string pass, string name, string gender, string BD)
         {
             UserManager user = new UserManager();
-            return user.userSignUp(email, pass, name, gender, BD);
+            string checkSignUp = user.userSignUp(email, pass, name, gender, BD);
+            if (checkSignUp != null && checkSignUp == "Succeed")
+                return "Done";
+            else if (checkSignUp != null && checkSignUp == "Failed")
+                return "MissInformation";
+            else
+                return checkSignUp;
         }
 
 

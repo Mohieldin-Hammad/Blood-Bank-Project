@@ -25,7 +25,7 @@ namespace BloodBank.AccessManagers
                     try
                     {
                         conn.Open();
-                        SqlCommand cmd = new SqlCommand($"exec sp_AddUser '{name}', '{email}', '{pass}', '{gender}', '{BD}'", conn);
+                        SqlCommand cmd = new SqlCommand($"exec sp_AddUsers '{name}', '{email}', '{pass}', '{gender}', '{BD}'", conn);
                         cmd.ExecuteNonQuery();
 
                         conn.Close();

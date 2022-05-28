@@ -37,23 +37,50 @@ namespace BloodBank
 
         }
 
-        private void UPSignIn_Click(object sender, EventArgs e)
-        {
-           Login lPage = new Login();
-            lPage.Show();
-            this.Hide();
-        }
 
         private void UPSignUP_Click(object sender, EventArgs e)
         {
-           Login lpage = new Login();
-            lpage.Show();
-            this.Hide();
+            AccessManagers.User user = new AccessManagers.User();
+
+            UPBirthDateInsert.Format = DateTimePickerFormat.Custom;
+            UPBirthDateInsert.CustomFormat = "yyyy-MM-dd";
+            if (CheckSignUpMissingInformation() == false && UPPassInsert.Text == UPConfirmInsert.Text) { 
+                //--------------
+                string email = UPEmailInsert.Text;
+                string pass = UPPassInsert.Text;
+                string name = UPFirstNameInsert.Text.Trim() + " " + UPLastNameInsert.Text.Trim();
+                string gender = UPGenderInsert.Text;
+                string bd = UPBirthDateInsert.Text.Trim();
+                //--------------
+
+                string checkSignUp = user.SignUp(email, pass, name, gender, bd);
+                if (checkSignUp == "Done")
+                {
+                    MessageBox.Show("New account has successfully created");
+                    Login lpage = new Login();
+                    lpage.Show();
+                    this.Hide();
+                }
+                else if (checkSignUp == "MissInformation")
+                { 
+                    MessageBox.Show("Some Information are missed");
+                    // here I will write method that is changing the colors of  text box
+                }
+                else
+                {
+                    MessageBox.Show(checkSignUp);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Passwords are not matching");
+            }
         }
 
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        private bool CheckSignUpMissingInformation()
         {
-
+            return UPEmailInsert.Text == "" || UPPassInsert.Text == "" || UPFirstNameInsert.Text.Trim() == "" || UPLastNameInsert.Text.Trim() == "" || UPGenderInsert.Text == "" || UPBirthDateInsert.Text.Trim() == "";
         }
+
     }
 }
