@@ -136,5 +136,12 @@ namespace BloodBank.AccessManagers
             return manager.selectIDOfName(name, "P");
         }
 
+
+        public int patientsCount()
+        {
+            DataTable dt = SelectAllPatientID();
+            return dt.Rows.Count;
+        }
+
     }
 }

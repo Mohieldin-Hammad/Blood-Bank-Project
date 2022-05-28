@@ -1,6 +1,6 @@
 ﻿namespace BloodBank
 {
-    partial class login_page
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -188,7 +188,7 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // login_page
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

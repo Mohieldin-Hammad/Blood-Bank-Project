@@ -39,14 +39,14 @@ namespace BloodBank
 
         private void UPSignIn_Click(object sender, EventArgs e)
         {
-           login_page lPage = new login_page();
+           Login lPage = new Login();
             lPage.Show();
             this.Hide();
         }
 
         private void UPSignUP_Click(object sender, EventArgs e)
         {
-           login_page lpage = new login_page();
+           Login lpage = new Login();
             lpage.Show();
             this.Hide();
         }

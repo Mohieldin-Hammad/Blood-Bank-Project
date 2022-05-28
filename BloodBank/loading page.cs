@@ -31,7 +31,7 @@ namespace BloodBank
             {
 
                 timer1.Enabled = false;
-                login_page log = new login_page();
+                Login log = new Login();
                 log.Show();
                 this.Hide();
 

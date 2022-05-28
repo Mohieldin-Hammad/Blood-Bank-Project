@@ -16,6 +16,7 @@ namespace BloodBank
         {
             InitializeComponent();
             setBloods();
+            calculateStatistics();
         }
 
 
@@ -65,6 +66,20 @@ namespace BloodBank
             //OM_Count.Text = blood.getCountOfBloods("O-");
            //-----------------
         }
+
+
+        
+        private void calculateStatistics()
+        {
+            AccessManagers.Patient patient = new AccessManagers.Patient();
+            patientCount.Text = patient.patientsCount().ToString();
+
+            AccessManagers.Donor donor = new AccessManagers.Donor();
+            donorCount.Text = donor.donorsCount().ToString();
+
+            // Transfers
+        }
+
 
 
         private void DashBoard_Page_Click(object sender, EventArgs e)
