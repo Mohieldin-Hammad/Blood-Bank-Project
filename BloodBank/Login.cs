@@ -17,10 +17,6 @@ namespace BloodBank
             InitializeComponent();
         }
 
-        private void pass_Click(object sender, EventArgs e)
-        {
-
-        }
 
         
 
@@ -31,15 +27,6 @@ namespace BloodBank
             this.Hide();
         }
 
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -55,14 +42,6 @@ namespace BloodBank
             this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void ViewDonors_Page_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

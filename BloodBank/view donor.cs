@@ -118,7 +118,7 @@ namespace BloodBank
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void Donor_Page_Click(object sender, EventArgs e)

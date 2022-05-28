@@ -11,26 +11,42 @@ namespace BloodBank.AccessManagers
 {
     class UserManager
     {
-        public bool InsertUser(string name, string pass)
+        public string userSignUp(string email, string pass, string name, string gender, string BD)
         {
+
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
             {
-                try
+                if (CheckMissingInformation(email, pass, name, gender, BD))
                 {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand($"exec sp_NewUser '{name}', '{pass}'", conn);
-                    cmd.ExecuteNonQuery();
+                    return "Failed";
+                }
+                else
+                {
+                    try
+                    {
+                        conn.Open();
+                        SqlCommand cmd = new SqlCommand($"exec sp_AddUser '{name}', '{email}', '{pass}', '{gender}', '{BD}'", conn);
+                        cmd.ExecuteNonQuery();
 
-                    conn.Close();
+                        conn.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return ex.Message;
+                    }
+                    return "Succeed";
                 }
-                catch //(Exception _)
-                {
-                    conn.Close();
-                    return false;
-                }
-                return true;
-                
             }
+        }
+
+
+
+
+
+        private bool CheckMissingInformation(string email, string pass, string userName, string gender, string BD)
+        {
+            return email == "" || pass == "" || userName == "" || gender == "" || BD == "";
         }
     }
 }

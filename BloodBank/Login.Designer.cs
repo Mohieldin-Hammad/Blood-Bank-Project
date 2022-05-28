@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(387, 46);
             this.label1.TabIndex = 62;
             this.label1.Text = "Blood Bank System";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // INEmaiInsert
             // 
@@ -147,7 +146,6 @@
             this.ViewDonors_Page.Size = new System.Drawing.Size(93, 32);
             this.ViewDonors_Page.TabIndex = 73;
             this.ViewDonors_Page.Text = "Name";
-            this.ViewDonors_Page.Click += new System.EventHandler(this.ViewDonors_Page_Click);
             // 
             // label2
             // 
@@ -186,7 +184,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.guna2PictureBox1.TabIndex = 63;
             this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // Login
             // 

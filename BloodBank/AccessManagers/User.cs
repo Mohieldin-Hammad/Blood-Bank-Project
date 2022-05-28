@@ -13,11 +13,6 @@ namespace BloodBank.AccessManagers
     {
         public void NewUser(string name, string pass)
         {
-            UserManager manager = new UserManager();
-            if (manager.InsertUser(name, pass))
-                MessageBox.Show("User has been add succesfully");
-            else
-                MessageBox.Show("The process is failed Please try again");
         }
 
     }
