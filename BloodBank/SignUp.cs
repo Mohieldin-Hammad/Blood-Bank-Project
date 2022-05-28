@@ -46,8 +46,8 @@ namespace BloodBank
 
         private void UPSignUP_Click(object sender, EventArgs e)
         {
-           SignUp Spage = new SignUp();
-            Spage.Show();
+           login_page lpage = new login_page();
+            lpage.Show();
             this.Hide();
         }
 
