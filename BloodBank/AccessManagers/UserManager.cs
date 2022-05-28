@@ -41,7 +41,40 @@ namespace BloodBank.AccessManagers
         }
 
 
+        public string checkEmail(string email) {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                string Query = $"exec sp_checkEmail '{email}'";
+                DataSet dataSet = GetDataSet(Query, conn);
+                // will return either Succeed or Failed
+                return dataSet.Tables[0].Rows[0][0].ToString();
+            } 
+        }
 
+
+        public string checkPassword(string email, string password) 
+        {
+            using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))
+            {
+                string Query = $"exec sp_checkPassword '{email}', '{password}'";
+                DataSet dataSet = GetDataSet(Query, conn);
+                // will return either Succeed or Failed or EmailNotExists
+                return dataSet.Tables[0].Rows[0][0].ToString();
+            }
+        }
+
+
+        private DataSet GetDataSet(string query, SqlConnection conn)
+        {
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(adapter);
+            DataSet dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            conn.Close();
+
+            return dataSet;
+        }
 
 
         private bool CheckMissingInformation(string email, string pass, string userName, string gender, string BD)
