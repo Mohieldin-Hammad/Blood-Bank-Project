@@ -44,36 +44,43 @@ namespace BloodBank
 
             UPBirthDateInsert.Format = DateTimePickerFormat.Custom;
             UPBirthDateInsert.CustomFormat = "yyyy-MM-dd";
-            if (CheckSignUpMissingInformation() == false && UPPassInsert.Text == UPConfirmInsert.Text) { 
-                //--------------
-                string email = UPEmailInsert.Text;
-                string pass = UPPassInsert.Text;
-                string name = UPFirstNameInsert.Text.Trim() + " " + UPLastNameInsert.Text.Trim();
-                string gender = UPGenderInsert.Text;
-                string bd = UPBirthDateInsert.Text.Trim();
-                //--------------
+            if (CheckSignUpMissingInformation() == false) { 
+                if (UPPassInsert.Text == UPConfirmInsert.Text) { 
+                    //--------------
+                    string email = UPEmailInsert.Text;
+                    string pass = UPPassInsert.Text;
+                    string name = UPFirstNameInsert.Text.Trim() + " " + UPLastNameInsert.Text.Trim();
+                    string gender = UPGenderInsert.Text;
+                    string bd = UPBirthDateInsert.Text.Trim();
+                    //--------------
 
-                string checkSignUp = user.SignUp(email, pass, name, gender, bd);
-                if (checkSignUp == "Done")
-                {
-                    MessageBox.Show("New account has successfully created");
-                    Login lpage = new Login();
-                    lpage.Show();
-                    this.Hide();
-                }
-                else if (checkSignUp == "MissInformation")
-                { 
-                    MessageBox.Show("Some Information are missed");
-                    // here I will write method that is changing the colors of  text box
+                    string checkSignUp = user.SignUp(email, pass, name, gender, bd);
+                    if (checkSignUp == "Done")
+                    {
+                        MessageBox.Show("New account has successfully created");
+                        Login lpage = new Login();
+                        lpage.Show();
+                        this.Hide();
+                    }
+                    else if (checkSignUp == "MissInformation")
+                    { 
+                        MessageBox.Show("Some Information are missed");
+                        // here I will write method that is changing the colors of  text box
+                    }
+                    else
+                    {
+                        MessageBox.Show(checkSignUp);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(checkSignUp);
+                    MessageBox.Show("Passwords are not matching!");
                 }
             }
             else
             {
-                MessageBox.Show("Passwords are not matching");
+                MessageBox.Show("Some Information are missed, please make sure that you've completed all the Requirements");
+                // here I will write method that is changing the colors of  text box
             }
         }
 
