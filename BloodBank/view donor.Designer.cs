@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -70,10 +70,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(623, 746);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(467, 606);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 39);
+            this.label6.Size = new System.Drawing.Size(0, 31);
             this.label6.TabIndex = 4;
             // 
             // label7
@@ -81,27 +80,24 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(683, 207);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(512, 168);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(182, 39);
+            this.label7.Size = new System.Drawing.Size(148, 31);
             this.label7.TabIndex = 5;
             this.label7.Text = "Donor List";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(105, 362);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Location = new System.Drawing.Point(79, 294);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(0, 22);
+            this.textBox4.Size = new System.Drawing.Size(1, 20);
             this.textBox4.TabIndex = 30;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(460, 362);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox5.Location = new System.Drawing.Point(345, 294);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(0, 22);
+            this.textBox5.Size = new System.Drawing.Size(1, 20);
             this.textBox5.TabIndex = 33;
             // 
             // VDBlood
@@ -125,10 +121,9 @@
             "AB-",
             "O+",
             "O-"});
-            this.VDBlood.Location = new System.Drawing.Point(458, 151);
-            this.VDBlood.Margin = new System.Windows.Forms.Padding(4);
+            this.VDBlood.Location = new System.Drawing.Point(344, 123);
             this.VDBlood.Name = "VDBlood";
-            this.VDBlood.Size = new System.Drawing.Size(210, 36);
+            this.VDBlood.Size = new System.Drawing.Size(158, 36);
             this.VDBlood.TabIndex = 67;
             // 
             // guna2HtmlLabel5
@@ -137,10 +132,9 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(458, 117);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(344, 95);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(185, 33);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(139, 27);
             this.guna2HtmlLabel5.TabIndex = 66;
             this.guna2HtmlLabel5.Text = "Blood Type";
             // 
@@ -150,19 +144,17 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(250, 119);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(188, 97);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(134, 33);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(100, 27);
             this.guna2HtmlLabel3.TabIndex = 64;
             this.guna2HtmlLabel3.Text = "Gender";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(601, 187);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Location = new System.Drawing.Point(451, 152);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(0, 22);
+            this.textBox3.Size = new System.Drawing.Size(1, 20);
             this.textBox3.TabIndex = 63;
             // 
             // guna2HtmlLabel1
@@ -171,10 +163,9 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(43, 118);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(32, 96);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(159, 33);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(119, 27);
             this.guna2HtmlLabel1.TabIndex = 61;
             this.guna2HtmlLabel1.Text = "Name";
             // 
@@ -191,13 +182,12 @@
             this.VDName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VDName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VDName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDName.Location = new System.Drawing.Point(43, 151);
-            this.VDName.Margin = new System.Windows.Forms.Padding(4);
+            this.VDName.Location = new System.Drawing.Point(32, 123);
             this.VDName.Name = "VDName";
             this.VDName.PasswordChar = '\0';
             this.VDName.PlaceholderText = "";
             this.VDName.SelectedText = "";
-            this.VDName.Size = new System.Drawing.Size(198, 36);
+            this.VDName.Size = new System.Drawing.Size(148, 29);
             this.VDName.TabIndex = 60;
             // 
             // VDEmail
@@ -213,13 +203,12 @@
             this.VDEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VDEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VDEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDEmail.Location = new System.Drawing.Point(676, 151);
-            this.VDEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.VDEmail.Location = new System.Drawing.Point(507, 123);
             this.VDEmail.Name = "VDEmail";
             this.VDEmail.PasswordChar = '\0';
             this.VDEmail.PlaceholderText = "";
             this.VDEmail.SelectedText = "";
-            this.VDEmail.Size = new System.Drawing.Size(266, 36);
+            this.VDEmail.Size = new System.Drawing.Size(200, 29);
             this.VDEmail.TabIndex = 74;
             // 
             // DEmail
@@ -228,10 +217,9 @@
             this.DEmail.BackColor = System.Drawing.Color.Transparent;
             this.DEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DEmail.ForeColor = System.Drawing.Color.Firebrick;
-            this.DEmail.Location = new System.Drawing.Point(675, 119);
-            this.DEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.DEmail.Location = new System.Drawing.Point(506, 97);
             this.DEmail.Name = "DEmail";
-            this.DEmail.Size = new System.Drawing.Size(120, 33);
+            this.DEmail.Size = new System.Drawing.Size(90, 27);
             this.DEmail.TabIndex = 73;
             this.DEmail.Text = "E-mail";
             // 
@@ -245,21 +233,20 @@
             this.panel1.Controls.Add(this.Patients_page);
             this.panel1.Controls.Add(this.ViewDonors_Page);
             this.panel1.Controls.Add(this.Donor_Page);
-            this.panel1.Location = new System.Drawing.Point(-3, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1539, 101);
+            this.panel1.Size = new System.Drawing.Size(1154, 82);
             this.panel1.TabIndex = 75;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Exit
             // 
             this.Exit.AutoSize = true;
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit.ForeColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(1479, 11);
-            this.Exit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Exit.Location = new System.Drawing.Point(1109, 9);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(37, 36);
+            this.Exit.Size = new System.Drawing.Size(31, 29);
             this.Exit.TabIndex = 9;
             this.Exit.Text = "X";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
@@ -270,10 +257,9 @@
             this.DashBoard_Page.BackColor = System.Drawing.Color.Transparent;
             this.DashBoard_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoard_Page.ForeColor = System.Drawing.Color.White;
-            this.DashBoard_Page.Location = new System.Drawing.Point(40, 34);
-            this.DashBoard_Page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DashBoard_Page.Location = new System.Drawing.Point(30, 28);
             this.DashBoard_Page.Name = "DashBoard_Page";
-            this.DashBoard_Page.Size = new System.Drawing.Size(173, 36);
+            this.DashBoard_Page.Size = new System.Drawing.Size(142, 29);
             this.DashBoard_Page.TabIndex = 8;
             this.DashBoard_Page.Text = "DashBoard";
             this.DashBoard_Page.Click += new System.EventHandler(this.DashBoard_Page_Click);
@@ -283,10 +269,9 @@
             this.BloodTransfer_Page.AutoSize = true;
             this.BloodTransfer_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodTransfer_Page.ForeColor = System.Drawing.Color.White;
-            this.BloodTransfer_Page.Location = new System.Drawing.Point(1199, 32);
-            this.BloodTransfer_Page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BloodTransfer_Page.Location = new System.Drawing.Point(899, 26);
             this.BloodTransfer_Page.Name = "BloodTransfer_Page";
-            this.BloodTransfer_Page.Size = new System.Drawing.Size(225, 36);
+            this.BloodTransfer_Page.Size = new System.Drawing.Size(187, 29);
             this.BloodTransfer_Page.TabIndex = 7;
             this.BloodTransfer_Page.Text = "Blood Transfer";
             this.BloodTransfer_Page.Click += new System.EventHandler(this.BloodTransfer_Page_Click);
@@ -296,10 +281,9 @@
             this.ViewPatients_Page.AutoSize = true;
             this.ViewPatients_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewPatients_Page.ForeColor = System.Drawing.Color.White;
-            this.ViewPatients_Page.Location = new System.Drawing.Point(943, 32);
-            this.ViewPatients_Page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ViewPatients_Page.Location = new System.Drawing.Point(707, 26);
             this.ViewPatients_Page.Name = "ViewPatients_Page";
-            this.ViewPatients_Page.Size = new System.Drawing.Size(209, 36);
+            this.ViewPatients_Page.Size = new System.Drawing.Size(171, 29);
             this.ViewPatients_Page.TabIndex = 5;
             this.ViewPatients_Page.Text = "View Patients";
             this.ViewPatients_Page.Click += new System.EventHandler(this.ViewPatients_Page_Click);
@@ -309,10 +293,9 @@
             this.Patients_page.AutoSize = true;
             this.Patients_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Patients_page.ForeColor = System.Drawing.Color.White;
-            this.Patients_page.Location = new System.Drawing.Point(760, 34);
-            this.Patients_page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Patients_page.Location = new System.Drawing.Point(570, 28);
             this.Patients_page.Name = "Patients_page";
-            this.Patients_page.Size = new System.Drawing.Size(130, 36);
+            this.Patients_page.Size = new System.Drawing.Size(107, 29);
             this.Patients_page.TabIndex = 4;
             this.Patients_page.Text = "Patients";
             this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
@@ -320,13 +303,12 @@
             // ViewDonors_Page
             // 
             this.ViewDonors_Page.AutoSize = true;
-            this.ViewDonors_Page.BackColor = System.Drawing.Color.Firebrick;
+            this.ViewDonors_Page.BackColor = System.Drawing.Color.DarkRed;
             this.ViewDonors_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewDonors_Page.ForeColor = System.Drawing.Color.White;
-            this.ViewDonors_Page.Location = new System.Drawing.Point(499, 32);
-            this.ViewDonors_Page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ViewDonors_Page.Location = new System.Drawing.Point(374, 26);
             this.ViewDonors_Page.Name = "ViewDonors_Page";
-            this.ViewDonors_Page.Size = new System.Drawing.Size(197, 36);
+            this.ViewDonors_Page.Size = new System.Drawing.Size(161, 29);
             this.ViewDonors_Page.TabIndex = 3;
             this.ViewDonors_Page.Text = "View Donors";
             this.ViewDonors_Page.Click += new System.EventHandler(this.ViewDonors_Page_Click);
@@ -336,10 +318,9 @@
             this.Donor_Page.AutoSize = true;
             this.Donor_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Donor_Page.ForeColor = System.Drawing.Color.White;
-            this.Donor_Page.Location = new System.Drawing.Point(307, 32);
-            this.Donor_Page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Donor_Page.Location = new System.Drawing.Point(230, 26);
             this.Donor_Page.Name = "Donor_Page";
-            this.Donor_Page.Size = new System.Drawing.Size(102, 36);
+            this.Donor_Page.Size = new System.Drawing.Size(84, 29);
             this.Donor_Page.TabIndex = 2;
             this.Donor_Page.Text = "Donor";
             this.Donor_Page.Click += new System.EventHandler(this.Donor_Page_Click);
@@ -353,10 +334,9 @@
             this.EditButton.FillColor = System.Drawing.Color.Red;
             this.EditButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditButton.ForeColor = System.Drawing.Color.White;
-            this.EditButton.Location = new System.Drawing.Point(1381, 119);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(4);
+            this.EditButton.Location = new System.Drawing.Point(1036, 97);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(132, 44);
+            this.EditButton.Size = new System.Drawing.Size(99, 36);
             this.EditButton.TabIndex = 78;
             this.EditButton.Text = "Edit";
             this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
@@ -370,10 +350,9 @@
             this.DelButton.FillColor = System.Drawing.Color.Red;
             this.DelButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DelButton.ForeColor = System.Drawing.Color.White;
-            this.DelButton.Location = new System.Drawing.Point(1381, 171);
-            this.DelButton.Margin = new System.Windows.Forms.Padding(4);
+            this.DelButton.Location = new System.Drawing.Point(1036, 139);
             this.DelButton.Name = "DelButton";
-            this.DelButton.Size = new System.Drawing.Size(132, 44);
+            this.DelButton.Size = new System.Drawing.Size(99, 36);
             this.DelButton.TabIndex = 79;
             this.DelButton.Text = "del";
             this.DelButton.Click += new System.EventHandler(this.DelButton_Click);
@@ -388,12 +367,11 @@
             this.VDBD.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.VDBD.ForeColor = System.Drawing.Color.White;
             this.VDBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.VDBD.Location = new System.Drawing.Point(1158, 151);
-            this.VDBD.Margin = new System.Windows.Forms.Padding(4);
+            this.VDBD.Location = new System.Drawing.Point(868, 123);
             this.VDBD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.VDBD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.VDBD.Name = "VDBD";
-            this.VDBD.Size = new System.Drawing.Size(179, 36);
+            this.VDBD.Size = new System.Drawing.Size(134, 29);
             this.VDBD.TabIndex = 80;
             this.VDBD.Value = new System.DateTime(2022, 5, 25, 23, 30, 38, 0);
             // 
@@ -403,10 +381,9 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(1158, 118);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(868, 96);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(161, 33);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(121, 27);
             this.guna2HtmlLabel4.TabIndex = 81;
             this.guna2HtmlLabel4.Text = "BirthDate";
             // 
@@ -425,10 +402,9 @@
             this.VDGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.VDGender.Location = new System.Drawing.Point(250, 151);
-            this.VDGender.Margin = new System.Windows.Forms.Padding(4);
+            this.VDGender.Location = new System.Drawing.Point(188, 123);
             this.VDGender.Name = "VDGender";
-            this.VDGender.Size = new System.Drawing.Size(200, 36);
+            this.VDGender.Size = new System.Drawing.Size(151, 36);
             this.VDGender.TabIndex = 82;
             // 
             // DTshow
@@ -437,42 +413,41 @@
             this.DTshow.AllowUserToDeleteRows = false;
             this.DTshow.AllowUserToResizeColumns = false;
             this.DTshow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DTshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DTshow.BackgroundColor = System.Drawing.Color.White;
             this.DTshow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTshow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTshow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DTshow.ColumnHeadersHeight = 20;
             this.DTshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTshow.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTshow.DefaultCellStyle = dataGridViewCellStyle6;
             this.DTshow.EnableHeadersVisualStyles = false;
             this.DTshow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.DTshow.Location = new System.Drawing.Point(43, 260);
-            this.DTshow.Margin = new System.Windows.Forms.Padding(4);
+            this.DTshow.Location = new System.Drawing.Point(32, 211);
             this.DTshow.MultiSelect = false;
             this.DTshow.Name = "DTshow";
             this.DTshow.ReadOnly = true;
             this.DTshow.RowHeadersVisible = false;
             this.DTshow.RowHeadersWidth = 51;
             this.DTshow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTshow.Size = new System.Drawing.Size(1470, 525);
+            this.DTshow.Size = new System.Drawing.Size(1102, 427);
             this.DTshow.TabIndex = 83;
             this.DTshow.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DTshow.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -512,13 +487,13 @@
             this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.DCityInsert.ForeColor = System.Drawing.Color.Red;
             this.DCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DCityInsert.Location = new System.Drawing.Point(951, 152);
-            this.DCityInsert.Margin = new System.Windows.Forms.Padding(5);
+            this.DCityInsert.Location = new System.Drawing.Point(713, 124);
+            this.DCityInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DCityInsert.Name = "DCityInsert";
             this.DCityInsert.PasswordChar = '\0';
             this.DCityInsert.PlaceholderText = "";
             this.DCityInsert.SelectedText = "";
-            this.DCityInsert.Size = new System.Drawing.Size(198, 35);
+            this.DCityInsert.Size = new System.Drawing.Size(148, 28);
             this.DCityInsert.TabIndex = 85;
             // 
             // DCity
@@ -527,10 +502,9 @@
             this.DCity.BackColor = System.Drawing.Color.Transparent;
             this.DCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DCity.ForeColor = System.Drawing.Color.Firebrick;
-            this.DCity.Location = new System.Drawing.Point(951, 118);
-            this.DCity.Margin = new System.Windows.Forms.Padding(4);
+            this.DCity.Location = new System.Drawing.Point(713, 96);
             this.DCity.Name = "DCity";
-            this.DCity.Size = new System.Drawing.Size(90, 33);
+            this.DCity.Size = new System.Drawing.Size(68, 27);
             this.DCity.TabIndex = 84;
             this.DCity.Text = "City ";
             // 
@@ -538,19 +512,18 @@
             // 
             this.guna2PictureBox1.Image = global::BloodBank.Properties.Resources.icons8_blood_641;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(863, 203);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(657, 165);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(52, 49);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(39, 40);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 86;
             this.guna2PictureBox1.TabStop = false;
             // 
             // view_donor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1536, 807);
+            this.ClientSize = new System.Drawing.Size(1153, 640);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.DCityInsert);
             this.Controls.Add(this.DCity);
@@ -575,7 +548,6 @@
             this.Controls.Add(this.label6);
             this.ForeColor = System.Drawing.Color.DarkRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "view_donor";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
