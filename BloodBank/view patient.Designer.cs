@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -93,31 +93,31 @@
             this.PTshow.AllowUserToDeleteRows = false;
             this.PTshow.AllowUserToResizeColumns = false;
             this.PTshow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.PTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.PTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.PTshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PTshow.BackgroundColor = System.Drawing.Color.White;
             this.PTshow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PTshow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.PTshow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.PTshow.ColumnHeadersHeight = 20;
             this.PTshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PTshow.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PTshow.DefaultCellStyle = dataGridViewCellStyle12;
             this.PTshow.EnableHeadersVisualStyles = false;
             this.PTshow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PTshow.Location = new System.Drawing.Point(17, 210);
@@ -328,13 +328,13 @@
             this.VPGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VPGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VPGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPGender.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VPGender.ForeColor = System.Drawing.Color.Red;
+            this.VPGender.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VPGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPGender.ItemHeight = 30;
             this.VPGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.VPGender.Location = new System.Drawing.Point(184, 118);
+            this.VPGender.Location = new System.Drawing.Point(537, 118);
             this.VPGender.Name = "VPGender";
             this.VPGender.Size = new System.Drawing.Size(151, 36);
             this.VPGender.TabIndex = 93;
@@ -345,7 +345,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(867, 91);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(859, 91);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(107, 27);
             this.guna2HtmlLabel4.TabIndex = 92;
@@ -361,11 +361,11 @@
             this.VPBD.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.VPBD.ForeColor = System.Drawing.Color.White;
             this.VPBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.VPBD.Location = new System.Drawing.Point(867, 118);
+            this.VPBD.Location = new System.Drawing.Point(859, 118);
             this.VPBD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.VPBD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.VPBD.Name = "VPBD";
-            this.VPBD.Size = new System.Drawing.Size(134, 29);
+            this.VPBD.Size = new System.Drawing.Size(160, 29);
             this.VPBD.TabIndex = 91;
             this.VPBD.Value = new System.DateTime(2022, 5, 25, 23, 30, 38, 0);
             // 
@@ -380,9 +380,10 @@
             this.VPEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VPEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VPEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VPEmail.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VPEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPEmail.Location = new System.Drawing.Point(506, 118);
+            this.VPEmail.Location = new System.Drawing.Point(179, 118);
             this.VPEmail.Name = "VPEmail";
             this.VPEmail.PasswordChar = '\0';
             this.VPEmail.PlaceholderText = "";
@@ -396,7 +397,7 @@
             this.DEmail.BackColor = System.Drawing.Color.Transparent;
             this.DEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DEmail.ForeColor = System.Drawing.Color.Firebrick;
-            this.DEmail.Location = new System.Drawing.Point(506, 92);
+            this.DEmail.Location = new System.Drawing.Point(179, 92);
             this.DEmail.Name = "DEmail";
             this.DEmail.Size = new System.Drawing.Size(91, 27);
             this.DEmail.TabIndex = 89;
@@ -411,8 +412,8 @@
             this.VPBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VPBlood.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VPBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPBlood.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VPBlood.ForeColor = System.Drawing.Color.Red;
+            this.VPBlood.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VPBlood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPBlood.ItemHeight = 30;
             this.VPBlood.Items.AddRange(new object[] {
             "A+",
@@ -423,7 +424,7 @@
             "AB-",
             "O+",
             "O-"});
-            this.VPBlood.Location = new System.Drawing.Point(342, 118);
+            this.VPBlood.Location = new System.Drawing.Point(695, 118);
             this.VPBlood.Name = "VPBlood";
             this.VPBlood.Size = new System.Drawing.Size(158, 36);
             this.VPBlood.TabIndex = 88;
@@ -434,7 +435,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(342, 90);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(695, 90);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(135, 27);
             this.guna2HtmlLabel5.TabIndex = 87;
@@ -446,7 +447,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(184, 92);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(537, 92);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(96, 27);
             this.guna2HtmlLabel3.TabIndex = 86;
@@ -454,7 +455,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(307, 147);
+            this.textBox3.Location = new System.Drawing.Point(301, 219);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(1, 20);
             this.textBox3.TabIndex = 85;
@@ -482,7 +483,8 @@
             this.VPName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VPName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VPName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VPName.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VPName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VPName.Location = new System.Drawing.Point(25, 118);
             this.VPName.Name = "VPName";
@@ -503,16 +505,16 @@
             this.VPCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VPCity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VPCity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPCity.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.VPCity.ForeColor = System.Drawing.Color.Red;
+            this.VPCity.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VPCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPCity.Location = new System.Drawing.Point(712, 119);
+            this.VPCity.Location = new System.Drawing.Point(384, 118);
             this.VPCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.VPCity.Name = "VPCity";
             this.VPCity.PasswordChar = '\0';
             this.VPCity.PlaceholderText = "";
             this.VPCity.SelectedText = "";
-            this.VPCity.Size = new System.Drawing.Size(148, 28);
+            this.VPCity.Size = new System.Drawing.Size(148, 29);
             this.VPCity.TabIndex = 95;
             // 
             // DCity
@@ -521,7 +523,7 @@
             this.DCity.BackColor = System.Drawing.Color.Transparent;
             this.DCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DCity.ForeColor = System.Drawing.Color.Firebrick;
-            this.DCity.Location = new System.Drawing.Point(712, 91);
+            this.DCity.Location = new System.Drawing.Point(384, 90);
             this.DCity.Name = "DCity";
             this.DCity.Size = new System.Drawing.Size(68, 27);
             this.DCity.TabIndex = 94;

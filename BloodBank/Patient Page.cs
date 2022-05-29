@@ -111,7 +111,9 @@ namespace BloodBank
 
         private void Donor_Page_Click(object sender, EventArgs e)
         {
-
+            donor_page DPage = new donor_page();
+            DPage.Show();
+            this.Hide();
         }
 
         private void PPhone_text_Click(object sender, EventArgs e)

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -109,8 +109,8 @@
             this.VDBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VDBlood.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VDBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDBlood.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.VDBlood.ForeColor = System.Drawing.Color.Red;
+            this.VDBlood.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VDBlood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VDBlood.ItemHeight = 30;
             this.VDBlood.Items.AddRange(new object[] {
             "A+",
@@ -121,7 +121,7 @@
             "AB-",
             "O+",
             "O-"});
-            this.VDBlood.Location = new System.Drawing.Point(344, 123);
+            this.VDBlood.Location = new System.Drawing.Point(698, 122);
             this.VDBlood.Name = "VDBlood";
             this.VDBlood.Size = new System.Drawing.Size(158, 36);
             this.VDBlood.TabIndex = 67;
@@ -132,7 +132,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(344, 95);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(698, 94);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(139, 27);
             this.guna2HtmlLabel5.TabIndex = 66;
@@ -144,7 +144,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(188, 97);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(542, 96);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(100, 27);
             this.guna2HtmlLabel3.TabIndex = 64;
@@ -180,9 +180,11 @@
             this.VDName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VDName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VDName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VDName.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VDName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VDName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VDName.Location = new System.Drawing.Point(32, 123);
+            this.VDName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.VDName.Name = "VDName";
             this.VDName.PasswordChar = '\0';
             this.VDName.PlaceholderText = "";
@@ -201,14 +203,16 @@
             this.VDEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VDEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VDEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VDEmail.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VDEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VDEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDEmail.Location = new System.Drawing.Point(507, 123);
+            this.VDEmail.Location = new System.Drawing.Point(392, 123);
+            this.VDEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.VDEmail.Name = "VDEmail";
             this.VDEmail.PasswordChar = '\0';
             this.VDEmail.PlaceholderText = "";
             this.VDEmail.SelectedText = "";
-            this.VDEmail.Size = new System.Drawing.Size(200, 29);
+            this.VDEmail.Size = new System.Drawing.Size(144, 29);
             this.VDEmail.TabIndex = 74;
             // 
             // DEmail
@@ -217,7 +221,7 @@
             this.DEmail.BackColor = System.Drawing.Color.Transparent;
             this.DEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DEmail.ForeColor = System.Drawing.Color.Firebrick;
-            this.DEmail.Location = new System.Drawing.Point(506, 97);
+            this.DEmail.Location = new System.Drawing.Point(185, 97);
             this.DEmail.Name = "DEmail";
             this.DEmail.Size = new System.Drawing.Size(90, 27);
             this.DEmail.TabIndex = 73;
@@ -295,9 +299,9 @@
             this.Patients_page.ForeColor = System.Drawing.Color.White;
             this.Patients_page.Location = new System.Drawing.Point(570, 28);
             this.Patients_page.Name = "Patients_page";
-            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.Size = new System.Drawing.Size(94, 29);
             this.Patients_page.TabIndex = 4;
-            this.Patients_page.Text = "Patients";
+            this.Patients_page.Text = "Patient";
             this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
             // ViewDonors_Page
@@ -367,11 +371,11 @@
             this.VDBD.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.VDBD.ForeColor = System.Drawing.Color.White;
             this.VDBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.VDBD.Location = new System.Drawing.Point(868, 123);
+            this.VDBD.Location = new System.Drawing.Point(862, 124);
             this.VDBD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.VDBD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.VDBD.Name = "VDBD";
-            this.VDBD.Size = new System.Drawing.Size(134, 29);
+            this.VDBD.Size = new System.Drawing.Size(149, 29);
             this.VDBD.TabIndex = 80;
             this.VDBD.Value = new System.DateTime(2022, 5, 25, 23, 30, 38, 0);
             // 
@@ -381,7 +385,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(868, 96);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(862, 97);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(121, 27);
             this.guna2HtmlLabel4.TabIndex = 81;
@@ -396,13 +400,13 @@
             this.VDGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VDGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VDGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VDGender.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.VDGender.ForeColor = System.Drawing.Color.Red;
+            this.VDGender.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VDGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VDGender.ItemHeight = 30;
             this.VDGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.VDGender.Location = new System.Drawing.Point(188, 123);
+            this.VDGender.Location = new System.Drawing.Point(542, 122);
             this.VDGender.Name = "VDGender";
             this.VDGender.Size = new System.Drawing.Size(151, 36);
             this.VDGender.TabIndex = 82;
@@ -413,31 +417,31 @@
             this.DTshow.AllowUserToDeleteRows = false;
             this.DTshow.AllowUserToResizeColumns = false;
             this.DTshow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.DTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.DTshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DTshow.BackgroundColor = System.Drawing.Color.White;
             this.DTshow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTshow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DTshow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DTshow.ColumnHeadersHeight = 20;
             this.DTshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTshow.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTshow.DefaultCellStyle = dataGridViewCellStyle9;
             this.DTshow.EnableHeadersVisualStyles = false;
             this.DTshow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.DTshow.Location = new System.Drawing.Point(32, 211);
@@ -484,16 +488,16 @@
             this.DCityInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DCityInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DCityInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DCityInsert.ForeColor = System.Drawing.Color.Red;
+            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.DCityInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DCityInsert.Location = new System.Drawing.Point(713, 124);
-            this.DCityInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DCityInsert.Location = new System.Drawing.Point(187, 123);
+            this.DCityInsert.Margin = new System.Windows.Forms.Padding(4);
             this.DCityInsert.Name = "DCityInsert";
             this.DCityInsert.PasswordChar = '\0';
             this.DCityInsert.PlaceholderText = "";
             this.DCityInsert.SelectedText = "";
-            this.DCityInsert.Size = new System.Drawing.Size(148, 28);
+            this.DCityInsert.Size = new System.Drawing.Size(197, 29);
             this.DCityInsert.TabIndex = 85;
             // 
             // DCity
@@ -502,7 +506,7 @@
             this.DCity.BackColor = System.Drawing.Color.Transparent;
             this.DCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DCity.ForeColor = System.Drawing.Color.Firebrick;
-            this.DCity.Location = new System.Drawing.Point(713, 96);
+            this.DCity.Location = new System.Drawing.Point(391, 96);
             this.DCity.Name = "DCity";
             this.DCity.Size = new System.Drawing.Size(68, 27);
             this.DCity.TabIndex = 84;

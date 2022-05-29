@@ -144,9 +144,9 @@
             this.Patients_page.ForeColor = System.Drawing.Color.White;
             this.Patients_page.Location = new System.Drawing.Point(566, 26);
             this.Patients_page.Name = "Patients_page";
-            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.Size = new System.Drawing.Size(94, 29);
             this.Patients_page.TabIndex = 4;
-            this.Patients_page.Text = "Patients";
+            this.Patients_page.Text = "Patient";
             this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
             // ViewDonors_Page
@@ -192,13 +192,14 @@
             this.DNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DNameInsert.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DNameInsert.ForeColor = System.Drawing.Color.Red;
+            this.DNameInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DNameInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DNameInsert.Location = new System.Drawing.Point(135, 168);
             this.DNameInsert.Margin = new System.Windows.Forms.Padding(4);
             this.DNameInsert.Name = "DNameInsert";
             this.DNameInsert.PasswordChar = '\0';
+            this.DNameInsert.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DNameInsert.PlaceholderText = "";
             this.DNameInsert.SelectedText = "";
             this.DNameInsert.Size = new System.Drawing.Size(262, 34);
@@ -277,13 +278,14 @@
             this.DPhoneInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DPhoneInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DPhoneInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DPhoneInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.DPhoneInsert.ForeColor = System.Drawing.Color.Red;
+            this.DPhoneInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DPhoneInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DPhoneInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DPhoneInsert.Location = new System.Drawing.Point(135, 274);
-            this.DPhoneInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DPhoneInsert.Margin = new System.Windows.Forms.Padding(4);
             this.DPhoneInsert.Name = "DPhoneInsert";
             this.DPhoneInsert.PasswordChar = '\0';
+            this.DPhoneInsert.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DPhoneInsert.PlaceholderText = "";
             this.DPhoneInsert.SelectedText = "";
             this.DPhoneInsert.Size = new System.Drawing.Size(262, 36);
@@ -336,8 +338,8 @@
             this.DBloodInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DBloodInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DBloodInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DBloodInsert.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.DBloodInsert.ForeColor = System.Drawing.Color.Red;
+            this.DBloodInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBloodInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DBloodInsert.ItemHeight = 30;
             this.DBloodInsert.Items.AddRange(new object[] {
             "A+",
@@ -378,8 +380,8 @@
             this.DGenderInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.DGenderInsert.ForeColor = System.Drawing.Color.Red;
+            this.DGenderInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGenderInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DGenderInsert.ItemHeight = 30;
             this.DGenderInsert.Items.AddRange(new object[] {
             "Male",
@@ -400,13 +402,14 @@
             this.DCityInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DCityInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DCityInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DCityInsert.ForeColor = System.Drawing.Color.Red;
+            this.DCityInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCityInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DCityInsert.Location = new System.Drawing.Point(743, 168);
-            this.DCityInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DCityInsert.Margin = new System.Windows.Forms.Padding(4);
             this.DCityInsert.Name = "DCityInsert";
             this.DCityInsert.PasswordChar = '\0';
+            this.DCityInsert.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DCityInsert.PlaceholderText = "";
             this.DCityInsert.SelectedText = "";
             this.DCityInsert.Size = new System.Drawing.Size(219, 36);

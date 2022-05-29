@@ -70,5 +70,35 @@ namespace BloodBank
             SPage.Show();
             this.Hide();
         }
+
+        private void closedeye_Click(object sender, EventArgs e)
+        {
+            if (INPasswordInsert.PasswordChar == '\0')
+            {
+                closedeye.SendToBack();
+                eye.BringToFront();
+                INPasswordInsert.PasswordChar = '*';
+            }
+        }
+
+        private void eye_Click(object sender, EventArgs e)
+        {
+            if (INPasswordInsert.PasswordChar == '*')
+            {
+                eye.SendToBack();
+                closedeye.BringToFront();
+                INPasswordInsert.PasswordChar = '\0';
+            }
+        }
+
+        private void INPasswordInsert_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
