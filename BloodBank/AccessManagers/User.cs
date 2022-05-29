@@ -34,7 +34,7 @@ namespace BloodBank.AccessManagers
                 if (checkPass == "Succeed")
                 {   
                     Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
-                    string smtpCheck = sMTP.SendEmailTo("moheesabry@gmail.com");
+                    string smtpCheck = sMTP.SendEmailTo("moheesabry@gmail.com", "mohee", "Donation");
                     if(smtpCheck == "Succeed")
                     {
                         MessageBox.Show("Email is sent");
