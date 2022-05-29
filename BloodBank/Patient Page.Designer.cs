@@ -70,8 +70,8 @@
             this.PBloodInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PBloodInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PBloodInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PBloodInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.PBloodInsert.ForeColor = System.Drawing.Color.Red;
+            this.PBloodInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PBloodInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PBloodInsert.ItemHeight = 30;
             this.PBloodInsert.Items.AddRange(new object[] {
             "A+",
@@ -112,11 +112,11 @@
             this.PCityInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PCityInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PCityInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PCityInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.PCityInsert.ForeColor = System.Drawing.Color.Red;
+            this.PCityInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PCityInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PCityInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PCityInsert.Location = new System.Drawing.Point(730, 166);
-            this.PCityInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PCityInsert.Margin = new System.Windows.Forms.Padding(4);
             this.PCityInsert.Name = "PCityInsert";
             this.PCityInsert.PasswordChar = '\0';
             this.PCityInsert.PlaceholderText = "";
@@ -168,11 +168,11 @@
             this.PPhoneInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PPhoneInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PPhoneInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PPhoneInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.PPhoneInsert.ForeColor = System.Drawing.Color.Red;
+            this.PPhoneInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PPhoneInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PPhoneInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PPhoneInsert.Location = new System.Drawing.Point(139, 272);
-            this.PPhoneInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PPhoneInsert.Margin = new System.Windows.Forms.Padding(4);
             this.PPhoneInsert.Name = "PPhoneInsert";
             this.PPhoneInsert.PasswordChar = '\0';
             this.PPhoneInsert.PlaceholderText = "";
@@ -251,13 +251,14 @@
             this.PNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PNameInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.PNameInsert.ForeColor = System.Drawing.Color.Red;
+            this.PNameInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PNameInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PNameInsert.Location = new System.Drawing.Point(137, 167);
-            this.PNameInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PNameInsert.Margin = new System.Windows.Forms.Padding(4);
             this.PNameInsert.Name = "PNameInsert";
             this.PNameInsert.PasswordChar = '\0';
+            this.PNameInsert.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PNameInsert.PlaceholderText = "";
             this.PNameInsert.SelectedText = "";
             this.PNameInsert.Size = new System.Drawing.Size(257, 36);
@@ -296,8 +297,8 @@
             this.PGenderInsert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.PGenderInsert.ForeColor = System.Drawing.Color.Red;
+            this.PGenderInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PGenderInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PGenderInsert.ItemHeight = 30;
             this.PGenderInsert.Items.AddRange(new object[] {
             "Male",

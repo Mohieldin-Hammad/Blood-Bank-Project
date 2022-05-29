@@ -153,6 +153,16 @@ namespace BloodBank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_arrow_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-arrow-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_blood_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-blood-64", resourceCulture);
@@ -193,6 +203,26 @@ namespace BloodBank.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_641 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_drop_of_blood_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-drop-of-blood-50", resourceCulture);
@@ -206,6 +236,46 @@ namespace BloodBank.Properties {
         internal static System.Drawing.Bitmap icons8_eye_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eye-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye_502 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye-502", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_left_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-left-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -89,5 +89,61 @@ namespace BloodBank
             return UPEmailInsert.Text == "" || UPPassInsert.Text == "" || UPFirstNameInsert.Text.Trim() == "" || UPLastNameInsert.Text.Trim() == "" || UPGenderInsert.Text == "" || UPBirthDateInsert.Text.Trim() == "";
         }
 
+        private void eye_Click(object sender, EventArgs e)
+        {
+            if(UPPassInsert.PasswordChar == '*')
+            {
+                eye.SendToBack();
+                closedeye.BringToFront();
+                UPPassInsert.PasswordChar = '\0';
+            }
+        }
+
+        private void closedeye_Click(object sender, EventArgs e)
+        {
+            if (UPPassInsert.PasswordChar == '\0')
+            {
+                closedeye.SendToBack();
+                eye.BringToFront();
+                UPPassInsert.PasswordChar = '*';
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (UPConfirmInsert.PasswordChar == '*')
+            {
+                guna2Button1.SendToBack();
+                guna2Button2.BringToFront();
+                UPConfirmInsert.PasswordChar = '\0';
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (UPConfirmInsert.PasswordChar == '\0')
+            {
+                guna2Button2.SendToBack();
+                guna2Button1.BringToFront();
+                UPConfirmInsert.PasswordChar = '*';
+            }
+        }
+
+        private void UPPassInsert_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+            Login LPage = new Login();
+            LPage.Show();
+            this.Hide();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -47,12 +47,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.eye = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.closedeye = new Guna.UI2.WinForms.Guna2Button();
+            this.Exit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +63,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(92, 20);
+            this.label1.Location = new System.Drawing.Point(100, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(312, 37);
             this.label1.TabIndex = 2;
@@ -92,8 +95,8 @@
             this.UPFirstNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPFirstNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPFirstNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UPFirstNameInsert.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPFirstNameInsert.ForeColor = System.Drawing.Color.Red;
+            this.UPFirstNameInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.UPFirstNameInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPFirstNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UPFirstNameInsert.Location = new System.Drawing.Point(55, 180);
             this.UPFirstNameInsert.Margin = new System.Windows.Forms.Padding(4);
@@ -115,13 +118,14 @@
             this.UPLastNameInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPLastNameInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPLastNameInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UPLastNameInsert.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
-            this.UPLastNameInsert.ForeColor = System.Drawing.Color.Red;
+            this.UPLastNameInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPLastNameInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPLastNameInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UPLastNameInsert.Location = new System.Drawing.Point(250, 180);
             this.UPLastNameInsert.Margin = new System.Windows.Forms.Padding(4);
             this.UPLastNameInsert.Name = "UPLastNameInsert";
             this.UPLastNameInsert.PasswordChar = '\0';
+            this.UPLastNameInsert.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPLastNameInsert.PlaceholderText = "";
             this.UPLastNameInsert.SelectedText = "";
             this.UPLastNameInsert.Size = new System.Drawing.Size(176, 34);
@@ -138,8 +142,8 @@
             this.UPEmailInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPEmailInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPEmailInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UPEmailInsert.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPEmailInsert.ForeColor = System.Drawing.Color.Red;
+            this.UPEmailInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPEmailInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPEmailInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UPEmailInsert.Location = new System.Drawing.Point(55, 255);
             this.UPEmailInsert.Margin = new System.Windows.Forms.Padding(4);
@@ -162,10 +166,10 @@
             this.UPPassInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPPassInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPPassInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UPPassInsert.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPPassInsert.ForeColor = System.Drawing.Color.Red;
+            this.UPPassInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPPassInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPPassInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UPPassInsert.Location = new System.Drawing.Point(55, 330);
+            this.UPPassInsert.Location = new System.Drawing.Point(55, 331);
             this.UPPassInsert.Margin = new System.Windows.Forms.Padding(4);
             this.UPPassInsert.Name = "UPPassInsert";
             this.UPPassInsert.PasswordChar = '*';
@@ -173,6 +177,7 @@
             this.UPPassInsert.SelectedText = "";
             this.UPPassInsert.Size = new System.Drawing.Size(176, 34);
             this.UPPassInsert.TabIndex = 18;
+            this.UPPassInsert.TextChanged += new System.EventHandler(this.UPPassInsert_TextChanged);
             // 
             // UPBirthDateInsert
             // 
@@ -200,7 +205,7 @@
             this.UPGenderInsert.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UPGenderInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UPGenderInsert.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.UPGenderInsert.ForeColor = System.Drawing.Color.Red;
+            this.UPGenderInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPGenderInsert.ItemHeight = 30;
             this.UPGenderInsert.Items.AddRange(new object[] {
             "Male",
@@ -228,8 +233,8 @@
             this.UPConfirmInsert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPConfirmInsert.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UPConfirmInsert.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UPConfirmInsert.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPConfirmInsert.ForeColor = System.Drawing.Color.Red;
+            this.UPConfirmInsert.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPConfirmInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UPConfirmInsert.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UPConfirmInsert.Location = new System.Drawing.Point(250, 330);
             this.UPConfirmInsert.Margin = new System.Windows.Forms.Padding(4);
@@ -304,11 +309,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.Location = new System.Drawing.Point(245, 300);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 25);
+            this.label5.Size = new System.Drawing.Size(178, 24);
             this.label5.TabIndex = 78;
             this.label5.Text = "Confirm Password";
             // 
@@ -334,6 +339,69 @@
             this.label7.TabIndex = 80;
             this.label7.Text = "Birthdate";
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::BloodBank.Properties.Resources.icons8_back_arrow_64;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(24, 20);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(34, 37);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 85;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = global::BloodBank.Properties.Resources.icons8_eye_50;
+            this.guna2Button1.Location = new System.Drawing.Point(388, 335);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(32, 24);
+            this.guna2Button1.TabIndex = 83;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Image = global::BloodBank.Properties.Resources.icons8_eye_502;
+            this.guna2Button2.Location = new System.Drawing.Point(391, 335);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(32, 24);
+            this.guna2Button2.TabIndex = 84;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // eye
+            // 
+            this.eye.BorderColor = System.Drawing.Color.Transparent;
+            this.eye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.eye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.eye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.eye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.eye.FillColor = System.Drawing.Color.White;
+            this.eye.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.eye.ForeColor = System.Drawing.Color.White;
+            this.eye.Image = global::BloodBank.Properties.Resources.icons8_eye_50;
+            this.eye.Location = new System.Drawing.Point(190, 335);
+            this.eye.Name = "eye";
+            this.eye.Size = new System.Drawing.Size(32, 24);
+            this.eye.TabIndex = 81;
+            this.eye.Click += new System.EventHandler(this.eye_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::BloodBank.Properties.Resources.icons8_user_90;
@@ -345,39 +413,45 @@
             this.guna2PictureBox1.TabIndex = 61;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2PictureBox2
+            // closedeye
             // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::BloodBank.Properties.Resources.icons8_eye_24;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(206, 339);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.guna2PictureBox2.TabIndex = 81;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
+            this.closedeye.BorderColor = System.Drawing.Color.Transparent;
+            this.closedeye.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.closedeye.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.closedeye.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.closedeye.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.closedeye.FillColor = System.Drawing.Color.White;
+            this.closedeye.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.closedeye.ForeColor = System.Drawing.Color.White;
+            this.closedeye.Image = global::BloodBank.Properties.Resources.icons8_eye_502;
+            this.closedeye.Location = new System.Drawing.Point(190, 335);
+            this.closedeye.Name = "closedeye";
+            this.closedeye.Size = new System.Drawing.Size(32, 24);
+            this.closedeye.TabIndex = 82;
+            this.closedeye.Click += new System.EventHandler(this.closedeye_Click);
             // 
-            // guna2PictureBox3
+            // Exit
             // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = global::BloodBank.Properties.Resources.icons8_eye_24;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(402, 339);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.guna2PictureBox3.TabIndex = 82;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
+            this.Exit.AutoSize = true;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Exit.Location = new System.Drawing.Point(444, 20);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(31, 29);
+            this.Exit.TabIndex = 86;
+            this.Exit.Text = "X";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 565);
-            this.Controls.Add(this.guna2PictureBox3);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.eye);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -391,22 +465,22 @@
             this.Controls.Add(this.UPGenderInsert);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.UPBirthDateInsert);
-            this.Controls.Add(this.UPPassInsert);
             this.Controls.Add(this.UPEmailInsert);
             this.Controls.Add(this.UPLastNameInsert);
             this.Controls.Add(this.UPFirstNameInsert);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.closedeye);
+            this.Controls.Add(this.UPPassInsert);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -433,7 +507,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2Button eye;
+        private Guna.UI2.WinForms.Guna2Button closedeye;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private System.Windows.Forms.Label Exit;
     }
 }
