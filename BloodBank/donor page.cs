@@ -95,6 +95,11 @@ namespace BloodBank
         {
             Application.Exit();
         }
+
+        private void donor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

@@ -34,7 +34,7 @@ namespace BloodBank
         {
             VPName.Text = "";
             VPGender.SelectedIndex = -1;
-            VPPhone.Text = "";
+            //VPPhone.Text = "";
             VPCity.Text = "";
             VPBlood.SelectedIndex = -1;
         }
@@ -71,7 +71,7 @@ namespace BloodBank
             VPGender.Text = gender;
             VPBlood.Text = blood;
             VPBD.Text = bd;
-            VPPhone.Text = phone;
+            //VPPhone.Text = phone;
             VPCity.Text = city;
         }
 
@@ -146,7 +146,7 @@ namespace BloodBank
             
                 VPBD.Format = DateTimePickerFormat.Custom;
                 VPBD.CustomFormat = "yyyy-MM-dd";
-                string checkEdit = patient.EditPatient(id, VPName.Text, VPGender.Text, VPBlood.Text, VPBD.Text, VPPhone.Text, VPCity.Text);
+                string checkEdit = patient.EditPatient(id, VPName.Text, VPGender.Text, VPBlood.Text, VPBD.Text, VPEmail.Text, VPCity.Text);
             
                 if (checkEdit == "MissInformation")
                 {
@@ -200,6 +200,11 @@ namespace BloodBank
             donor_page DPage = new donor_page();
             DPage.Show();
             this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

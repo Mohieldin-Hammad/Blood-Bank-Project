@@ -101,7 +101,7 @@
             this.panel1.Controls.Add(this.Donor_Page);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 82);
+            this.panel1.Size = new System.Drawing.Size(1157, 82);
             this.panel1.TabIndex = 0;
             // 
             // Exit
@@ -160,9 +160,9 @@
             this.Patients_page.ForeColor = System.Drawing.Color.White;
             this.Patients_page.Location = new System.Drawing.Point(570, 28);
             this.Patients_page.Name = "Patients_page";
-            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.Size = new System.Drawing.Size(94, 29);
             this.Patients_page.TabIndex = 4;
-            this.Patients_page.Text = "Patients";
+            this.Patients_page.Text = "Patient";
             this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
             // ViewDonors_Page
@@ -194,11 +194,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(450, 616);
+            this.label1.Location = new System.Drawing.Point(469, 607);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Blood Bank System";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Panel1
             // 
@@ -798,17 +799,18 @@
             // 
             this.guna2PictureBox4.Image = global::BloodBank.Properties.Resources.icons8_blood_641;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(560, 527);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(562, 541);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(72, 70);
             this.guna2PictureBox4.TabIndex = 45;
             this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 656);
+            this.ClientSize = new System.Drawing.Size(1153, 640);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.OM_Count);
             this.Controls.Add(this.circularProgressBarOM);

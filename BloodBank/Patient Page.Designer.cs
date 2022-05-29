@@ -90,14 +90,16 @@
             // 
             // PCity_text
             // 
+            this.PCity_text.AutoSize = false;
             this.PCity_text.BackColor = System.Drawing.Color.Transparent;
             this.PCity_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PCity_text.ForeColor = System.Drawing.Color.Firebrick;
             this.PCity_text.Location = new System.Drawing.Point(730, 127);
             this.PCity_text.Name = "PCity_text";
-            this.PCity_text.Size = new System.Drawing.Size(55, 33);
+            this.PCity_text.Size = new System.Drawing.Size(83, 33);
             this.PCity_text.TabIndex = 37;
             this.PCity_text.Text = "City";
+            this.PCity_text.Click += new System.EventHandler(this.PCity_text_Click);
             // 
             // PCityInsert
             // 
@@ -124,32 +126,36 @@
             // 
             // PBlood_text
             // 
+            this.PBlood_text.AutoSize = false;
             this.PBlood_text.BackColor = System.Drawing.Color.Transparent;
             this.PBlood_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PBlood_text.ForeColor = System.Drawing.Color.Firebrick;
             this.PBlood_text.Location = new System.Drawing.Point(470, 233);
             this.PBlood_text.Name = "PBlood_text";
-            this.PBlood_text.Size = new System.Drawing.Size(150, 33);
+            this.PBlood_text.Size = new System.Drawing.Size(173, 33);
             this.PBlood_text.TabIndex = 34;
             this.PBlood_text.Text = "Blood Type";
+            this.PBlood_text.Click += new System.EventHandler(this.PBlood_text_Click);
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(423, 269);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(0, 20);
+            this.textBox5.Size = new System.Drawing.Size(1, 20);
             this.textBox5.TabIndex = 33;
             // 
             // PPhone_text
             // 
+            this.PPhone_text.AutoSize = false;
             this.PPhone_text.BackColor = System.Drawing.Color.Transparent;
             this.PPhone_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PPhone_text.ForeColor = System.Drawing.Color.Firebrick;
             this.PPhone_text.Location = new System.Drawing.Point(137, 230);
             this.PPhone_text.Name = "PPhone_text";
-            this.PPhone_text.Size = new System.Drawing.Size(86, 33);
+            this.PPhone_text.Size = new System.Drawing.Size(114, 33);
             this.PPhone_text.TabIndex = 32;
             this.PPhone_text.Text = "Phone ";
+            this.PPhone_text.Click += new System.EventHandler(this.PPhone_text_Click);
             // 
             // PPhoneInsert
             // 
@@ -178,55 +184,61 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(155, 194);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(0, 20);
+            this.textBox4.Size = new System.Drawing.Size(1, 20);
             this.textBox4.TabIndex = 30;
             // 
             // PGender_text
             // 
+            this.PGender_text.AutoSize = false;
             this.PGender_text.BackColor = System.Drawing.Color.Transparent;
             this.PGender_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PGender_text.ForeColor = System.Drawing.Color.Firebrick;
             this.PGender_text.Location = new System.Drawing.Point(470, 127);
             this.PGender_text.Name = "PGender_text";
-            this.PGender_text.Size = new System.Drawing.Size(99, 33);
+            this.PGender_text.Size = new System.Drawing.Size(125, 33);
             this.PGender_text.TabIndex = 29;
             this.PGender_text.Text = "Gender";
+            this.PGender_text.Click += new System.EventHandler(this.PGender_text_Click);
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(499, 166);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(0, 20);
+            this.textBox3.Size = new System.Drawing.Size(1, 20);
             this.textBox3.TabIndex = 27;
             // 
             // PBD_text
             // 
+            this.PBD_text.AutoSize = false;
             this.PBD_text.BackColor = System.Drawing.Color.Transparent;
             this.PBD_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PBD_text.ForeColor = System.Drawing.Color.Firebrick;
             this.PBD_text.Location = new System.Drawing.Point(732, 230);
             this.PBD_text.Name = "PBD_text";
-            this.PBD_text.Size = new System.Drawing.Size(126, 33);
+            this.PBD_text.Size = new System.Drawing.Size(149, 33);
             this.PBD_text.TabIndex = 26;
             this.PBD_text.Text = "BirthDate";
+            this.PBD_text.Click += new System.EventHandler(this.PBD_text_Click);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(423, 166);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(0, 20);
+            this.textBox2.Size = new System.Drawing.Size(1, 20);
             this.textBox2.TabIndex = 24;
             // 
             // PName_text
             // 
+            this.PName_text.AutoSize = false;
             this.PName_text.BackColor = System.Drawing.Color.Transparent;
             this.PName_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PName_text.ForeColor = System.Drawing.Color.Firebrick;
             this.PName_text.Location = new System.Drawing.Point(137, 127);
             this.PName_text.Name = "PName_text";
-            this.PName_text.Size = new System.Drawing.Size(79, 33);
+            this.PName_text.Size = new System.Drawing.Size(109, 33);
             this.PName_text.TabIndex = 23;
             this.PName_text.Text = "Name";
+            this.PName_text.Click += new System.EventHandler(this.PName_text_Click);
             // 
             // PNameInsert
             // 
@@ -256,7 +268,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(157, 166);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(0, 20);
+            this.textBox1.Size = new System.Drawing.Size(1, 20);
             this.textBox1.TabIndex = 21;
             // 
             // PSaveInsert
@@ -331,10 +343,11 @@
             this.panel1.Controls.Add(this.Patients_page);
             this.panel1.Controls.Add(this.ViewDonors_Page);
             this.panel1.Controls.Add(this.Donor_Page);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 82);
+            this.panel1.Size = new System.Drawing.Size(1156, 82);
             this.panel1.TabIndex = 55;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Exit
             // 
@@ -351,7 +364,7 @@
             // DashBoard_Page
             // 
             this.DashBoard_Page.AutoSize = true;
-            this.DashBoard_Page.BackColor = System.Drawing.Color.DarkRed;
+            this.DashBoard_Page.BackColor = System.Drawing.Color.Red;
             this.DashBoard_Page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoard_Page.ForeColor = System.Drawing.Color.White;
             this.DashBoard_Page.Location = new System.Drawing.Point(30, 28);
@@ -388,13 +401,14 @@
             // Patients_page
             // 
             this.Patients_page.AutoSize = true;
+            this.Patients_page.BackColor = System.Drawing.Color.DarkRed;
             this.Patients_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Patients_page.ForeColor = System.Drawing.Color.White;
             this.Patients_page.Location = new System.Drawing.Point(570, 28);
             this.Patients_page.Name = "Patients_page";
-            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.Size = new System.Drawing.Size(94, 29);
             this.Patients_page.TabIndex = 4;
-            this.Patients_page.Text = "Patients";
+            this.Patients_page.Text = "Patient";
             this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
             // ViewDonors_Page
@@ -419,12 +433,13 @@
             this.Donor_Page.Size = new System.Drawing.Size(84, 29);
             this.Donor_Page.TabIndex = 2;
             this.Donor_Page.Text = "Donor";
+            this.Donor_Page.Click += new System.EventHandler(this.Donor_Page_Click);
             // 
             // Patient_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 656);
+            this.ClientSize = new System.Drawing.Size(1153, 640);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.PBirthDateInsert);
@@ -448,6 +463,7 @@
             this.ForeColor = System.Drawing.Color.Brown;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient_Page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient_Page";
             this.Load += new System.EventHandler(this.Patient_Page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

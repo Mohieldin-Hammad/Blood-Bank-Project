@@ -34,8 +34,8 @@ namespace BloodBank
         {
             VDName.Text = "";
             VDGender.SelectedIndex = -1;
-            VDPhone.Text = "";
-            VDCity.Text = "";
+            //VDPhone.Text = "";
+            VDEmail.Text = "";
             VDBlood.SelectedIndex = -1;
         }
 
@@ -61,8 +61,8 @@ namespace BloodBank
             //VDGender.SelectedIndex = VDGender.FindStringExact(gender);
             VDBlood.Text = blood;
             VDBD.Text = bd;
-            VDPhone.Text = phone;
-            VDCity.Text = city;
+            //VDPhone.Text = phone;
+            VDEmail.Text = city;
         }
 
 
@@ -139,7 +139,7 @@ namespace BloodBank
 
                 VDBD.Format = DateTimePickerFormat.Custom;
                 VDBD.CustomFormat = "yyyy-MM-dd";
-                string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDPhone.Text, VDCity.Text);
+                string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDEmail.Text, DCityInsert.Text);
 
                 if (checkEdit == "MissInformation")
                 {
@@ -204,8 +204,9 @@ namespace BloodBank
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
-
-        
+        }
     }
 }

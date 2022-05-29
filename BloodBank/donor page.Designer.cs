@@ -30,12 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Label();
             this.DashBoard_Page = new System.Windows.Forms.Label();
             this.BloodTransfer_Page = new System.Windows.Forms.Label();
             this.ViewPatients_Page = new System.Windows.Forms.Label();
             this.Patients_page = new System.Windows.Forms.Label();
             this.ViewDonors_Page = new System.Windows.Forms.Label();
+            this.donor = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.DNameInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.DName = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -56,7 +58,6 @@
             this.DCityInsert = new Guna.UI2.WinForms.Guna2TextBox();
             this.DBirthDateInsert = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.donor = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +65,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Exit);
             this.panel1.Controls.Add(this.DashBoard_Page);
             this.panel1.Controls.Add(this.BloodTransfer_Page);
@@ -73,15 +75,26 @@
             this.panel1.Controls.Add(this.donor);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1154, 82);
+            this.panel1.Size = new System.Drawing.Size(1193, 82);
             this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1113, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 29);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "X";
             // 
             // Exit
             // 
             this.Exit.AutoSize = true;
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit.ForeColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(1110, 9);
+            this.Exit.Location = new System.Drawing.Point(1150, 7);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(31, 29);
             this.Exit.TabIndex = 67;
@@ -148,11 +161,24 @@
             this.ViewDonors_Page.Text = "View Donors";
             this.ViewDonors_Page.Click += new System.EventHandler(this.ViewDonors_Page_Click);
             // 
+            // donor
+            // 
+            this.donor.AutoSize = true;
+            this.donor.BackColor = System.Drawing.Color.DarkRed;
+            this.donor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donor.ForeColor = System.Drawing.Color.White;
+            this.donor.Location = new System.Drawing.Point(226, 28);
+            this.donor.Name = "donor";
+            this.donor.Size = new System.Drawing.Size(84, 29);
+            this.donor.TabIndex = 2;
+            this.donor.Text = "Donor";
+            this.donor.Click += new System.EventHandler(this.donor_Click);
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(155, 168);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(0, 20);
+            this.textBox1.Size = new System.Drawing.Size(1, 20);
             this.textBox1.TabIndex = 2;
             // 
             // DNameInsert
@@ -180,23 +206,25 @@
             // 
             // DName
             // 
+            this.DName.AutoSize = false;
             this.DName.BackColor = System.Drawing.Color.Transparent;
             this.DName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DName.ForeColor = System.Drawing.Color.Firebrick;
             this.DName.Location = new System.Drawing.Point(135, 129);
             this.DName.Name = "DName";
-            this.DName.Size = new System.Drawing.Size(79, 33);
+            this.DName.Size = new System.Drawing.Size(108, 32);
             this.DName.TabIndex = 4;
             this.DName.Text = "Name";
             // 
             // DBirthDate
             // 
+            this.DBirthDate.AutoSize = false;
             this.DBirthDate.BackColor = System.Drawing.Color.Transparent;
             this.DBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DBirthDate.ForeColor = System.Drawing.Color.Firebrick;
             this.DBirthDate.Location = new System.Drawing.Point(743, 234);
             this.DBirthDate.Name = "DBirthDate";
-            this.DBirthDate.Size = new System.Drawing.Size(126, 33);
+            this.DBirthDate.Size = new System.Drawing.Size(150, 32);
             this.DBirthDate.TabIndex = 7;
             this.DBirthDate.Text = "BirthDate";
             // 
@@ -204,17 +232,18 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(979, 275);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(0, 20);
+            this.textBox2.Size = new System.Drawing.Size(1, 20);
             this.textBox2.TabIndex = 5;
             // 
             // DGender
             // 
+            this.DGender.AutoSize = false;
             this.DGender.BackColor = System.Drawing.Color.Transparent;
             this.DGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGender.ForeColor = System.Drawing.Color.Firebrick;
             this.DGender.Location = new System.Drawing.Point(484, 129);
             this.DGender.Name = "DGender";
-            this.DGender.Size = new System.Drawing.Size(99, 33);
+            this.DGender.Size = new System.Drawing.Size(126, 32);
             this.DGender.TabIndex = 10;
             this.DGender.Text = "Gender";
             // 
@@ -222,19 +251,20 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(504, 168);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(0, 20);
+            this.textBox3.Size = new System.Drawing.Size(1, 20);
             this.textBox3.TabIndex = 8;
             // 
             // DPhone
             // 
+            this.DPhone.AutoSize = false;
             this.DPhone.BackColor = System.Drawing.Color.Transparent;
             this.DPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DPhone.ForeColor = System.Drawing.Color.Firebrick;
             this.DPhone.Location = new System.Drawing.Point(135, 234);
             this.DPhone.Name = "DPhone";
-            this.DPhone.Size = new System.Drawing.Size(86, 33);
+            this.DPhone.Size = new System.Drawing.Size(105, 32);
             this.DPhone.TabIndex = 13;
-            this.DPhone.Text = "Phone ";
+            this.DPhone.Text = "Email ";
             // 
             // DPhoneInsert
             // 
@@ -263,17 +293,18 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(155, 273);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(0, 20);
+            this.textBox4.Size = new System.Drawing.Size(1, 20);
             this.textBox4.TabIndex = 11;
             // 
             // DBlood
             // 
+            this.DBlood.AutoSize = false;
             this.DBlood.BackColor = System.Drawing.Color.Transparent;
             this.DBlood.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DBlood.ForeColor = System.Drawing.Color.Firebrick;
             this.DBlood.Location = new System.Drawing.Point(479, 234);
             this.DBlood.Name = "DBlood";
-            this.DBlood.Size = new System.Drawing.Size(150, 33);
+            this.DBlood.Size = new System.Drawing.Size(174, 32);
             this.DBlood.TabIndex = 16;
             this.DBlood.Text = "Blood Type";
             // 
@@ -281,17 +312,18 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(499, 273);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(0, 20);
+            this.textBox5.Size = new System.Drawing.Size(1, 20);
             this.textBox5.TabIndex = 14;
             // 
             // DCity
             // 
+            this.DCity.AutoSize = false;
             this.DCity.BackColor = System.Drawing.Color.Transparent;
             this.DCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DCity.ForeColor = System.Drawing.Color.Firebrick;
             this.DCity.Location = new System.Drawing.Point(743, 129);
             this.DCity.Name = "DCity";
-            this.DCity.Size = new System.Drawing.Size(55, 33);
+            this.DCity.Size = new System.Drawing.Size(84, 32);
             this.DCity.TabIndex = 19;
             this.DCity.Text = "City ";
             // 
@@ -406,23 +438,11 @@
             this.guna2PictureBox1.TabIndex = 53;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // donor
-            // 
-            this.donor.AutoSize = true;
-            this.donor.BackColor = System.Drawing.Color.DarkRed;
-            this.donor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.donor.ForeColor = System.Drawing.Color.White;
-            this.donor.Location = new System.Drawing.Point(226, 28);
-            this.donor.Name = "donor";
-            this.donor.Size = new System.Drawing.Size(84, 29);
-            this.donor.TabIndex = 2;
-            this.donor.Text = "Donor";
-            // 
             // donor_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 656);
+            this.ClientSize = new System.Drawing.Size(1153, 640);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.DBirthDateInsert);
             this.Controls.Add(this.DCityInsert);
@@ -445,6 +465,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "donor_page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "donor_page";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -484,5 +505,6 @@
         private System.Windows.Forms.Label Exit;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label donor;
+        private System.Windows.Forms.Label label1;
     }
 }

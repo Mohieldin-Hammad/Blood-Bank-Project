@@ -65,17 +65,18 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(235, 314);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(0, 20);
+            this.textBox1.Size = new System.Drawing.Size(1, 20);
             this.textBox1.TabIndex = 43;
             // 
             // guna2HtmlLabel5
             // 
+            this.guna2HtmlLabel5.AutoSize = false;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(195, 327);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(150, 33);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(189, 33);
             this.guna2HtmlLabel5.TabIndex = 55;
             this.guna2HtmlLabel5.Text = "Blood Type";
             // 
@@ -123,28 +124,32 @@
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(903, 327);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(150, 33);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(189, 33);
             this.guna2HtmlLabel2.TabIndex = 63;
             this.guna2HtmlLabel2.Text = "Blood Type";
             // 
             // guna2HtmlLabel3
             // 
+            this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(903, 232);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(79, 33);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(123, 33);
             this.guna2HtmlLabel3.TabIndex = 62;
             this.guna2HtmlLabel3.Text = "Name";
             // 
             // PName
             // 
+            this.PName.BorderColor = System.Drawing.Color.Red;
+            this.PName.BorderThickness = 2;
             this.PName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PName.DefaultText = "";
             this.PName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -167,7 +172,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(934, 314);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(0, 20);
+            this.textBox2.Size = new System.Drawing.Size(1, 20);
             this.textBox2.TabIndex = 60;
             // 
             // transferButton
@@ -188,6 +193,8 @@
             // 
             // DName
             // 
+            this.DName.BorderColor = System.Drawing.Color.Red;
+            this.DName.BorderThickness = 2;
             this.DName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.DName.DefaultText = "";
             this.DName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -195,7 +202,7 @@
             this.DName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.DName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DName.Location = new System.Drawing.Point(194, 272);
             this.DName.Name = "DName";
@@ -208,12 +215,13 @@
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(195, 232);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(79, 33);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(123, 33);
             this.guna2HtmlLabel1.TabIndex = 45;
             this.guna2HtmlLabel1.Text = "Name";
             // 
@@ -235,34 +243,38 @@
             // 
             // guna2HtmlLabel4
             // 
+            this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(196, 150);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(33, 33);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(80, 33);
             this.guna2HtmlLabel4.TabIndex = 68;
             this.guna2HtmlLabel4.Text = "ID";
             // 
             // guna2HtmlLabel6
             // 
+            this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Firebrick;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(903, 150);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(33, 33);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(80, 33);
             this.guna2HtmlLabel6.TabIndex = 70;
             this.guna2HtmlLabel6.Text = "ID";
             // 
             // cmbDonorID
             // 
             this.cmbDonorID.BackColor = System.Drawing.Color.Transparent;
+            this.cmbDonorID.BorderColor = System.Drawing.Color.Red;
+            this.cmbDonorID.BorderThickness = 2;
             this.cmbDonorID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbDonorID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDonorID.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbDonorID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbDonorID.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.cmbDonorID.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDonorID.ForeColor = System.Drawing.Color.Red;
             this.cmbDonorID.ItemHeight = 30;
             this.cmbDonorID.Location = new System.Drawing.Point(196, 189);
@@ -275,6 +287,8 @@
             // cmbPatientID
             // 
             this.cmbPatientID.BackColor = System.Drawing.Color.Transparent;
+            this.cmbPatientID.BorderColor = System.Drawing.Color.Red;
+            this.cmbPatientID.BorderThickness = 2;
             this.cmbPatientID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbPatientID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPatientID.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -299,10 +313,11 @@
             this.panel1.Controls.Add(this.ViewPatients_Page);
             this.panel1.Controls.Add(this.Patients_page);
             this.panel1.Controls.Add(this.ViewDonors_Page);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 82);
+            this.panel1.Size = new System.Drawing.Size(1154, 82);
             this.panel1.TabIndex = 73;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Donor_Page
             // 
@@ -372,9 +387,9 @@
             this.Patients_page.ForeColor = System.Drawing.Color.White;
             this.Patients_page.Location = new System.Drawing.Point(570, 28);
             this.Patients_page.Name = "Patients_page";
-            this.Patients_page.Size = new System.Drawing.Size(107, 29);
+            this.Patients_page.Size = new System.Drawing.Size(94, 29);
             this.Patients_page.TabIndex = 4;
-            this.Patients_page.Text = "Patients";
+            this.Patients_page.Text = "Patient";
             this.Patients_page.Click += new System.EventHandler(this.Patients_page_Click);
             // 
             // ViewDonors_Page
@@ -393,7 +408,7 @@
             // 
             this.guna2PictureBox1.Image = global::BloodBank.Properties.Resources.blood_transfusion__2_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(451, 327);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(485, 314);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(273, 256);
             this.guna2PictureBox1.TabIndex = 2;
@@ -401,6 +416,8 @@
             // 
             // DBlood
             // 
+            this.DBlood.BorderColor = System.Drawing.Color.Red;
+            this.DBlood.BorderThickness = 2;
             this.DBlood.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.DBlood.DefaultText = "";
             this.DBlood.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -408,7 +425,7 @@
             this.DBlood.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DBlood.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DBlood.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DBlood.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DBlood.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.DBlood.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DBlood.Location = new System.Drawing.Point(196, 366);
             this.DBlood.Name = "DBlood";
@@ -421,6 +438,8 @@
             // 
             // PBlood
             // 
+            this.PBlood.BorderColor = System.Drawing.Color.Red;
+            this.PBlood.BorderThickness = 2;
             this.PBlood.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PBlood.DefaultText = "";
             this.PBlood.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -443,7 +462,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 656);
+            this.ClientSize = new System.Drawing.Size(1153, 640);
             this.Controls.Add(this.PBlood);
             this.Controls.Add(this.DBlood);
             this.Controls.Add(this.panel1);
@@ -468,6 +487,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Transfer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transfer";
             this.Load += new System.EventHandler(this.Transfer_Load);
             this.panel1.ResumeLayout(false);

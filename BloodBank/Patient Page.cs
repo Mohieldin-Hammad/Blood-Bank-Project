@@ -109,6 +109,44 @@ namespace BloodBank
             Application.Exit();
         }
 
+        private void Donor_Page_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void PPhone_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PName_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PGender_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PBlood_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PCity_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PBD_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
