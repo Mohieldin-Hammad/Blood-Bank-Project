@@ -78,7 +78,7 @@ namespace BloodBank.Controllers
                 subject = "Blood Donation";
             }
 
-            message.From.Add(new MailboxAddress("Blood Bank", "bloodbank354@gmail.com"));
+            message.From.Add(new MailboxAddress("Blood Bank", senderEmail));
             message.To.Add(MailboxAddress.Parse(email));
             message.Subject = subject;
            

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
-
+using System.Threading;
 
 namespace BloodBank.AccessManagers
 {
@@ -17,6 +17,13 @@ namespace BloodBank.AccessManagers
             Manager manager = new Manager();
             
             return manager.Select("sp_ShowBloodsTable");
+        }
+
+
+        private static void sendEmail(string email, string reciever, string cond)
+        {
+            Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
+            string smtpCheck = sMTP.SendEmailTo(email, reciever, cond);
         }
 
 
@@ -43,8 +50,9 @@ namespace BloodBank.AccessManagers
                     {
                         firstName = name;
                     }
-                    Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
-                    string smtpCheck = sMTP.SendEmailTo(phone, firstName, "Donation");
+
+                    Thread emailMsg = new Thread(() => sendEmail(phone, firstName, "Donation"));
+                    emailMsg.Start();
                     return "Done";
                 }
                 else

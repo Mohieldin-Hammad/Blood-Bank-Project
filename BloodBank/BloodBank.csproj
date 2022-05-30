@@ -329,7 +329,6 @@
     <None Include="Resources\icons8-back-arrow-64.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controllers\blood.png" />
     <Content Include="Controllers\donation.html" />
     <Content Include="Controllers\signin.html" />
   </ItemGroup>

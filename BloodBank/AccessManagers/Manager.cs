@@ -79,6 +79,8 @@ namespace BloodBank.AccessManagers
         }
 
 
+
+
         public int selectIDOfName(string name, string type)
         {
             using (SqlConnection conn = new SqlConnection(Helper.CnnVal("BloodBankDB")))

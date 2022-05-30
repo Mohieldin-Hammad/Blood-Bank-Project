@@ -73,6 +73,7 @@ namespace BloodBank
         {
             AccessManagers.Patient patient = new AccessManagers.Patient();
             patientCount.Text = patient.patientsCount().ToString();
+            transferCount.Text = patient.transfersCount().ToString();
 
             AccessManagers.Donor donor = new AccessManagers.Donor();
             donorCount.Text = donor.donorsCount().ToString();

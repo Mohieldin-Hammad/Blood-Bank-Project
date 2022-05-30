@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace BloodBank.AccessManagers
 {
@@ -23,6 +24,12 @@ namespace BloodBank.AccessManagers
                 return checkSignUp;
         }
 
+        private static void sendEmail(string email, string reciever, string cond)
+        {
+            Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
+            string smtpCheck = sMTP.SendEmailTo(email, reciever, cond);
+        }
+
 
         public string Login(string email, string pass)
         {
@@ -32,14 +39,9 @@ namespace BloodBank.AccessManagers
             {
                 string checkPass = user.checkPassword(email, pass);
                 if (checkPass == "Succeed")
-                {   
-                    Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
-                    string smtpCheck = sMTP.SendEmailTo(email, email, "SignIn");
-                    if(smtpCheck == "Succeed")
-                    {
-                        MessageBox.Show("A confirmation email is sent to you");
-                    }
-
+                {
+                    Thread msg = new Thread(() => sendEmail(email,email, "SignIn"));
+                    msg.Start();
                     return "Done";
                 }
                 else if (checkPass == "Failed")
