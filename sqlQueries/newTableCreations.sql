@@ -7,7 +7,7 @@ PGender varchar(50) not null,
 PBlood varchar(5) not null,
 PBirthDate date not null,
 P_Age as (year(getdate()) - year(PBirthDate)),
-PPhone varchar(50) not null,
+PEmail varchar(320) not null unique,
 PCity VarChar(50) not null, 
 PType VarChar(5) not null
 constraint PeoplePK primary key(P_ID),

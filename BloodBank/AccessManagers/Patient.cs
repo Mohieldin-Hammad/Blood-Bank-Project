@@ -143,5 +143,11 @@ namespace BloodBank.AccessManagers
             return dt.Rows.Count;
         }
 
+        public int transfersCount()
+        {
+            Manager manager = new Manager();
+            return manager.Select("sp_SelectAllTransfers").Rows.Count;
+        }
+
     }
 }

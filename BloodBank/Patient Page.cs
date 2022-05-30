@@ -36,27 +36,33 @@ namespace BloodBank
 
         private void PSaveInsert_Click(object sender, EventArgs e)
         {
-            AccessManagers.Patient PatientInsert = new AccessManagers.Patient(); 
-            
-            PBirthDateInsert.Format = DateTimePickerFormat.Custom;
-            PBirthDateInsert.CustomFormat = "yyyy-MM-dd";
-
-            string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PBirthDateInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
-            
-            if (CheckMassage == "Done" && CheckMassage != null)
+            if (PNameInsert.Text.Trim() == "" || PPhoneInsert.Text.Trim() == "" || PCityInsert.Text.Trim() == "")
             {
-                MessageBox.Show("Patient Successfully Seved");
-                ResetPatient();
-            }
-            else if (CheckMassage == "MissInformation")
-            {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Inputs Cannot be empty");
             }
             else
             {
-                MessageBox.Show(CheckMassage);
-            }
+                AccessManagers.Patient PatientInsert = new AccessManagers.Patient();
 
+                PBirthDateInsert.Format = DateTimePickerFormat.Custom;
+                PBirthDateInsert.CustomFormat = "yyyy-MM-dd";
+
+                string CheckMassage = PatientInsert.InsertNewPatient(PNameInsert.Text, PGenderInsert.Text, PBloodInsert.Text, PBirthDateInsert.Text, PPhoneInsert.Text, PCityInsert.Text);
+
+                if (CheckMassage == "Done" && CheckMassage != null)
+                {
+                    MessageBox.Show("Patient Successfully Seved");
+                    ResetPatient();
+                }
+                else if (CheckMassage == "MissInformation")
+                {
+                    MessageBox.Show("Missing Information");
+                }
+                else
+                {
+                    MessageBox.Show(CheckMassage);
+                }
+            }
         }
 
         private void ResetPatient()

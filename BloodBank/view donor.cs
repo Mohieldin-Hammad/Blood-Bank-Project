@@ -34,8 +34,8 @@ namespace BloodBank
         {
             VDName.Text = "";
             VDGender.SelectedIndex = -1;
-            //VDPhone.Text = "";
-            VDEmail.Text = "";
+            VDPhone.Text = "";
+            VDCity.Text = "";
             VDBlood.SelectedIndex = -1;
         }
 
@@ -61,8 +61,8 @@ namespace BloodBank
             //VDGender.SelectedIndex = VDGender.FindStringExact(gender);
             VDBlood.Text = blood;
             VDBD.Text = bd;
-            //VDPhone.Text = phone;
-            VDEmail.Text = city;
+            VDPhone.Text = phone;
+            VDCity.Text = city;
         }
 
 
@@ -134,26 +134,34 @@ namespace BloodBank
             { 
                 int currentRowIndex = DTshow.CurrentCell.RowIndex;
                 int id = (int)DTshow.Rows[currentRowIndex].Cells[0].Value;
-
-                AccessManagers.Donor donor = new AccessManagers.Donor();
-
-                VDBD.Format = DateTimePickerFormat.Custom;
-                VDBD.CustomFormat = "yyyy-MM-dd";
-                string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDEmail.Text, DCityInsert.Text);
-
-                if (checkEdit == "MissInformation")
+                
+                if (VDName.Text.Trim() == "" || VDPhone.Text.Trim() == "" || VDCity.Text.Trim() == "")
                 {
-                    MessageBox.Show("Missing Information");
-                }
-                else if (checkEdit == "Done")
-                {
-                    MessageBox.Show("Donor is Successfully Updated");
+                    MessageBox.Show("Inputs Cannot be empty");
                 }
                 else
                 {
-                    MessageBox.Show(checkEdit);
+                    AccessManagers.Donor donor = new AccessManagers.Donor();
+
+                    VDBD.Format = DateTimePickerFormat.Custom;
+                    VDBD.CustomFormat = "yyyy-MM-dd";
+                
+                    string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDCity.Text, VDPhone.Text);
+
+                    if (checkEdit == "MissInformation")
+                    {
+                        MessageBox.Show("Missing Information");
+                    }
+                    else if (checkEdit == "Done")
+                    {
+                        MessageBox.Show("Donor is Successfully Updated");
+                    }
+                    else
+                    {
+                        MessageBox.Show(checkEdit);
+                    }
+                    showtable();
                 }
-                showtable();
             }
             else
             {

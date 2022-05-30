@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
-
+using System.Threading;
 
 namespace BloodBank.AccessManagers
 {
@@ -20,6 +20,13 @@ namespace BloodBank.AccessManagers
         }
 
 
+        private static void sendEmail(string email, string reciever, string cond)
+        {
+            Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
+            string smtpCheck = sMTP.SendEmailTo(email, reciever, cond);
+        }
+
+
         public string Donate(int id)
         {
             string msg;
@@ -30,8 +37,24 @@ namespace BloodBank.AccessManagers
 
                 if (msg == "Failed_To_Increment_Blood")
                     return "IncrementFailed";
-                else if (msg == "Succeed")
+                else if (msg == "Succeed") 
+                {
+                    string phone = manager.getColumnsByID('D', id, "PPhone")[0];
+                    string name = manager.getColumnsByID('D', id, "PName")[0];
+                    string firstName = "";
+                    try
+                    {
+                        firstName = name.Split(' ')[0];
+                    }
+                    catch (Exception)
+                    {
+                        firstName = name;
+                    }
+
+                    Thread emailMsg = new Thread(() => sendEmail(phone, firstName, "Donation"));
+                    emailMsg.Start();
                     return "Done";
+                }
                 else
                     return msg;
             }
