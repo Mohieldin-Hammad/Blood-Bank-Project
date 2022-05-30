@@ -62,8 +62,8 @@ namespace BloodBank.Controllers
     {
         //-------------
         //enter your email and password
-        private string senderEmail = "bloodbank354@gmail.com";
-        private string senderEmailPassword = "Aa@123456";
+        private string senderEmail = "";
+        private string senderEmailPassword = "";
         //-------------
         public string SendEmailTo(string email, string userInMail, string cond)
         {
