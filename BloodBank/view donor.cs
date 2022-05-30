@@ -146,7 +146,7 @@ namespace BloodBank
                     VDBD.Format = DateTimePickerFormat.Custom;
                     VDBD.CustomFormat = "yyyy-MM-dd";
                 
-                    string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDCity.Text, VDPhone.Text);
+                    string checkEdit = donor.EditDonor(id, VDName.Text, VDGender.Text, VDBlood.Text, VDBD.Text, VDPhone.Text, VDCity.Text);
 
                     if (checkEdit == "MissInformation")
                     {
