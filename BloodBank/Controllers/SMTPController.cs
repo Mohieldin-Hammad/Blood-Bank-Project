@@ -68,15 +68,20 @@ namespace BloodBank.Controllers
         public string SendEmailTo(string email, string userInMail, string cond)
         {
             MimeMessage message = new MimeMessage();
-            
-            message.From.Add(new MailboxAddress("Tester", "bloodbank354@gmail.com"));
-            message.To.Add(MailboxAddress.Parse(email));
-            message.Subject = "Trying to write the code";
-            message.Body = new TextPart("htm")
+            string subject = "";
+            if (cond == "SignIn")
             {
-                Text = "hello, mohee your code is successfully worked"
-            };
+                subject = "Security alert"; 
+            }
+            else if (cond == "Donation")
+            {
+                subject = "Blood Donation";
+            }
 
+            message.From.Add(new MailboxAddress("Blood Bank", "bloodbank354@gmail.com"));
+            message.To.Add(MailboxAddress.Parse(email));
+            message.Subject = subject;
+           
             string emailCode = "";
             var bodyBuilder = new BodyBuilder();
             if (cond != null && cond == "Donation")
@@ -85,6 +90,7 @@ namespace BloodBank.Controllers
             }
             else if (cond != null && cond == "SignIn")
             {
+
                 emailCode = emailSelection(cond).Replace("{UserEmail}", userInMail);
             }
             else
@@ -125,7 +131,7 @@ namespace BloodBank.Controllers
             
             if (selection == "Donation")
                 return email_html.DonationMessage;
-            else if (selection == "SignInd")
+            else if (selection == "SignIn")
                 return email_html.SignInMeassage;
             else
                 return null;

@@ -24,25 +24,32 @@ namespace BloodBank
 
         private void DSaveInsert_Click(object sender, EventArgs e)
         {
-            AccessManagers.Donor DonorInsert = new AccessManagers.Donor();
-
-            DBirthDateInsert.Format = DateTimePickerFormat.Custom;
-            DBirthDateInsert.CustomFormat = "yyyy-MM-dd";
-
-            string CheckMassage = DonorInsert.InsertNewDonor(DNameInsert.Text, DGenderInsert.Text, DBloodInsert.Text, DBirthDateInsert.Text, DPhoneInsert.Text, DCityInsert.Text);
-
-            if (CheckMassage == "Done" && CheckMassage != null)
+            if (DNameInsert.Text.Trim() == "" || DPhoneInsert.Text.Trim() == "" || DCityInsert.Text.Trim() == "")
             {
-                MessageBox.Show("Donor Successfully Seved");
-                ResetDonor();
-            }
-            else if (CheckMassage == "MissInformation")
-            {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Inputs Cannot be empty");
             }
             else
             {
-                MessageBox.Show(CheckMassage);
+                AccessManagers.Donor DonorInsert = new AccessManagers.Donor();
+
+                DBirthDateInsert.Format = DateTimePickerFormat.Custom;
+                DBirthDateInsert.CustomFormat = "yyyy-MM-dd";
+            
+                string CheckMassage = DonorInsert.InsertNewDonor(DNameInsert.Text, DGenderInsert.Text, DBloodInsert.Text, DBirthDateInsert.Text, DPhoneInsert.Text, DCityInsert.Text);
+
+                if (CheckMassage == "Done" && CheckMassage != null)
+                {
+                    MessageBox.Show("Donor Successfully Seved");
+                    ResetDonor();
+                }
+                else if (CheckMassage == "MissInformation")
+                {
+                    MessageBox.Show("Missing Information");
+                }
+                else
+                {
+                    MessageBox.Show(CheckMassage);
+                }
             }
 
         }

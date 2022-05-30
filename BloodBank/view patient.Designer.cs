@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -51,7 +51,7 @@
             this.VPGender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.VPBD = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.VPEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.VPPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.DEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.VPBlood = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -93,31 +93,31 @@
             this.PTshow.AllowUserToDeleteRows = false;
             this.PTshow.AllowUserToResizeColumns = false;
             this.PTshow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.PTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.PTshow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.PTshow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PTshow.BackgroundColor = System.Drawing.Color.White;
             this.PTshow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PTshow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.PTshow.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PTshow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.PTshow.ColumnHeadersHeight = 20;
             this.PTshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PTshow.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PTshow.DefaultCellStyle = dataGridViewCellStyle3;
             this.PTshow.EnableHeadersVisualStyles = false;
             this.PTshow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PTshow.Location = new System.Drawing.Point(17, 210);
@@ -369,27 +369,28 @@
             this.VPBD.TabIndex = 91;
             this.VPBD.Value = new System.DateTime(2022, 5, 25, 23, 30, 38, 0);
             // 
-            // VPEmail
+            // VPPhone
             // 
-            this.VPEmail.BorderColor = System.Drawing.Color.Red;
-            this.VPEmail.BorderThickness = 2;
-            this.VPEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VPEmail.DefaultText = "";
-            this.VPEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.VPEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.VPEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.VPEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPEmail.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.VPEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VPEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VPEmail.Location = new System.Drawing.Point(179, 118);
-            this.VPEmail.Name = "VPEmail";
-            this.VPEmail.PasswordChar = '\0';
-            this.VPEmail.PlaceholderText = "";
-            this.VPEmail.SelectedText = "";
-            this.VPEmail.Size = new System.Drawing.Size(200, 29);
-            this.VPEmail.TabIndex = 90;
+            this.VPPhone.BorderColor = System.Drawing.Color.Red;
+            this.VPPhone.BorderThickness = 2;
+            this.VPPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.VPPhone.DefaultText = "";
+            this.VPPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.VPPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.VPPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.VPPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.VPPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPPhone.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.VPPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.VPPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.VPPhone.Location = new System.Drawing.Point(179, 118);
+            this.VPPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.VPPhone.Name = "VPPhone";
+            this.VPPhone.PasswordChar = '\0';
+            this.VPPhone.PlaceholderText = "";
+            this.VPPhone.SelectedText = "";
+            this.VPPhone.Size = new System.Drawing.Size(200, 29);
+            this.VPPhone.TabIndex = 90;
             // 
             // DEmail
             // 
@@ -487,6 +488,7 @@
             this.VPName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VPName.Location = new System.Drawing.Point(25, 118);
+            this.VPName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.VPName.Name = "VPName";
             this.VPName.PasswordChar = '\0';
             this.VPName.PlaceholderText = "";
@@ -509,7 +511,7 @@
             this.VPCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.VPCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VPCity.Location = new System.Drawing.Point(384, 118);
-            this.VPCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.VPCity.Margin = new System.Windows.Forms.Padding(4);
             this.VPCity.Name = "VPCity";
             this.VPCity.PasswordChar = '\0';
             this.VPCity.PlaceholderText = "";
@@ -539,7 +541,7 @@
             this.Controls.Add(this.VPGender);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.VPBD);
-            this.Controls.Add(this.VPEmail);
+            this.Controls.Add(this.VPPhone);
             this.Controls.Add(this.DEmail);
             this.Controls.Add(this.VPBlood);
             this.Controls.Add(this.guna2HtmlLabel5);
@@ -591,7 +593,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox VPGender;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2DateTimePicker VPBD;
-        private Guna.UI2.WinForms.Guna2TextBox VPEmail;
+        private Guna.UI2.WinForms.Guna2TextBox VPPhone;
         private Guna.UI2.WinForms.Guna2HtmlLabel DEmail;
         private Guna.UI2.WinForms.Guna2ComboBox VPBlood;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;

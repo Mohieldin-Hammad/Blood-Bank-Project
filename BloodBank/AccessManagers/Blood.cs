@@ -30,8 +30,23 @@ namespace BloodBank.AccessManagers
 
                 if (msg == "Failed_To_Increment_Blood")
                     return "IncrementFailed";
-                else if (msg == "Succeed")
+                else if (msg == "Succeed") 
+                {
+                    string phone = manager.getColumnsByID('D', id, "PPhone")[0];
+                    string name = manager.getColumnsByID('D', id, "PName")[0];
+                    string firstName = "";
+                    try
+                    {
+                        firstName = name.Split(' ')[0];
+                    }
+                    catch (Exception)
+                    {
+                        firstName = name;
+                    }
+                    Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
+                    string smtpCheck = sMTP.SendEmailTo(phone, firstName, "Donation");
                     return "Done";
+                }
                 else
                     return msg;
             }

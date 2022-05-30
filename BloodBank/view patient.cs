@@ -34,7 +34,7 @@ namespace BloodBank
         {
             VPName.Text = "";
             VPGender.SelectedIndex = -1;
-            //VPPhone.Text = "";
+            VPPhone.Text = "";
             VPCity.Text = "";
             VPBlood.SelectedIndex = -1;
         }
@@ -71,7 +71,7 @@ namespace BloodBank
             VPGender.Text = gender;
             VPBlood.Text = blood;
             VPBD.Text = bd;
-            //VPPhone.Text = phone;
+            VPPhone.Text = phone;
             VPCity.Text = city;
         }
 
@@ -142,31 +142,42 @@ namespace BloodBank
                 int currentRowIndex = PTshow.CurrentCell.RowIndex;
                 int id = (int)PTshow.Rows[currentRowIndex].Cells[0].Value;
 
-                AccessManagers.Patient patient = new AccessManagers.Patient();
-            
-                VPBD.Format = DateTimePickerFormat.Custom;
-                VPBD.CustomFormat = "yyyy-MM-dd";
-                string checkEdit = patient.EditPatient(id, VPName.Text, VPGender.Text, VPBlood.Text, VPBD.Text, VPEmail.Text, VPCity.Text);
-            
-                if (checkEdit == "MissInformation")
+                if (VPName.Text.Trim() == "" || VPPhone.Text.Trim() == "" || VPCity.Text.Trim() == "")
                 {
-                    MessageBox.Show("Missing Information");
-                }
-                else if (checkEdit == "Done")
-                {
-                    MessageBox.Show("Patient is Successfully Updated");
+                    MessageBox.Show("Inputs Cannot be empty");
                 }
                 else
                 {
-                    MessageBox.Show(checkEdit);
+                    AccessManagers.Patient patient = new AccessManagers.Patient();
+
+                    VPBD.Format = DateTimePickerFormat.Custom;
+                    VPBD.CustomFormat = "yyyy-MM-dd";
+                
+                    string checkEdit = patient.EditPatient(id, VPName.Text, VPGender.Text, VPBlood.Text, VPBD.Text, VPPhone.Text, VPCity.Text);
+            
+                    if (checkEdit == "MissInformation")
+                    {
+                        MessageBox.Show("Missing Information");
+                    }
+                    else if (checkEdit == "Done")
+                    {
+                        MessageBox.Show("Patient is Successfully Updated");
+                    }
+                    else
+                    {
+                        MessageBox.Show(checkEdit);
+                    }
+                    showtable();
                 }
-                showtable();
             }
             else
             {
                 MessageBox.Show("Row is not selected!");
             }
         }
+
+
+        
 
         private void DelButton_Click(object sender, EventArgs e)
         {

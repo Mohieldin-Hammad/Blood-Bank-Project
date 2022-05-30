@@ -34,14 +34,10 @@ namespace BloodBank.AccessManagers
                 if (checkPass == "Succeed")
                 {   
                     Controllers.SMTPWithMailKit sMTP = new Controllers.SMTPWithMailKit();
-                    string smtpCheck = sMTP.SendEmailTo("moheesabry@gmail.com", "mohee", "Donation");
+                    string smtpCheck = sMTP.SendEmailTo(email, email, "SignIn");
                     if(smtpCheck == "Succeed")
                     {
-                        MessageBox.Show("Email is sent");
-                    }
-                    else
-                    {
-                        MessageBox.Show(smtpCheck);
+                        MessageBox.Show("A confirmation email is sent to you");
                     }
 
                     return "Done";

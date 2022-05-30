@@ -17,7 +17,6 @@ namespace BloodBank
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new loading_page());
-            //Application.Run(new login_page());
             //Application.Run(new donor_page());
             //Application.Run(new Patient_Page());    
            
