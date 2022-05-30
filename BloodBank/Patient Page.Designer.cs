@@ -154,7 +154,7 @@
             this.PPhone_text.Name = "PPhone_text";
             this.PPhone_text.Size = new System.Drawing.Size(114, 33);
             this.PPhone_text.TabIndex = 32;
-            this.PPhone_text.Text = "Phone ";
+            this.PPhone_text.Text = "Email";
             this.PPhone_text.Click += new System.EventHandler(this.PPhone_text_Click);
             // 
             // PPhoneInsert
